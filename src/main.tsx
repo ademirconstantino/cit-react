@@ -5,6 +5,7 @@ import TopMenu from './TopMenu.tsx'
 import TopBar from './TopBar.tsx'
 import Home from './Home.tsx'
 import { LangProvider } from "./LangContext";
+import Footer from './Footer.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -12,6 +13,7 @@ createRoot(document.getElementById('root')!).render(
       <TopMenu/>
       <TopBar/>
       <Home/>
+      <Footer/>
     </LangProvider>
   </StrictMode>,
 )
