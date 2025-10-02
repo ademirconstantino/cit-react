@@ -1,0 +1,73 @@
+{
+    "header": {
+        "website_title": "ConstantinoIT.com WebSite",
+        "website_description": "ConstantinoIt.com - Specialized company in Software Development.",
+        "google_site_verification": "YC5krEfiSwEJeWE3UwtVJIO4Pj_ZqtRQrs2ZvDGteHs"
+    },
+    "menu": {
+        "about_us": "ACERCA",
+        "services": "SERVICIOS",
+        "contact": "CONTACTO"
+    },
+    "home": {
+        "welcome_message": "Bienvenido a Constantino IT Consulting",
+        "welcome_companydetails": "Empresa especializada en servicios de consultoría de TI",
+        "desc_mobile_apps": "Mobile Apps",
+        "desc_mobile_apps_body": "Desarrollamos aplicaciones móviles utilizando los mejores procesos de TI.",
+        "desc_support": "24x7 Support",
+        "desc_support_body": "El uso de las mejores prácticas de TI. Ofrecemos la automatización DevOps con Jenkins, chef y outros.",
+        "desc_support_a": "Experiencia en la nube",
+        "desc_support_abody": "Observabilidad con Prometheus y Grafana para analizar la eficiencia de sus microservicios",
+        "desc_support_b": "Kubernetes y Open Shift",
+        "desc_support_bbody": "Nuestra experiencia en la nube (consulentes certificados) puede impulsar a su empresa al siguiente nivel con Oracle Cloud"
+    },
+    "footer": {
+        "telephone_number": "+55 41 9 9607 5187",
+        "contact_us": "Contáctenos",
+        "address": "Sao Paulo | Curitiba | Roma",
+        "copyright_notice": "Constantino IT Consulting | Copyright &copy; 2010-2025"
+    },
+    "links": {
+        "facebook_link": "http://www.facebook.com/ConstantinoIT",
+        "twitter_link": "http://www.twitter.com/ItConstantino",
+        "linkedin_link": "http://www.linkedin.com/company/constantino-it/"
+    },
+    "about": {
+        "this_section": "In this section",
+        "about_us": "Acerca",
+        "mission": "Nuestra Missíon",
+        "business_insight": "Visión de negocio",
+        "our_values": "Nuestros valores",
+        "text_about_cit": "Acerca de la Constantino TI",
+        "text_about_cit_body": "Primeramente, una compañía de alta tecnología.",
+        "experience": "Más de 20 años de experiencia en TI ",
+        "company_details": "Hay dos décadas de know-how. Trabajamos con él durante más de 20 años. Durante todos estos años hemos seguido la innovación de computación bastante cerca, y hoy tenemos la seguridad en la oferta de servicios de buena calidad para nuestros clientes.",
+        "mission_text": "Crear soluciones innovadoras e implementar soluciones de software de TI, que asistirán a las expectativas del cliente.",
+        "business_insight_text": "Ser una compañía de tecnologías de referencia en el espacio internacional, reconocida por su calidad.",
+        "our_values_text": "Podemos decir que el respeto, dedicación, seriedad y madurez trabajar son valores constantes en nuestra organización. "
+    },
+    "services": {
+        "this_section": "In this section",
+        "our_services": "Nuestros Servicios",
+        "software_factory": "Fabrica de Software",
+        "expert_consultants": "Consultors Experientes",
+        "areas_consultancy": "Áreas de Consultoría",
+        "header_text": "Nuestros Servicios",
+        "header_text_body": "Qué podemos ofrecer a su empresa.",
+        "software_factory_text": "Desarrollamos software en demanda de su negocio con las tecnologías que asistirán a su negocio y le guiará en una forma inteligente. Nuestro saber hacer es lo que refleja en la calidad final.",
+        "expert_consultants_text": "Tenemos un equipo de consultores experientes no que lo hace. Nuestro trabajo en red y la experiencia nos permite atender a su empresa en los campos críticos, ofreciendo soluciones inteligentes.",
+        "areas_consultancy_text": "Actuamos en algunas áreas de tecnología de la información, que incluye desarrollo de software, análisis de procesos, Identidad Visual, Seguridad en TI, sitios web, Infraestructura y Optimización de Procesos de Negocio."
+    },
+    "contact": {
+        "header_text": "Contactenos",
+        "header_text_body": "Mantente en contacto con nosotros",
+        "name": "Nome",
+        "email": "E-mail",
+        "message": "Mensaje",
+        "send_message": "Enviar mensaje",
+        "telephone": " +55 41 9 9607 5187",
+        "send_us_mail": "Enviar un correo electrónico",
+        "location": "Sao Paulo | Curitiba | Roma",
+        "thankyou": "gracias por tu mensaje"
+    }
+}

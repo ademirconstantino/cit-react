@@ -1,0 +1,73 @@
+{
+	"header" : {
+		"website_title": "ConstantinoIT.com WebSite",
+		"website_description": "ConstantinoIt.com - Specialized company in Software Development.",
+		"google_site_verification": "YC5krEfiSwEJeWE3UwtVJIO4Pj_ZqtRQrs2ZvDGteHs"
+    },
+	"menu" : {
+        "about_us": "ABOUT US",
+        "services": "SERVICES",
+        "contact": "CONTACT US"
+    },
+	"home" : {
+        "welcome_message": "Welcome to Constantino IT Consulting",
+        "welcome_companydetails": "Specialized Company in IT Consulting Services",
+		"desc_mobile_apps" : "Mobile Apps",
+		"desc_mobile_apps_body" : "We develop mobile apps using the best IT processes and approaches.",
+		"desc_support" : "24x7 Support",
+		"desc_support_body" : "Using the best IT pratices and approaches. We offer devops automation with jenkins, chef and docker.",
+		"desc_support_a" : "Cloud Expertise",
+		"desc_support_abody" : "Observability using prometheus and grafana to analise your microservices efficiency.",
+		"desc_support_b" : "Kubernetes and Open Shift",
+		"desc_support_bbody" : "Our cloud expertise (and also Certified) can put your company to the next level using the Oracle Cloud."
+    },
+	"footer" : {
+        "telephone_number": "+55 41 9 9607 5187",
+		"contact_us": "Contact Us",
+		"address": "Sao Paulo | Curitiba | Roma",
+		"copyright_notice": "Constantino IT Consulting | Copyright &copy; 2010-2025"
+    },
+	"links" : {
+        "facebook_link": "http://www.facebook.com/ConstantinoIT",
+		"twitter_link": "http://www.twitter.com/ItConstantino",
+		"linkedin_link": "http://www.linkedin.com/company/constantino-it/"
+    },
+	"about" : {
+        "this_section": "In this section",
+		"about_us": "About us",
+		"mission": "Mission",
+		"business_insight": "Business Insight",
+		"our_values": "Our Values",
+		"text_about_cit": "About Constantino IT Consulting",
+		"text_about_cit_body": "Primarily a high-tech company.",
+		"experience": "20+ years in IT experience ",
+		"company_details": "There are two decades of know-how. We work with it for 20+ years. Over all these years we followed the computing innovation quite nearby, and today we have security in offering good quality services for our clients.",
+		"mission_text": "Create innovative solutions and implement IT software solutions which will attend the client expectancies.",
+		"business_insight_text": "To be a refference IT company at the international space, recognized by its quality.",
+		"our_values_text": "We can say that respect, dedication, seriously work and maturity are constant values in our organization. "
+    },
+	"services" : {
+        "this_section" : "In this section",
+		"our_services" : "Our services",
+		"software_factory": "Software Factory",
+		"expert_consultants" : "Expert Consultants",
+		"areas_consultancy" : "Areas of Consultancy",
+		"header_text" : "Our services",
+		"header_text_body" : "What can we offer to your company.",
+		"software_factory_text" : "We develop software on demand for your business with the tecnologies that will atend your business and will attend you in a smart way. Our know how is what reflect in the final quality.",
+		"expert_consultants_text" : "We have an expert team that does it. Our networking and experience allows us to attend your company in the critical fields, offering smart solutions.",
+		"areas_consultancy_text" : "We act in some areas in Information Technology, which includes Software Development, Process Analysis, Visual Identity, Security in IT, Websites, Infrastructure and Business Process Optimization."
+    },
+	"contact" : {
+        "header_text" : "Contact us",
+		"header_text_body" : "Keep in touch with us",
+		"name" : "Name",
+		"email" : "E-mail",
+		"message" : "Message",
+		"send_message" : "Send message",
+		"telephone" : " +55 41 9 9607 5187",
+		"send_us_mail" : "Send us an e-mail",
+		"location" : "Sao Paulo | Curitiba | Roma",
+		"thankyou" : "Thank you for your message."
+    }
+}

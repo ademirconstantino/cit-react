@@ -1,0 +1,74 @@
+{
+	"header" : {
+		"website_title": "ConstantinoIT.com WebSite",
+		"website_description": "ConstantinoIt.com - Specialized company in Software Development.",
+		"google_site_verification": "YC5krEfiSwEJeWE3UwtVJIO4Pj_ZqtRQrs2ZvDGteHs"
+    },
+	"menu" : {
+        "about_us": "CHI SIAMO",
+        "services": "SERVIZI",
+        "clients": "CLIENTS",
+        "contact": "CONTATTACI"
+    },
+	"home" : {
+        "welcome_message": "Benvenuto in Constantino IT Consulting",
+        "welcome_companydetails": "Azienda specializzata in servizi di consulenza informatica",
+		"desc_mobile_apps" : "Mobile Apps",
+		"desc_mobile_apps_body" : "Sviluppiamo app mobili utilizzando i migliori processi e approcci IT.",
+		"desc_support" : "24x7 Support",
+		"desc_support_body" : "Utilizzando le migliori pratiche e approcci IT. Offriamo l'automazione devops con jenkins, chef e docker.",
+		"desc_support_a": "Competenza nel cloud",
+        "desc_support_abody": "Osservabilità con Prometheus e Grafana per analizzare l'efficienza dei tuoi microservizi.",
+        "desc_support_b": "Kubernetes e Open Shift",
+        "desc_support_bbody": "La nostra competenza nel cloud (consulenti certificati) possono portare la tua azienda al livello successivo utilizzando Oracle Cloud."
+    },
+	"footer" : {
+        "telephone_number": "+55 41 9 9607 5187",
+		"contact_us": "Contattaci",
+		"address": "Sao Paulo | Curitiba | Roma",
+		"copyright_notice": "Constantino IT Consulting | Copyright &copy; 2010-2025"
+    },
+	"links" : {
+        "facebook_link": "http://www.facebook.com/ConstantinoIT",
+		"twitter_link": "http://www.twitter.com/ItConstantino",
+		"linkedin_link": "http://www.linkedin.com/company/constantino-it/"
+    },
+	"about" : {
+        "this_section": "In this section",
+		"about_us": "Chi siamo",
+		"mission": "Missione",
+		"business_insight": "Approfondimento commerciale",
+		"our_values": "I nostri valori",
+		"text_about_cit": "Informazioni su Constantino IT Consulting",
+		"text_about_cit_body": "Principalmente un'azienda high-tech.",
+		"experience": "Oltre 20 anni di esperienza nel settore IT ",
+		"company_details": "Ci sono due decenni di know-how. Ci lavoriamo da oltre 20 anni. In tutti questi anni abbiamo seguito l'innovazione informatica abbastanza da vicino e oggi abbiamo la sicurezza nell'offrire servizi di buona qualità ai nostri clienti.",
+		"mission_text": "Creare soluzioni innovative e implementare soluzioni software IT che soddisferanno le aspettative del cliente.",
+		"business_insight_text": "Essere un'azienda IT di riferimento a livello internazionale, riconosciuta per la sua qualità.",
+		"our_values_text": "Possiamo dire che rispetto, dedizione, lavoro serio e maturità sono valori costanti nella nostra organizzazione."
+    },
+	"services" : {
+        "this_section" : "In this section",
+		"our_services" : "I nostri servizi",
+		"software_factory": "Fabbrica di software",
+		"expert_consultants" : "Consulenti esperti",
+		"areas_consultancy" : "Aree di consulenza",
+		"header_text" : "I nostri servizi",
+		"header_text_body" : "Cosa possiamo offrire alla tua azienda.",
+		"software_factory_text" : "Sviluppiamo software on demand per il tuo business con le tecnologie che accompagneranno il tuo business e ti assisteranno in modo smart. Il nostro know how è ciò che si riflette nella qualità finale.",
+		"expert_consultants_text" : "Abbiamo un team di esperti che lo fa. Il nostro networking e la nostra esperienza ci permettono di assistere la tua azienda nei settori critici, offrendo soluzioni intelligenti.",
+		"areas_consultancy_text" : "Operiamo in alcune aree dell'Information Technology, che includono lo sviluppo di software, l'analisi dei processi, l'identità visiva, la sicurezza nell'IT, i siti Web, l'infrastruttura e l'ottimizzazione dei processi aziendali."
+    },
+	"contact" : {
+        "header_text" : "Contattaci",
+		"header_text_body" : "Resta in contatto con noi",
+		"name" : "Nome",
+		"email" : "E-mail",
+		"message" : "Messaggio",
+		"send_message" : "Invia messaggio",
+		"telephone" : " +55 41 9 9607 5187",
+		"send_us_mail" : "Mandaci un email",
+		"location" : "Sao Paulo | Curitiba | Roma",
+		"thankyou" : "Grazie per il vostro messaggio."
+    }
+}

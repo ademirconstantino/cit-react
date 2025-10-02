@@ -1,0 +1,74 @@
+{
+	"header" : {
+		"website_title": "ConstantinoIT.com WebSite",
+		"website_description": "ConstantinoIt.com - Specialized company in Software Development.",
+		"google_site_verification": "YC5krEfiSwEJeWE3UwtVJIO4Pj_ZqtRQrs2ZvDGteHs"
+    },
+	"menu" : {
+        "about_us": "SOBRE",
+        "services": "SERVIÇOS",
+        "contact": "CONTATO"
+    },
+	"home" : {
+        "welcome_message": "Seja bem-vindo a Constantino IT Services",
+        "welcome_companydetails": "Empresa especializada em Consultoria em TI",
+		"desc_mobile_apps" : "Mobile Apps",
+		"desc_mobile_apps_body" : "Desenvolvemos aplicativos móveis para seu negócio utilizando-se das melhores práticas de desenvolvimento de software.",
+		"desc_support" : "24x7 Support",
+		"desc_support_body" : "Controle de servidores e aplicações em nuvem 24/7. Utilizamos os melhores conceitos e práticas de IT do mercado. Devops, automação de processos, Jenkins, Chef.",
+		"desc_support_a": "Expertise em Nuvem",
+        "desc_support_abody": "Observabilidade usando Prometheus e Grafana para analisar a eficiência dos seus microsserviços.",
+        "desc_support_b": "Kubernetes e OpenShift",
+        "desc_support_bbody": "Nossa expertise em nuvem (profissionais certificados) pode levar sua empresa ao próximo nível usando Oracle Cloud."
+		
+    },
+	"footer" : {
+        "telephone_number": "+55 41 9 9607 5187",
+		"contact_us": "Contate-nos",
+		"address": "Sao Paulo | Curitiba | Roma",
+		"copyright_notice": "Constantino IT Consulting | Copyright &copy; 2010-2025"
+    },
+	"links" : {
+        "facebook_link": "http://www.facebook.com/ConstantinoIT",
+		"twitter_link": "http://www.twitter.com/ItConstantino",
+		"linkedin_link": "http://www.linkedin.com/company/constantino-it/"
+    },
+	"about" : {
+        "this_section": "Nesta seção",
+		"about_us": "Sobre nós",
+		"mission": "Missão",
+		"business_insight": "Visão",
+		"our_values": "Valores",
+		"text_about_cit": "Sobre a Constantino IT Consulting",
+		"text_about_cit_body": "Tecnologia na busca por resultados.",
+		"experience": "Experiência acumulada de 20+ anos de TI.",
+		"company_details": "São duas décadas de know-how acumulado. Trabalhamos há 20 anos com TI, e durante todos estes anos, presenciamos a evolução da computação bem de perto. Hoje, temos segurança em oferecer serviços de qualidade para nossos clientes e parceiros.",
+		"mission_text": "Criar soluções inovadoras e implementar soluções de TI que atendam as expectativas de nossos clientes.",
+		"business_insight_text": "Ser uma empresa de TI referência a nível internacional, reconhecida pela qualidade e nível diferenciado de atendimento aos nossos clientes e parceiros.",
+		"our_values_text": "Podemos dizer que respeito, seriedade, dedicação e maturidade são valores constantes em nossa organização."
+    },
+	"services" : {
+        "this_section" : "Nesta seção",
+		"our_services" : "Nossos Serviços",
+		"software_factory": "Fábrica de Projetos",
+		"expert_consultants" : "Consultores Experts",
+		"areas_consultancy" : "Áreas de Atuação",
+		"header_text" : "Nossos Serviços",
+		"header_text_body" : "O que podemos oferecer para sua empresa.",
+		"software_factory_text" : "Desenvolvemos sistemas sob demanda para seu negócio. Desde o controle de seu estacionamento a seu estoque, com as tecnologias que irão atender de forma eficaz suas necessidades. Nosso know-how permite uma eficácia nas estimativas e na qualidade do produto final.",
+		"expert_consultants_text" : "Possuímos uma equipe formada com profissionais experts na área em que atuam. Nosso networking e experiência acumulada permite que possamos atender sua empresa nos pontos críticos, oferecendo soluções inteligentes e a um preço competitivo.",
+		"areas_consultancy_text" : "Atuamos em diversos segmentos da área de TI, entre eles: Desenvolvimento de Software, Análise de Processos, Identidade Visual, Segurança em TI, Websites, Infraestrutura e Otimização de Processos de Negócio."
+    },
+	"contact" : {
+        "header_text" : "Contate-nos",
+		"header_text_body" : "Entre em contato conosco",
+		"name" : "Nome",
+		"email" : "E-mail",
+		"message" : "Mensagem",
+		"send_message" : "Enviar mensagem",
+		"telephone" : " +55 41 9 9607 5187",
+		"send_us_mail" : "Envie um e-mail",
+		"location" : "Sao Paulo | Curitiba | Roma",
+		"thankyou" : "obrigado por sua mensagem"
+    }
+}
