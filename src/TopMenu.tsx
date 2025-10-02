@@ -14,9 +14,6 @@ function TopMenu() {
 
   const { langSelected, setLangSelected } = useLang();
 
-  const title = JsonReader(langSelected, "header.website_title");
-  console.log(title);
-
   function myFunction() {
     	let x = document.getElementById("myTopnav");
       if(x) {
@@ -32,9 +29,9 @@ function TopMenu() {
     <div className="main">
       <div className="topnav" id="myTopnav">
 			  <a><i className="fa fa-home"></i></a>
-			  <a>ABOUT US</a> 
-			  <a>SERVICES</a> 
-			  <a>CONTACT US</a> 
+			  <a>{JsonReader(langSelected, "menu.about_us")}</a> 
+			  <a>{JsonReader(langSelected, "menu.services")}</a> 
+			  <a>{JsonReader(langSelected, "menu.contact")}</a> 
         <a href="javascript:void(0);" className="icon" onClick={myFunction}>
 				<i className="fa fa-bars"></i>
 			  </a>

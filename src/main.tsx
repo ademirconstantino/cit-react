@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import TopMenu from './TopMenu.tsx'
 import TopBar from './TopBar.tsx'
+import Home from './Home.tsx'
 import { LangProvider } from "./LangContext";
 
 createRoot(document.getElementById('root')!).render(
@@ -10,6 +11,7 @@ createRoot(document.getElementById('root')!).render(
      <LangProvider>
       <TopMenu/>
       <TopBar/>
+      <Home/>
     </LangProvider>
   </StrictMode>,
 )

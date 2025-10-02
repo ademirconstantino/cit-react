@@ -7,7 +7,6 @@ import "../public/css/theme-style.min.css";
 import "../public/css/custom-style.css";
 import "../public/css/font-awesome.min.css";
 
-
 import './App.css'
 
 function TopBar() {
@@ -20,7 +19,7 @@ function TopBar() {
   return (
     <div id="navigation" >
       <div className="navbar-static-top" style={{ paddingTop: 25}}>
-            <div className="container" style={{width: "90%"}}>
+            <div className="container" style={{width: "80%"}}>
                 <table width="100%">
                     <tbody>
                     <tr>
