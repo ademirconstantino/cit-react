@@ -14,7 +14,7 @@ function Footer() {
 const { langSelected, setLangSelected } = useLang();
 
   return (
-    <div className="container" style={{ backgroundColor: '#F0F0F0', paddingTop: 20 }}>
+    <div className="container" style={{ backgroundColor: '#F0F0F0', paddingTop: 20, width: "80%" }}>
         <div className="row">
             <div className="col-md-3 col">
             <div className="block contact-block">
@@ -36,7 +36,7 @@ const { langSelected, setLangSelected } = useLang();
         <div className="row">
             <div className="subfooter">
             <div className="col-md-6">
-                <p>Constantino IT Consulting | Copyright &copy; 2010-2025</p>
+                <p>{JsonReader(langSelected, "footer.copyright_notice")}</p>
             </div>
             <div style={{ paddingRight: 20, textAlign: 'right'}}>
                     <div>
