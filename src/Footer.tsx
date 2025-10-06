@@ -14,6 +14,7 @@ function Footer() {
 const { langSelected, setLangSelected } = useLang();
 
   return (
+    <div>
     <div className="container" style={{ backgroundColor: '#F0F0F0', paddingTop: 20, width: "80%" }}>
         <div className="row">
             <div className="col-md-3 col">
@@ -47,6 +48,8 @@ const { langSelected, setLangSelected } = useLang();
              </div>
          </div>
         </div>
+        </div>
+        <br/>
         </div>
     );
 }
