@@ -13,7 +13,7 @@ import './App.css';
 function About() {
 
     const { langSelected, setLangSelected } = useLang();
-    
+
     const variants = {
         initial: { y: "100%", opacity: 0 },
         animate: { y: 0, opacity: 1 },
@@ -35,55 +35,49 @@ function About() {
                 <div className="col-md-3 sidebar">
                 <div className="section-menu">
                     <ul className="nav nav-list">
-                    <li className="nav-header">In this section</li>
+                    <li className="nav-header">{JsonReader(langSelected, "about.this_section")}</li>
                     <li className="active">
-                        <a href="#" className="first">
-                        About us			</a>
+                        <a href="#" className="first">{JsonReader(langSelected, "about.about_us")}</a>
                     </li>
                     <li>
-                        <a href="#mission">
-                        Mission			</a>
+                        <a href="#mission">{JsonReader(langSelected, "about.mission")}</a>
                     </li>
                     <li>
-                        <a href="#businessinsight">
-                        Business Insight			</a>
+                        <a href="#businessinsight">{JsonReader(langSelected, "about.business_insight")}</a>
                     </li>
                     <li>
-                        <a href="#ourvalues">
-                        Our Values			</a>
+                        <a href="#ourvalues">{JsonReader(langSelected, "about.our_values")}</a>
                     </li>
                     </ul>
                 </div>
                 </div>
                 <div className="col-md-9">
                 <h2 className="title-divider">
-                    <span>About Constantino IT Consulting</span>
-                    <small>Primarily a high-tech company.</small>
+                    <span>{JsonReader(langSelected, "about.text_about_cit")}</span>
+                    <small>{JsonReader(langSelected, "about.text_about_cit_body")}</small>
                 </h2>
 
-                <h4>
-                    20+ years in IT experience 	  </h4>
-                <p align="justify">There are two decades of know-how. We work with Information Technology for 20 years. Over all these years we followed the computing innovation quite nearby, and today we have security in offering good quality services for our clients.</p>  
+                <h4>{JsonReader(langSelected, "about.experience")}</h4>
+                <p align="justify">{JsonReader(langSelected, "about.company_details")}</p>  
                 <div className="title-divider" id="stats">
-                    <h3>
-                    <span>Mission</span>
-                    </h3>
+                    <h3><span>{JsonReader(langSelected, "about.mission")}</span></h3>
                 </div>
-                    <span>Create innovative solutions and implement IT software solutions which will attend the client expectancies.</span>
+                    <span>{JsonReader(langSelected, "about.mission_text")}</span>
                 
                 <div className="title-divider" id="stats">
                     <h3>
-                    <span>Business Insight</span>
+                    <span>{JsonReader(langSelected, "about.business_insight")}</span>
                     </h3>
                 </div>
-                <span>To be a refference IT company at the international space, recognized by its quality.</span>
+                <span>{JsonReader(langSelected, "about.business_insight_text")}</span>
                 
                 <div className="title-divider" id="stats">
                     <h3>
-                    <span>Our Values</span>
+                    <span>{JsonReader(langSelected, "about.our_values")}</span>
                     </h3>
                 </div>
-                We can say that respect, dedication, seriously work and maturity are constant values in our organization. 	</div>
+                <span>{JsonReader(langSelected, "about.our_values_text")}</span>
+                </div>
             </div>
             </div>
         </div>
