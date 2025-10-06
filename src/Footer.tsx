@@ -26,7 +26,7 @@ const { langSelected, setLangSelected } = useLang();
                     <abbr title="Phone"><i className="fa fa-li fa-phone"></i></abbr>{JsonReader(langSelected, "footer.telephone_number")}</li>
                     <li>
                     <abbr title="Email"><i className="fa fa-li fa-envelope"></i></abbr>
-                    <a href="contact.php?lang=en" style={{ textDecoration: 'none', color: 'black' }}>{JsonReader(langSelected, "footer.contact_us")}</a>
+                    <a href="/contact" style={{ textDecoration: 'none', color: 'black' }}>{JsonReader(langSelected, "footer.contact_us")}</a>
                     </li>
                     <li>
                     <abbr title="Address"><i className="fa fa-li fa-home"></i></abbr>{JsonReader(langSelected, "footer.address")}</li>
