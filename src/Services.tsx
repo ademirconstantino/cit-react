@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import JsonReader from './JSonReader';
 import { useLang } from "./LangContext";
+import { motion } from "framer-motion";
 
 import "../public/css/menu.css"; 
 import "../public/css/bootstrap.min.css";
@@ -14,7 +15,21 @@ function Services() {
 
     const { langSelected, setLangSelected } = useLang();
 
+    const variants = {
+        initial: { y: "100%", opacity: 0 },
+        animate: { y: 0, opacity: 1 },
+        exit: { y: "-100%", opacity: 0 },
+    };
+
     return (
+            <motion.div
+      id="content"
+      variants={variants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      transition={{ duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }}
+    >
         <div id="content">
             <div className="container" id="about">
             <div className="row">
@@ -68,6 +83,7 @@ function Services() {
             </div>
             </div>
     </div>
+    </motion.div>
     );
 }
 

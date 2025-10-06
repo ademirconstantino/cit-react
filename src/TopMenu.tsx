@@ -28,10 +28,10 @@ function TopMenu() {
   return (
     <div className="main">
       <div className="topnav" id="myTopnav">
-			  <a><i className="fa fa-home"></i></a>
-			  <a>{JsonReader(langSelected, "menu.about_us")}</a> 
-			  <a>{JsonReader(langSelected, "menu.services")}</a> 
-			  <a>{JsonReader(langSelected, "menu.contact")}</a> 
+			  <a href='/'><i className="fa fa-home"></i></a>
+			  <a href='/about'>{JsonReader(langSelected, "menu.about_us")}</a> 
+			  <a href='/services'>{JsonReader(langSelected, "menu.services")}</a> 
+			  <a href='/contact'>{JsonReader(langSelected, "menu.contact")}</a> 
         <a href="javascript:void(0);" className="icon" onClick={myFunction}>
 				<i className="fa fa-bars"></i>
 			  </a>
