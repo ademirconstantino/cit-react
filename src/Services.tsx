@@ -36,49 +36,45 @@ function Services() {
                 <div className="col-md-3 sidebar">
                 <div className="section-menu">
                     <ul className="nav nav-list">
-                    <li className="nav-header">In this section</li>
+                    <li className="nav-header">{JsonReader(langSelected, "services.this_section")}</li>
                     <li className="active">
-                        <a href="#" className="first">
-                        Our services				</a>
+                        <a href="#" className="first">{JsonReader(langSelected, "services.our_services")}</a>
                     </li>
                     <li>
-                        <a href="#fabrica">
-                        Software Factory				</a>
+                        <a href="#fabrica">{JsonReader(langSelected, "services.software_factory")}</a>
                     </li>
                     <li>
-                        <a href="#consultores">
-                        Expert Consultants				</a>
+                        <a href="#consultores">{JsonReader(langSelected, "services.expert_consultants")}</a>
                     </li>
                     <li>
-                        <a href="#areas">
-                        Areas of Consultancy				</a>
+                        <a href="#areas">{JsonReader(langSelected, "services.areas_consultancy")}</a>
                     </li>
                     </ul>
                 </div>
                 </div>
                 <div className="col-md-9">
                 <h2 className="title-divider">
-                    <span>Our services</span>
-                    <small>What can we offer to your company.</small>
+                    <span>{JsonReader(langSelected, "services.header_text")}</span>
+                    <small>{JsonReader(langSelected, "services.header_text_body")}</small>
                 </h2>
                 <div className="title-divider" id="stats">
                     <h3>
-                    <span>Software Factory</span>
+                    <span>{JsonReader(langSelected, "services.software_factory")}</span>
                     </h3>
                 </div>
-                <span>We develop software on demand for your business with the tecnologies that will atend your business and will attend you in a smart way. Our know how is what reflect in the final quality.</span>
+                <span>{JsonReader(langSelected, "services.software_factory_text")}</span>
                 <div className="title-divider" id="stats">
                     <h3>
-                    <span>Expert Consultants</span>
+                    <span>{JsonReader(langSelected, "services.expert_consultants")}</span>
                     </h3>
                 </div>
-                <span>We have an expert team that does it. Our networking and experience allows us to attend your company in the critical fields, offering smart solutions.</span>
+                <span>{JsonReader(langSelected, "services.expert_consultants_text")}</span>
                 <div className="title-divider" id="stats">
                     <h3>
-                    <span>Areas of Consultancy</span>
+                    <span>{JsonReader(langSelected, "services.areas_consultancy")}</span>
                     </h3>
                     </div>
-                    <span>We act in some areas in Information Technology, which includes Software Development, Process Analysis, Visual Identity, Security in IT, Websites, Infrastructure and Business Process Optimization.</span>
+                    <span>{JsonReader(langSelected, "services.areas_consultancy_text")}</span>
                 </div>
             </div>
             </div>
