@@ -7,7 +7,6 @@ import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import { LangProvider } from "./LangContext";
 
 export default function App() {
 

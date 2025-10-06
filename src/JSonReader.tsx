@@ -3,11 +3,11 @@ import data_es from "../public/json/cit.es.json";
 import data_pt from "../public/json/cit.pt.json";
 import data_it from "../public/json/cit.it.json";
 
-const getValue = (path:String, data:any) => {
+const getValue = (path:string, data:any) => {
   return path.split(".").reduce((obj, key) => (obj && obj[key] ? obj[key] : null), data);
 };
 
-export default function JsonReader(lang = "en", key) {
+export default function JsonReader(lang = "en", key: string) {
   let langData = data_en;
 
   if (lang === "pt") {

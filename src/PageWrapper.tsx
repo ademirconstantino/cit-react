@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import type { ReactNode } from "react";
 
 const variants = {
   initial: { y: "100%", opacity: 0 },   // entra dal basso
@@ -6,7 +7,11 @@ const variants = {
   exit: { y: "-100%", opacity: 0 },     // esce verso l'alto
 };
 
-export default function PageWrapper({ children }) {
+interface PageWrapperProps {
+  children: ReactNode;
+}
+
+export default function PageWrapper({ children } : PageWrapperProps) {
   return (
     <motion.div
       variants={variants}

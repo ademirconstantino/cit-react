@@ -12,7 +12,7 @@ import './App.css'
 
 function Footer() {
 
-const { langSelected, setLangSelected } = useLang();
+const { langSelected } = useLang();
 
   return (
     <div>

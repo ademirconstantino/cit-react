@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import JsonReader from './JSonReader';
 import { motion } from "framer-motion";
 import { useLang } from "./LangContext";
@@ -13,7 +12,7 @@ import './App.css';
 
 function Contact() {
 
-    const { langSelected, setLangSelected } = useLang();
+    const { langSelected } = useLang();
 
     const variants = {
         initial: { y: "100%", opacity: 0 },
@@ -54,16 +53,16 @@ function Contact() {
                     <div className="col-md-6">
                     <form id="contact-form" action="http://constantinoit.com/contact2.php?lang=en" method="POST">
                         <div className="form-group">
-                        <label className="sr-only" for="nome">{JsonReader(langSelected, "contact.name")}</label>
+                        <label className="sr-only">{JsonReader(langSelected, "contact.name")}</label>
                         <input type="text" name="nome" className="form-control" id="nome" placeholder={JsonReader(langSelected, 'contact.name')}/>
                         </div>
                         <div className="form-group">
-                        <label className="sr-only" for="email">{JsonReader(langSelected, "contact.email")}</label>
+                        <label className="sr-only">{JsonReader(langSelected, "contact.email")}</label>
                         <input type="email" name="email" className="form-control" id="email" placeholder={JsonReader(langSelected, 'contact.email')}/>
                         </div>
                         <div className="form-group">
-                        <label className="sr-only" for="mensagem">{JsonReader(langSelected, "contact.message")}</label>
-                        <textarea rows="12" className="form-control" name="mensagem" id="mensagem" placeholder={JsonReader(langSelected, 'contact.message')}></textarea>
+                        <label className="sr-only">{JsonReader(langSelected, "contact.message")}</label>
+                        <textarea className="form-control" name="mensagem" id="mensagem" placeholder={JsonReader(langSelected, 'contact.message')}></textarea>
                         </div>
                         <input type="submit" className="btn btn-primary" value={JsonReader(langSelected, 'contact.send_message')}/>
                     </form>

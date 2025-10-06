@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import JsonReader from './JSonReader';
 import { useLang } from "./LangContext";
 import { motion } from "framer-motion";
@@ -13,7 +12,7 @@ import './App.css';
 
 function Services() {
 
-    const { langSelected, setLangSelected } = useLang();
+    const { langSelected } = useLang();
 
     const variants = {
         initial: { y: "100%", opacity: 0 },

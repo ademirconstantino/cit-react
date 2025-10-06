@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import JsonReader from './JSonReader';
 import { useLang } from "./LangContext";
 
@@ -12,10 +11,10 @@ import './App.css';
 
 function TopMenu() {
 
-  const { langSelected, setLangSelected } = useLang();
+  const { langSelected } = useLang();
 
   function myFunction() {
-    	let x = document.getElementById("myTopnav");
+    	const x = document.getElementById("myTopnav");
       if(x) {
         if (x.className === "topnav") {
             x.className += " responsive";

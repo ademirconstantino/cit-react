@@ -12,7 +12,7 @@ import './App.css'
 
 function Home() {
 
-    const { langSelected, setLangSelected } = useLang();
+    const { langSelected } = useLang();
 
 	const variants = {
         initial: { y: "100%", opacity: 0 },

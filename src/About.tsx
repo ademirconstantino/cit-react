@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import JsonReader from './JSonReader';
 import { useLang } from "./LangContext";
 import { motion } from "framer-motion";
@@ -12,7 +11,7 @@ import './App.css';
 
 function About() {
 
-    const { langSelected, setLangSelected } = useLang();
+    const { langSelected } = useLang();
 
     const variants = {
         initial: { y: "100%", opacity: 0 },
@@ -58,7 +57,7 @@ function About() {
                 </h2>
 
                 <h4>{JsonReader(langSelected, "about.experience")}</h4>
-                <p align="justify">{JsonReader(langSelected, "about.company_details")}</p>  
+                <p style={{ textAlign: "justify"}}>{JsonReader(langSelected, "about.company_details")}</p>  
                 <div className="title-divider" id="stats">
                     <h3><span>{JsonReader(langSelected, "about.mission")}</span></h3>
                 </div>
