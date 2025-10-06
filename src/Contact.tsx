@@ -52,17 +52,17 @@ function Contact() {
                 </div>
                 <div className="row">
                     <div className="col-md-6">
-                    <form id="contact-form" action="contact2.php?lang=en" method="POST">
+                    <form id="contact-form" action="http://constantinoit.com/contact2.php?lang=en" method="POST">
                         <div className="form-group">
-                        <label className="sr-only" for="nome">Name</label>
+                        <label className="sr-only" for="nome">{JsonReader(langSelected, "contact.name")}</label>
                         <input type="text" name="nome" className="form-control" id="nome" placeholder={JsonReader(langSelected, 'contact.name')}/>
                         </div>
                         <div className="form-group">
-                        <label className="sr-only" for="email">E-mail</label>
+                        <label className="sr-only" for="email">{JsonReader(langSelected, "contact.email")}</label>
                         <input type="email" name="email" className="form-control" id="email" placeholder={JsonReader(langSelected, 'contact.email')}/>
                         </div>
                         <div className="form-group">
-                        <label className="sr-only" for="mensagem">Message</label>
+                        <label className="sr-only" for="mensagem">{JsonReader(langSelected, "contact.message")}</label>
                         <textarea rows="12" className="form-control" name="mensagem" id="mensagem" placeholder={JsonReader(langSelected, 'contact.message')}></textarea>
                         </div>
                         <input type="submit" className="btn btn-primary" value={JsonReader(langSelected, 'contact.send_message')}/>
