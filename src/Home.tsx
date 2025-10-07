@@ -22,14 +22,7 @@ function Home() {
 
 
   return (
-	<motion.div
-      id="content"
-      variants={variants}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      transition={{ duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }}
-    >
+    <motion.div id="content" variants={variants} initial="initial" animate="animate"  exit="exit" transition={{ duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }}>
     <div id="content">
 	  <div className="container"  style={{width: "80%"}}>
 		  <div className="block features">

@@ -21,14 +21,7 @@ function Services() {
     };
 
     return (
-            <motion.div
-      id="content"
-      variants={variants}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      transition={{ duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }}
-    >
+        <motion.div id="content" variants={variants} initial="initial" animate="animate"  exit="exit" transition={{ duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }}>
         <div id="content">
             <div className="container" id="about">
             <div className="row">

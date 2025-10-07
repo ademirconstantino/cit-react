@@ -13,18 +13,8 @@ interface PageWrapperProps {
 
 export default function PageWrapper({ children } : PageWrapperProps) {
   return (
-    <motion.div
-      variants={variants}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      transition={{
-        duration: 0.6,
-        ease: [0.43, 0.13, 0.23, 0.96], // curva più fluida
-      }}
-      className="w-full h-full"
-    >
-      {children}
-    </motion.div>
+       <motion.div id="content" variants={variants} initial="initial" animate="animate"  exit="exit" transition={{ duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }}>
+          {children}
+        </motion.div>
   );
 }
