@@ -1,6 +1,6 @@
 {
 	"header" : {
-		"website_title": "ConstantinoIT.com WebSite",
+		"website_title": "ConstantinoIt.com WebSite",
 		"website_description": "ConstantinoIt.com - Specialized company in Software Development.",
 		"google_site_verification": "YC5krEfiSwEJeWE3UwtVJIO4Pj_ZqtRQrs2ZvDGteHs"
     },
@@ -23,7 +23,7 @@
         "desc_support_bbody": "La nostra competenza nel cloud (consulenti certificati) possono portare la tua azienda al livello successivo utilizzando Oracle Cloud."
     },
 	"footer" : {
-        "telephone_number": "+55 41 9 9607 5187",
+        "telephone_number": "+39 334 243 88 86",
 		"contact_us": "Contattaci",
 		"address": "Sao Paulo | Curitiba | Roma",
 		"copyright_notice": "Constantino IT Consulting | Copyright © 2010-2025"
@@ -66,7 +66,7 @@
 		"email" : "E-mail",
 		"message" : "Messaggio",
 		"send_message" : "Invia messaggio",
-		"telephone" : " +55 41 9 9607 5187",
+		"telephone" : "+39 334 243 88 86",
 		"send_us_mail" : "Mandaci un email",
 		"location" : "Sao Paulo | Curitiba | Roma",
 		"thankyou" : "Grazie per il vostro messaggio."

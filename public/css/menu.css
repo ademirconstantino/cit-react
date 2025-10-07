@@ -13,7 +13,7 @@
     margin-bottom: 1rem;
   }
   .flag-image-d {
-    max-width: 32px; /* smaller max width on phones */
+    max-width: 38px; /* smaller max width on phones */
     margin-bottom: 1rem;
     cursor: pointer;
   }
@@ -94,7 +94,7 @@
   }
   
   .flag-image-d {
-    max-width: 24px; /* smaller icons on mobile */
+    max-width: 20px; /* smaller icons on mobile */
     margin-bottom: 1rem;
     cursor: pointer;
   }
