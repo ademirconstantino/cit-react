@@ -42,8 +42,8 @@ const { langSelected } = useLang();
             </div>
             <div style={{ paddingRight: 20, textAlign: 'right'}}>
                     <div>
-                        <a href="https://x.com/AdConstantino"><i className="fa fa-twitter" style={{paddingLeft: 5}}></i></a>
-                        <a href="http://www.facebook.com/ademir.constantino"><i className="fa fa-facebook" style={{paddingLeft: 5}}></i></a>
+                        <a href="https://x.com/ItConstantino"><i className="fa fa-twitter" style={{paddingLeft: 5}}></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61581224173736"><i className="fa fa-facebook" style={{paddingLeft: 5}}></i></a>
                         <a href="http://www.linkedin.com/in/ademir-constantino/"><i className="fa fa-linkedin" style={{paddingLeft: 5}}></i></a>
                     </div>
              </div>
