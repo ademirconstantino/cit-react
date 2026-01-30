@@ -76,12 +76,17 @@
  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
     
- .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+    /* Hide all links by default on mobile */
+  .topnav a:not(:first-child) {
+    display: none;
   }
+
+  /* Show hamburger icon */
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
   .topnav.responsive a {
     float: none;
     display: block;

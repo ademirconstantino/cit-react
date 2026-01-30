@@ -1,40 +1,41 @@
 {
-	"header" : {
+	"header": {
 		"website_title": "ConstantinoIt.com WebSite",
 		"website_description": "ConstantinoIt.com - Specialized company in Software Development.",
 		"google_site_verification": "YC5krEfiSwEJeWE3UwtVJIO4Pj_ZqtRQrs2ZvDGteHs"
-    },
-	"menu" : {
-        "about_us": "SOBRE",
-        "services": "SERVIÇOS",
-        "contact": "CONTATO"
-    },
-	"home" : {
-        "welcome_message": "Seja bem-vindo a Constantino IT Services",
-        "welcome_companydetails": "Empresa especializada em Consultoria em TI",
-		"desc_mobile_apps" : "Mobile Apps",
-		"desc_mobile_apps_body" : "Desenvolvemos aplicativos móveis para seu negócio utilizando-se das melhores práticas de desenvolvimento de software.",
-		"desc_support" : "24x7 Support",
-		"desc_support_body" : "Controle de servidores e aplicações em nuvem 24/7. Utilizamos os melhores conceitos e práticas de IT do mercado. Devops, automação de processos, Jenkins, Chef.",
-		"desc_support_a": "Expertise em Nuvem",
-        "desc_support_abody": "Observabilidade usando Prometheus e Grafana para analisar a eficiência dos seus microsserviços.",
-        "desc_support_b": "Kubernetes e OpenShift",
-        "desc_support_bbody": "Nossa expertise em nuvem (profissionais certificados) pode levar sua empresa ao próximo nível usando Oracle Cloud."
-		
-    },
-	"footer" : {
-        "telephone_number": "+39 334 243 88 86",
+	},
+	"menu": {
+		"home": "HOME",
+		"about_us": "SOBRE",
+		"services": "SERVIÇOS",
+		"our_team": "OUR TEAM",
+		"contact": "CONTATO"
+	},
+	"home": {
+		"welcome_message": "Seja bem-vindo a Constantino IT Services",
+		"welcome_companydetails": "Empresa especializada em Consultoria em TI",
+		"desc_mobile_apps": "Mobile Apps",
+		"desc_mobile_apps_body": "Desenvolvemos aplicativos móveis para seu negócio utilizando-se das melhores práticas de desenvolvimento de software.",
+		"desc_support": "24x7 Support",
+		"desc_support_body": "Controle de servidores e aplicações em nuvem 24/7. Utilizamos os melhores conceitos e práticas de IT do mercado. Devops, automação de processos, Jenkins, Chef.",
+		"desc_support_a": "Cloud Solutions Expertise",
+		"desc_support_abody": "Ajudamos organizações a projetar, migrar e otimizar infraestruturas em nuvem para melhorar o desempenho e a eficiência de custos.",
+		"desc_support_b": "Web Development",
+		"desc_support_bbody": "Desenvolvemos aplicações web robustas e escaláveis, projetadas para suportar processos de negócio complexos e alta demanda de usuários."
+	},
+	"footer": {
+		"telephone_number": "+55 (41) 9 9607 5187",
 		"contact_us": "Contate-nos",
-		"address": "Sao Paulo | Curitiba | Roma",
-		"copyright_notice": "Constantino IT Consulting | Copyright © 2010-2026"
-    },
-	"links" : {
-        "facebook_link": "https://www.facebook.com/profile.php?id=61581224173736",
+		"address": "Rua Paraiba 2987 Curitiba, PR | Brasil",
+		"copyright_notice": "Constantino IT Consulting | Copyright © 2010-2026 All rights reserved."
+	},
+	"links": {
+		"facebook_link": "https://www.facebook.com/profile.php?id=61581224173736",
 		"twitter_link": "http://www.twitter.com/ItConstantino",
 		"linkedin_link": "http://www.linkedin.com/in/ademir-constantino"
-    },
-	"about" : {
-        "this_section": "Nesta seção",
+	},
+	"about": {
+		"this_section": "Nesta seção",
 		"about_us": "Sobre nós",
 		"mission": "Missão",
 		"business_insight": "Visão",
@@ -46,29 +47,103 @@
 		"mission_text": "Criar soluções inovadoras e implementar soluções de TI que atendam as expectativas de nossos clientes.",
 		"business_insight_text": "Ser uma empresa de TI referência a nível internacional, reconhecida pela qualidade e nível diferenciado de atendimento aos nossos clientes e parceiros.",
 		"our_values_text": "Podemos dizer que respeito, seriedade, dedicação e maturidade são valores constantes em nossa organização."
-    },
-	"services" : {
-        "this_section" : "Nesta seção",
-		"our_services" : "Nossos Serviços",
+	},
+	"services": {
+		"this_section": "Nesta seção",
+		"our_services": "Nossos Serviços",
 		"software_factory": "Fábrica de Projetos",
-		"expert_consultants" : "Consultores Experts",
-		"areas_consultancy" : "Áreas de Atuação",
-		"header_text" : "Nossos Serviços",
-		"header_text_body" : "O que podemos oferecer para sua empresa.",
-		"software_factory_text" : "Desenvolvemos sistemas sob demanda para seu negócio. Desde o controle de seu estacionamento a seu estoque, com as tecnologias que irão atender de forma eficaz suas necessidades. Nosso know-how permite uma eficácia nas estimativas e na qualidade do produto final.",
-		"expert_consultants_text" : "Possuímos uma equipe formada com profissionais experts na área em que atuam. Nosso networking e experiência acumulada permite que possamos atender sua empresa nos pontos críticos, oferecendo soluções inteligentes e a um preço competitivo.",
-		"areas_consultancy_text" : "Atuamos em diversos segmentos da área de TI, entre eles: Desenvolvimento de Software, Análise de Processos, Identidade Visual, Segurança em TI, Websites, Infraestrutura e Otimização de Processos de Negócio."
-    },
-	"contact" : {
-        "header_text" : "Contate-nos",
-		"header_text_body" : "Entre em contato conosco",
-		"name" : "Nome",
-		"email" : "E-mail",
-		"message" : "Mensagem",
-		"send_message" : "Enviar mensagem",
-		"telephone" : "+39 334 243 88 86",
-		"send_us_mail" : "Envie um e-mail",
-		"location" : "Sao Paulo | Curitiba | Roma",
-		"thankyou" : "obrigado por sua mensagem"
-    }
+		"expert_consultants": "Consultores Experts",
+		"areas_consultancy": "Áreas de Atuação",
+		"header_text": "Nossos Serviços",
+		"header_text_body": "O que podemos oferecer para sua empresa.",
+		"software_factory_text": "Desenvolvemos sistemas sob demanda para seu negócio. Desde o controle de seu estacionamento a seu estoque, com as tecnologias que irão atender de forma eficaz suas necessidades. Nosso know-how permite uma eficácia nas estimativas e na qualidade do produto final.",
+		"expert_consultants_text": "Possuímos uma equipe formada com profissionais experts na área em que atuam. Nosso networking e experiência acumulada permite que possamos atender sua empresa nos pontos críticos, oferecendo soluções inteligentes e a um preço competitivo.",
+		"areas_consultancy_text": "Atuamos em diversos segmentos da área de TI, entre eles: Desenvolvimento de Software, Análise de Processos, Identidade Visual, Segurança em TI, Websites, Infraestrutura e Otimização de Processos de Negócio."
+	},
+	"team": {
+		"title": "Nosso time",
+		"subtitle": "Pessoas, experiência e paixão por trás de cada solução",
+		"intro": "Nosso time é composto por profissionais experientes que combinam excelência técnica com um profundo entendimento dos desafios de negócio. Trabalhamos de forma colaborativa para entregar soluções digitais confiáveis, escaláveis e inovadoras.",
+		"values_title": "Nossos valores",
+		"values_body": "Acreditamos na transparência, na excelência técnica e em parcerias de longo prazo. Qualidade, responsabilidade e melhoria contínua orientam tudo o que fazemos.",
+		"expertise_title": "Nossa experiência",
+		"expertise_body": "Nossos profissionais possuem sólida experiência em desenvolvimento mobile, tecnologias web, plataformas em nuvem e arquitetura corporativa, sempre utilizando ferramentas e metodologias de ponta.",
+		"culture_title": "Nossa cultura",
+		"culture_body": "Promovemos uma cultura de aprendizado, colaboração e inovação, na qual o compartilhamento de conhecimento e o crescimento contínuo fazem parte da nossa rotina diária."
+		}
+	,
+	"services_pages": {
+		"mobile_menu_title": "Apps Mobile",
+		"mobile_menu_overview": "Visão geral",
+		"mobile_menu_technology": "Stack tecnológico",
+		"mobile_menu_process": "Processo de desenvolvimento",
+		"mobile_menu_delivery": "Entrega e qualidade",
+		"mobile_title": "Apps Mobile",
+		"mobile_subtitle": "Desenvolvemos aplicações mobile utilizando os melhores processos e abordagens de TI.",
+		"mobile_overview_title": "Visão geral das soluções mobile",
+		"mobile_overview_body": "Desenvolvemos aplicações mobile de alto desempenho, projetadas para escalar junto com o seu negócio. Nossas soluções têm foco em usabilidade, segurança e facilidade de manutenção a longo prazo, entregando experiências de usuário fluidas nas plataformas iOS e Android.",
+		"mobile_technology_title": "Tecnologias de ponta",
+		"mobile_technology_body": "Nossas aplicações mobile são desenvolvidas com frameworks modernos como React Native e Flutter, combinados com desenvolvimento nativo em Swift e Kotlin quando necessário. Integramos backends em nuvem, APIs REST e GraphQL, pipelines de CI/CD e mecanismos de autenticação seguros para garantir confiabilidade e desempenho.",
+		"mobile_process_title": "Nosso processo de desenvolvimento",
+		"mobile_process_body": "Seguimos uma abordagem de desenvolvimento ágil e iterativa, começando pela análise de requisitos e design de UX, seguida por desenvolvimento incremental, testes contínuos e feedback frequente do cliente. Isso garante transparência, flexibilidade e prazos de entrega previsíveis.",
+		"mobile_delivery_title": "Entrega, desempenho e qualidade",
+		"mobile_delivery_body": "A qualidade está incorporada em todas as etapas do desenvolvimento. Aplicamos testes automatizados, monitoramento de desempenho e boas práticas de segurança para garantir releases estáveis. Nosso time oferece suporte à publicação nas lojas, monitoramento e manutenção pós-lançamento para assegurar o sucesso a longo prazo.",
+		"web_menu_title": "Desenvolvimento Web",
+		"web_menu_overview": "Visão geral",
+		"web_menu_technology": "Stack tecnológico",
+		"web_menu_architecture": "Arquitetura",
+		"web_menu_quality": "Qualidade e desempenho",
+		"web_title": "Desenvolvimento Web",
+		"web_subtitle": "Soluções web modernas, escaláveis e de alto desempenho.",
+		"web_overview_title": "Visão geral das soluções web",
+		"web_overview_body": "Desenvolvemos aplicações web robustas e escaláveis, projetadas para suportar processos de negócio complexos e alta demanda de usuários.",
+		"web_technology_title": "Tecnologias web modernas",
+		"web_technology_body": "Nosso stack inclui React, Angular, Vue, Node.js e frameworks modernos de backend, combinados com APIs REST e GraphQL.",
+		"web_architecture_title": "Arquitetura limpa",
+		"web_architecture_body": "Projetamos arquiteturas modulares e de fácil manutenção, que suportam a evolução a longo prazo e integração simplificada.",
+		"web_quality_title": "Qualidade e desempenho",
+		"web_quality_body": "Otimização de desempenho, boas práticas de segurança e testes automatizados são partes essenciais do nosso pipeline de entrega.",
+		"cloud_menu_title": "Soluções em Nuvem",
+		"cloud_menu_overview": "Visão geral",
+		"cloud_menu_platforms": "Plataformas em nuvem",
+		"cloud_menu_devops": "DevOps e automação",
+		"cloud_menu_security": "Segurança e confiabilidade",
+		"cloud_title": "Soluções em Nuvem",
+		"cloud_subtitle": "Infraestruturas em nuvem confiáveis e escaláveis.",
+		"cloud_overview_title": "Visão geral da estratégia em nuvem",
+		"cloud_overview_body": "Ajudamos organizações a projetar, migrar e otimizar infraestruturas em nuvem, melhorando desempenho e eficiência de custos.",
+		"cloud_platforms_title": "Plataformas em nuvem",
+		"cloud_platforms_body": "Trabalhamos com AWS, Azure e Google Cloud, selecionando os serviços adequados para cada cenário de negócio.",
+		"cloud_devops_title": "DevOps e automação",
+		"cloud_devops_body": "Infrastructure as Code, pipelines de CI/CD e monitoramento garantem implantações rápidas e confiáveis.",
+		"cloud_security_title": "Segurança e confiabilidade",
+		"cloud_security_body": "Aplicamos as melhores práticas de segurança em nuvem, monitoramento e estratégias de backup para garantir resiliência.",
+		"consulting_menu_title": "Consultoria em TI",
+		"consulting_menu_overview": "Visão geral",
+		"consulting_menu_strategy": "Estratégia de TI",
+		"consulting_menu_architecture": "Consultoria em arquitetura",
+		"consulting_menu_transformation": "Transformação digital",
+		"consulting_title": "Consultoria em TI",
+		"consulting_subtitle": "Orientação estratégica para transformar sua visão digital em realidade.",
+		"consulting_overview_title": "Visão geral da consultoria",
+		"consulting_overview_body": "Apoiamos organizações com consultoria especializada em tecnologia, processos e arquitetura.",
+		"consulting_strategy_title": "Estratégia de TI",
+		"consulting_strategy_body": "Alinhamos decisões tecnológicas aos objetivos de negócio, garantindo valor e escalabilidade no longo prazo.",
+		"consulting_architecture_title": "Consultoria em arquitetura",
+		"consulting_architecture_body": "Nossos especialistas ajudam a projetar arquiteturas de sistemas seguras, escaláveis e preparadas para o futuro.",
+		"consulting_transformation_title": "Transformação digital",
+		"consulting_transformation_body": "Guiamos organizações em iniciativas de transformação digital, do planejamento à execução."
+	},
+	"contact": {
+		"header_text": "Contate-nos",
+		"header_text_body": "Entre em contato conosco",
+		"name": "Nome",
+		"email": "E-mail",
+		"message": "Mensagem",
+		"send_message": "Enviar mensagem",
+		"telephone": "+55 (41) 9 9607 5187",
+		"send_us_mail": "Envie um e-mail",
+		"location": "Curitiba, PR, Brasil",
+		"thankyou": "obrigado por sua mensagem"
+	}
 }

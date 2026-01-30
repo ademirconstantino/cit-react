@@ -16,7 +16,7 @@ const { langSelected } = useLang();
 
   return (
     <div>
-    <div className="container" style={{ backgroundColor: '#F0F0F0', paddingTop: 20, width: "80%" }}>
+    <div className="container" style={{ backgroundColor: '#F0F0F0', paddingTop: 20, width: "90%" }}>
         <div className="row">
             <div className="col-md-3 col">
             <div className="block contact-block">

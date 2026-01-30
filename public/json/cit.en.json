@@ -1,39 +1,41 @@
 {
-	"header" : {
+	"header": {
 		"website_title": "ConstantinoIt.com WebSite",
 		"website_description": "ConstantinoIt.com - Specialized company in Software Development.",
 		"google_site_verification": "YC5krEfiSwEJeWE3UwtVJIO4Pj_ZqtRQrs2ZvDGteHs"
-    },
-	"menu" : {
-        "about_us": "ABOUT US",
-        "services": "SERVICES",
-        "contact": "CONTACT US"
-    },
-	"home" : {
-        "welcome_message": "Welcome to Constantino IT Consulting",
-        "welcome_companydetails": "Specialized Company in IT Consulting Services",
-		"desc_mobile_apps" : "Mobile Apps",
-		"desc_mobile_apps_body" : "We develop mobile apps using the best IT processes and approaches.",
-		"desc_support" : "24x7 Support",
-		"desc_support_body" : "Using the best IT pratices and approaches. We offer devops automation with jenkins, chef and docker.",
-		"desc_support_a" : "Cloud Expertise",
-		"desc_support_abody" : "Observability using prometheus and grafana to analise your microservices efficiency.",
-		"desc_support_b" : "Kubernetes and Open Shift",
-		"desc_support_bbody" : "Our cloud expertise (and also Certified) can put your company to the next level using the Oracle Cloud."
-    },
-	"footer" : {
-        "telephone_number": "+39 334 243 88 86",
+	},
+	"menu": {
+		"home": "HOME",
+		"about_us": "ABOUT US",
+		"services": "SERVICES",
+		"our_team": "OUR TEAM",
+		"contact": "CONTACT US"
+	},
+	"home": {
+		"welcome_message": "Welcome to Constantino IT Consulting",
+		"welcome_companydetails": "Specialized Company in IT Consulting Services",
+		"desc_mobile_apps": "Mobile Apps",
+		"desc_mobile_apps_body": "We develop mobile apps using the best IT processes and approaches.",
+		"desc_support": "IT Consulting",
+		"desc_support_body": "We support organizations with expert guidance across technology, processes, and architecture.",
+		"desc_support_a": "Cloud Solutions Expertise",
+		"desc_support_abody": "We help organizations design, migrate, and optimize cloud infrastructures for performance and cost efficiency.",
+		"desc_support_b": "Web Development",
+		"desc_support_bbody": "We develop robust and scalable web applications designed to support complex business processes and high user demand."
+	},
+	"footer": {
+		"telephone_number": "+55 (41) 9 9607 5187",
 		"contact_us": "Contact Us",
-		"address": "Sao Paulo | Curitiba | Roma",
-		"copyright_notice": "Constantino IT Consulting | Copyright © 2010-2026"
-    },
-	"links" : {
-        "facebook_link": "https://www.facebook.com/profile.php?id=61581224173736",
+		"address": "St Paraiba 2987 Curitiba, PR | Brazil",
+		"copyright_notice": "Constantino IT Consulting | Copyright © 2010-2026 All rights reserved."
+	},
+	"links": {
+		"facebook_link": "https://www.facebook.com/profile.php?id=61581224173736",
 		"twitter_link": "http://www.twitter.com/ItConstantino",
 		"linkedin_link": "http://www.linkedin.com/in/ademir-constantino"
-    },
-	"about" : {
-        "this_section": "In this section",
+	},
+	"about": {
+		"this_section": "In this section",
 		"about_us": "About us",
 		"mission": "Mission",
 		"business_insight": "Business Insight",
@@ -45,29 +47,102 @@
 		"mission_text": "Create innovative solutions and develop IT software solutions that will meet the client businesss requirements.",
 		"business_insight_text": "To be a refference IT company at the international space, recognized by our quality.",
 		"our_values_text": "We can say that respect, dedication, seriously work and maturity are constant values in our organization. "
-    },
-	"services" : {
-        "this_section" : "In this section",
-		"our_services" : "Our services",
+	},
+	"services": {
+		"this_section": "In this section",
+		"our_services": "Our services",
 		"software_factory": "Software Factory",
-		"expert_consultants" : "Expert Consultants",
-		"areas_consultancy" : "Areas of Consultancy",
-		"header_text" : "Our services",
-		"header_text_body" : "What can we offer to your company.",
-		"software_factory_text" : "We develop software on demand for your business with the tecnologies that will atend your business and will attend you in a smart way. Our know how is what reflect in the final quality.",
-		"expert_consultants_text" : "We have an expert team that does it. Our networking and experience allows us to attend your company in the critical fields, offering smart solutions.",
-		"areas_consultancy_text" : "We act in some areas in Information Technology, which includes Software Development, Process Analysis, Visual Identity, Security in IT, Websites, Infrastructure and Business Process Optimization."
-    },
-	"contact" : {
-        "header_text" : "Contact us",
-		"header_text_body" : "Keep in touch with us",
-		"name" : "Name",
-		"email" : "E-mail",
-		"message" : "Message",
-		"send_message" : "Send message",
-		"telephone" : "+39 334 243 88 86",
-		"send_us_mail" : "Send us an e-mail",
-		"location" : "Sao Paulo | Curitiba | Roma",
-		"thankyou" : "Thank you for your message."
-    }
+		"expert_consultants": "Expert Consultants",
+		"areas_consultancy": "Areas of Consultancy",
+		"header_text": "Our services",
+		"header_text_body": "What can we offer to your company.",
+		"software_factory_text": "We develop software on demand for your business with the tecnologies that will atend your business and will attend you in a smart way. Our know how is what reflect in the final quality.",
+		"expert_consultants_text": "We have an expert team that does it. Our networking and experience allows us to attend your company in the critical fields, offering smart solutions.",
+		"areas_consultancy_text": "We act in some areas in Information Technology, which includes Software Development, Process Analysis, Visual Identity, Security in IT, Websites, Infrastructure and Business Process Optimization."
+	},
+	"team": {
+		"title": "Our Team",
+		"subtitle": "People, expertise, and passion behind every solution",
+		"intro": "Our team is composed of experienced professionals who combine technical excellence with a deep understanding of business challenges. We work collaboratively to deliver reliable, scalable, and innovative digital solutions.",
+		"values_title": "Our Values",
+		"values_body": "We believe in transparency, technical excellence, and long-term partnerships. Quality, ownership, and continuous improvement guide everything we do.",
+		"expertise_title": "Our Expertise",
+		"expertise_body": "Our professionals have strong backgrounds in mobile development, web technologies, cloud platforms, and enterprise architecture, always using state-of-the-art tools and methodologies.",
+		"culture_title": "Our Culture",
+		"culture_body": "We foster a culture of learning, collaboration, and innovation, where knowledge sharing and continuous growth are part of our daily routine."
+	},
+	"services_pages": {
+		"mobile_menu_title": "Mobile Apps",
+		"mobile_menu_overview": "Overview",
+		"mobile_menu_technology": "Technology Stack",
+		"mobile_menu_process": "Development Process",
+		"mobile_menu_delivery": "Delivery & Quality",
+		"mobile_title": "Mobile Apps",
+		"mobile_subtitle": "We develop mobile apps using the best IT processes and approaches.",
+		"mobile_overview_title": "Mobile Solutions Overview",
+		"mobile_overview_body": "We build high-performance mobile applications designed to scale with your business. Our solutions focus on usability, security, and long-term maintainability, delivering seamless user experiences across iOS and Android platforms.",
+		"mobile_technology_title": "State-of-the-Art Technologies",
+		"mobile_technology_body": "Our mobile applications are built using modern frameworks such as React Native and Flutter, combined with native development in Swift and Kotlin when required. We integrate cloud-based backends, REST and GraphQL APIs, CI/CD pipelines, and secure authentication mechanisms to ensure reliability and performance.",
+		"mobile_process_title": "Our Development Process",
+		"mobile_process_body": "We follow an agile and iterative development approach, starting with requirement analysis and UX design, followed by incremental development, continuous testing, and regular client feedback. This ensures transparency, flexibility, and predictable delivery timelines.",
+		"mobile_delivery_title": "Delivery, Performance & Quality",
+		"mobile_delivery_body": "Quality is embedded into every stage of development. We apply automated testing, performance monitoring, and security best practices to guarantee stable releases. Our team supports app store deployment, monitoring, and post-launch maintenance to ensure long-term success.",
+		"web_menu_title": "Web Development",
+		"web_menu_overview": "Overview",
+		"web_menu_technology": "Technology Stack",
+		"web_menu_architecture": "Architecture",
+		"web_menu_quality": "Quality & Performance",
+		"web_title": "Web Development",
+		"web_subtitle": "Modern, scalable, and high-performance web solutions.",
+		"web_overview_title": "Web Solutions Overview",
+		"web_overview_body": "We develop robust and scalable web applications designed to support complex business processes and high user demand.",
+		"web_technology_title": "Modern Web Technologies",
+		"web_technology_body": "Our stack includes React, Angular, Vue, Node.js, and modern backend frameworks, combined with REST and GraphQL APIs.",
+		"web_architecture_title": "Clean Architecture",
+		"web_architecture_body": "We design modular and maintainable architectures that support long-term evolution and easy integration.",
+		"web_quality_title": "Quality & Performance",
+		"web_quality_body": "Performance optimization, security best practices, and automated testing are integral parts of our delivery pipeline.",
+		"cloud_menu_title": "Cloud Solutions",
+		"cloud_menu_overview": "Overview",
+		"cloud_menu_platforms": "Cloud Platforms",
+		"cloud_menu_devops": "DevOps & Automation",
+		"cloud_menu_security": "Security & Reliability",
+		"cloud_title": "Cloud Solutions",
+		"cloud_subtitle": "Reliable and scalable cloud-based infrastructures.",
+		"cloud_overview_title": "Cloud Strategy Overview",
+		"cloud_overview_body": "We help organizations design, migrate, and optimize cloud infrastructures for performance and cost efficiency.",
+		"cloud_platforms_title": "Cloud Platforms",
+		"cloud_platforms_body": "We work with Oracle's OCI, Amazon's AWS, Microsoft's Azure, and Google's GCP, selecting the right services for each business scenario.",
+		"cloud_devops_title": "DevOps & Automation",
+		"cloud_devops_body": "Infrastructure as Code, CI/CD pipelines, and monitoring ensure fast, reliable deployments.",
+		"cloud_security_title": "Security & Reliability",
+		"cloud_security_body": "We apply cloud security best practices, monitoring, and backup strategies to ensure resilience.",
+		"consulting_menu_title": "IT Consulting",
+		"consulting_menu_overview": "Overview",
+		"consulting_menu_strategy": "IT Strategy",
+		"consulting_menu_architecture": "Architecture Advisory",
+		"consulting_menu_transformation": "Digital Transformation",
+		"consulting_title": "IT Consulting",
+		"consulting_subtitle": "Strategic guidance to transform your digital vision into reality.",
+		"consulting_overview_title": "Consulting Overview",
+		"consulting_overview_body": "We support organizations with expert guidance across technology, processes, and architecture.",
+		"consulting_strategy_title": "IT Strategy",
+		"consulting_strategy_body": "We align technology decisions with business goals, ensuring long-term value and scalability.",
+		"consulting_architecture_title": "Architecture Advisory",
+		"consulting_architecture_body": "Our experts help design secure, scalable, and future-proof system architectures.",
+		"consulting_transformation_title": "Digital Transformation",
+		"consulting_transformation_body": "We guide organizations through digital transformation initiatives, from planning to execution."
+	},
+	"contact": {
+		"header_text": "Contact us",
+		"header_text_body": "Keep in touch with us",
+		"name": "Name",
+		"email": "E-mail",
+		"message": "Message",
+		"send_message": "Send message",
+		"telephone": "+55 (41) 9 9607 5187",
+		"send_us_mail": "Send us an e-mail",
+		"location": "Curitiba, PR, Brazil",
+		"thankyou": "Thank you for your message."
+	}
 }

@@ -66,9 +66,66 @@
 @media (min-width: 1200px) {
   /* Large devices (large desktops, 1200px and up) */
 }
-/*
- * --------------------------------------------------
- * 4. Misc
- * Other stuff
- *--------------------------------------------------
- */
+
+@media screen and (max-width: 480px) {
+
+  /* Main page titles */
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+
+  /* Service page title divider */
+  .title-divider > span {
+    font-size: 1.4rem;
+  }
+
+  .title-divider small {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    display: block;
+  }
+
+  /* Paragraph readability */
+  p {
+    font-size: 0.95rem;
+  }
+
+    /* Homepage feature/service titles */
+  .feature-block h3,
+  .feature-block h4,
+  .feature-title,
+  .service-box h3,
+  .icon-box h3 {
+    font-size: 1.1rem;
+    line-height: 1.25;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Homepage feature descriptions */
+  .feature-block p,
+  .service-box p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+ .feature-text-d h3 {
+    font-size: 1.1rem;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    line-height: 1.25;
+    margin-bottom: 0.5rem;
+  }
+}
