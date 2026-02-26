@@ -17,8 +17,8 @@
         "welcome_companydetails": "Azienda specializzata in servizi di consulenza informatica",
 		"desc_mobile_apps" : "Mobile Apps",
 		"desc_mobile_apps_body" : "Sviluppiamo app mobili utilizzando i migliori processi e approcci IT.",
-		"desc_support" : "24x7 Support",
-		"desc_support_body" : "Utilizzando le migliori pratiche e approcci IT. Offriamo l'automazione devops con jenkins, chef e docker.",
+		"desc_support": "IT Consulting",
+		"desc_support_body" : "Supportiamo le organizzazioni con consulenza esperta in ambito tecnologico, di processi e di architettura.",
 		"desc_support_a": "Cloud Solutions Expertise",
         "desc_support_abody": "Aiutiamo le organizzazioni a progettare, migrare e ottimizzare infrastrutture cloud per migliorare le prestazioni e l’efficienza dei costi.",
         "desc_support_b": "Web Development",
@@ -27,7 +27,7 @@
 	"footer": {
 		"telephone_number": "+55 (41) 9 9607 5187",
 		"contact_us": "Contattaci",
-		"address": "Via Paraiba 2987 Curitiba, PR | Brasile",
+		"address": "CNPJ 64.763.602/0001-83 - Curitiba, PR | Brasile",
 		"copyright_notice": "Constantino IT Consulting | Copyright © 2010-2026 All rights reserved."
 	},
 	"links" : {

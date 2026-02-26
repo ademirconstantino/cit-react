@@ -16,8 +16,8 @@
         "welcome_companydetails": "Empresa especializada en servicios de consultoría de TI",
         "desc_mobile_apps": "Mobile Apps",
         "desc_mobile_apps_body": "Desarrollamos aplicaciones móviles utilizando los mejores procesos de TI.",
-        "desc_support": "24x7 Support",
-        "desc_support_body": "El uso de las mejores prácticas de TI. Ofrecemos la automatización DevOps con Jenkins, chef y outros.",
+		"desc_support": "IT Consulting",
+        "desc_support_body": "Apoyamos a las organizaciones con orientación experta en tecnología, procesos y arquitectura.",
         "desc_support_a": "Cloud Solutions Expertise",
         "desc_support_abody": "Ayudamos a las organizaciones a diseñar, migrar y optimizar infraestructuras en la nube para mejorar el rendimiento y la eficiencia de costos.",
         "desc_support_b": "Web Development",
@@ -26,7 +26,7 @@
     "footer": {
 		"telephone_number": "+55 (41) 9 9607 5187",
         "contact_us": "Contáctenos",
-		"address": "Cl Paraiba 2987 Curitiba, PR, Brasil",
+		"address": "CNPJ 64.763.602/0001-83 - Curitiba, PR | Brasil",
 		"copyright_notice": "Constantino IT Consulting | Copyright © 2010-2026 All rights reserved."
 	},
 	"links" : {

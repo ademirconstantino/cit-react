@@ -16,8 +16,8 @@
 		"welcome_companydetails": "Empresa especializada em Consultoria em TI",
 		"desc_mobile_apps": "Mobile Apps",
 		"desc_mobile_apps_body": "Desenvolvemos aplicativos móveis para seu negócio utilizando-se das melhores práticas de desenvolvimento de software.",
-		"desc_support": "24x7 Support",
-		"desc_support_body": "Controle de servidores e aplicações em nuvem 24/7. Utilizamos os melhores conceitos e práticas de IT do mercado. Devops, automação de processos, Jenkins, Chef.",
+		"desc_support": "IT Consulting",
+		"desc_support_body": "Apoiamos organizações com orientação especializada em tecnologia, processos e arquitetura.",
 		"desc_support_a": "Cloud Solutions Expertise",
 		"desc_support_abody": "Ajudamos organizações a projetar, migrar e otimizar infraestruturas em nuvem para melhorar o desempenho e a eficiência de custos.",
 		"desc_support_b": "Web Development",
@@ -26,7 +26,7 @@
 	"footer": {
 		"telephone_number": "+55 (41) 9 9607 5187",
 		"contact_us": "Contate-nos",
-		"address": "Rua Paraiba 2987 Curitiba, PR | Brasil",
+		"address": "CNPJ 64.763.602/0001-83 - Curitiba, PR | Brasil",
 		"copyright_notice": "Constantino IT Consulting | Copyright © 2010-2026 All rights reserved."
 	},
 	"links": {
@@ -144,6 +144,6 @@
 		"telephone": "+55 (41) 9 9607 5187",
 		"send_us_mail": "Envie um e-mail",
 		"location": "Curitiba, PR, Brasil",
-		"thankyou": "obrigado por sua mensagem"
+		"thankyou": "Obrigado por sua mensagem"
 	}
 }
