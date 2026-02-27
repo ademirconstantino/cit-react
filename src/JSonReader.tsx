@@ -2,8 +2,8 @@ import data_en from "../public/json/cit.en.json";
 import data_es from "../public/json/cit.es.json";
 import data_pt from "../public/json/cit.pt.json";
 import data_it from "../public/json/cit.it.json";
-import data_fr from "../public/json/cit.it.json";
-import data_de from "../public/json/cit.it.json";
+import data_fr from "../public/json/cit.fr.json";
+import data_de from "../public/json/cit.de.json";
 
 const getValue = (path:string, data:any) => {
   return path.split(".").reduce((obj, key) => (obj && obj[key] ? obj[key] : null), data);
