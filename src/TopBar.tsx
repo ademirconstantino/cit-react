@@ -28,6 +28,7 @@ function TopBar() {
                                 <a onClick={() => setLangSelected("en")}><img src="img/en.png" className="flag-image-d" style={{paddingLeft: 2, paddingRight: 2}}/></a>
                                 <a onClick={() => setLangSelected("es")}><img src="img/es.png" className="flag-image-d" style={{paddingLeft: 2, paddingRight: 2}}/></a>
                                 <a onClick={() => setLangSelected("it")}><img src="img/it.png" className="flag-image-d" style={{paddingLeft: 2, paddingRight: 2}}/></a>
+                                <br/>
                                 <a onClick={() => setLangSelected("pt")}><img src="img/br.png" className="flag-image-d" style={{paddingLeft: 2, paddingRight: 2}}/></a>
                                 <a onClick={() => setLangSelected("fr")}><img src="img/fr.png" className="flag-image-d" style={{paddingLeft: 2, paddingRight: 2}}/></a>
                                 <a onClick={() => setLangSelected("de")}><img src="img/de.png" className="flag-image-d" style={{paddingLeft: 2, paddingRight: 2}}/></a>
