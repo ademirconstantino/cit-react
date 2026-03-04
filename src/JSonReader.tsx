@@ -4,6 +4,9 @@ import data_pt from "../public/json/cit.pt.json";
 import data_it from "../public/json/cit.it.json";
 import data_fr from "../public/json/cit.fr.json";
 import data_de from "../public/json/cit.de.json";
+import data_jp from "../public/json/cit.jp.json";
+import data_ch from "../public/json/cit.ch.json";
+import data_em from "../public/json/cit.em.json";
 
 const getValue = (path:string, data:any) => {
   return path.split(".").reduce((obj, key) => (obj && obj[key] ? obj[key] : null), data);
@@ -22,6 +25,12 @@ export default function JsonReader(lang = "en", key: string) {
     langData = data_fr;
   } else if (lang === "de") {
     langData = data_de;
+  } else if (lang === "jp") {
+    langData = data_jp;
+  } else if (lang === "ch") {
+    langData = data_ch;
+  } else if (lang === "em") {
+    langData = data_em;
   }
 
   return getValue(key, langData);
