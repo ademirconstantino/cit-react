@@ -22,7 +22,7 @@ export default function App() {
       <TopBar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Home />} />
+          <Route path="/cit-react/" element={<Home />} />
           <Route path="/cit-react/about" element={<About />} />
           <Route path="/cit-react/services" element={<Services />} />
           <Route path="/cit-react/our-team" element={<OurTeam />} />

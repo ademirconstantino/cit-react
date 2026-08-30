@@ -22,7 +22,7 @@ function TopMenu() {
           <i className="fa fa-bars"></i>
         </a>
 
-        <a href="/"><i className="fa fa-home"></i>&nbsp;&nbsp;{JsonReader(langSelected, "menu.home")}</a>
+        <a href="/cit-react/"><i className="fa fa-home"></i>&nbsp;&nbsp;{JsonReader(langSelected, "menu.home")}</a>
         <a href="/cit-react/about">{JsonReader(langSelected, "menu.about_us")}</a>
         <a href="/cit-react/services">{JsonReader(langSelected, "menu.services")}</a>
         <a href="/cit-react/our-team">{JsonReader(langSelected, "menu.our_team")}</a>
