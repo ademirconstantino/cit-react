@@ -8,7 +8,7 @@ import { LangProvider } from './LangContext';
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <LangProvider>
-      <BrowserRouter basename="/cit-react">
+      <BrowserRouter>
         <App />
       </BrowserRouter>
     </LangProvider>

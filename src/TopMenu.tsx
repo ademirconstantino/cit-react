@@ -1,14 +1,6 @@
 import JsonReader from './JSonReader';
 import { useLang } from "./LangContext";
 
-import "../public/css/menu.css"; 
-import "../public/css/bootstrap.min.css";
-import "../public/css/theme-style.min.css";
-import "../public/css/custom-style.css";
-import "../public/css/font-awesome.min.css";
-
-import './App.css';
-
 function TopMenu() {
   const { langSelected } = useLang();
 
@@ -30,7 +22,7 @@ function TopMenu() {
           <i className="fa fa-bars"></i>
         </a>
 
-        <a href="/cit-react"><i className="fa fa-home"></i>&nbsp;&nbsp;{JsonReader(langSelected, "menu.home")}</a>
+        <a href="/"><i className="fa fa-home"></i>&nbsp;&nbsp;{JsonReader(langSelected, "menu.home")}</a>
         <a href="/cit-react/about">{JsonReader(langSelected, "menu.about_us")}</a>
         <a href="/cit-react/services">{JsonReader(langSelected, "menu.services")}</a>
         <a href="/cit-react/our-team">{JsonReader(langSelected, "menu.our_team")}</a>
