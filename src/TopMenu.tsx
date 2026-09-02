@@ -1,6 +1,8 @@
 import JsonReader from './JSonReader';
 import { useLang } from "./LangContext";
 
+import { Link } from "react-router-dom";
+
 function TopMenu() {
   const { langSelected } = useLang();
 
@@ -21,12 +23,26 @@ function TopMenu() {
         <a href="javascript:void(0);" className="icon" onClick={myFunction}>
           <i className="fa fa-bars"></i>
         </a>
+      <Link to="/cit-react/">
+        <i className="fa fa-home"></i>&nbsp;&nbsp;
+        {JsonReader(langSelected, "menu.home")}
+      </Link>
 
-        <a href="/cit-react/"><i className="fa fa-home"></i>&nbsp;&nbsp;{JsonReader(langSelected, "menu.home")}</a>
-        <a href="/cit-react/about">{JsonReader(langSelected, "menu.about_us")}</a>
-        <a href="/cit-react/services">{JsonReader(langSelected, "menu.services")}</a>
-        <a href="/cit-react/our-team">{JsonReader(langSelected, "menu.our_team")}</a>
-        <a href="/cit-react/contact">{JsonReader(langSelected, "menu.contact")}</a>
+      <Link to="/cit-react/about">
+        {JsonReader(langSelected, "menu.about_us")}
+      </Link>
+
+      <Link to="/cit-react/services">
+        {JsonReader(langSelected, "menu.services")}
+      </Link>
+
+      <Link to="/cit-react/our-team">
+        {JsonReader(langSelected, "menu.our_team")}
+      </Link>
+
+      <Link to="/cit-react/contact">
+        {JsonReader(langSelected, "menu.contact")}
+      </Link>
       </div>
     </div>
   );
