@@ -42,7 +42,7 @@ function Contact() {
                 </div>
                 <div className="row">
                     <div className="col-md-6">
-                    <form id="contact-form" action="http://constantinoit.com/contact2.php?lang=en" method="POST">
+                    <form id="contact-form" action="https://formsubmit.co/ademirconstantino@gmail.com" method="POST">
                         <div className="form-group">
                         <label className="sr-only">{JsonReader(langSelected, "contact.name")}</label>
                         <input type="text" name="nome" className="form-control" id="nome" placeholder={JsonReader(langSelected, 'contact.name')}/>
