@@ -109,7 +109,7 @@
 }
 
 @media (max-width: 767px) {
-    .language_selector {
+    #navigation .language-selector {
         margin-left: 20px;
     }
 }
