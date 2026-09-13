@@ -59,8 +59,6 @@ function TopBar() {
                                             gap: "8px"
                                         }}
                                     >
-
-                                        {/* Bandeira do idioma selecionado */}
                                         <img
                                             src={selectedLanguage?.flag}
                                             alt={selectedLanguage?.name}
