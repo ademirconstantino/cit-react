@@ -29,28 +29,28 @@ function Home() {
 			  <small>{JsonReader(langSelected, "home.welcome_companydetails")}</small>
 			</h2>
 			<div className="row list-unstyled">
-			  <div className="feature col-sm-6 col-md-3">
+			  <div className="feature col-xs-6 col-sm-6 col-md-3">
 				<img src="img/features/feature-1.png" alt="Feature 1" className="feature-image-d" />
 				<h3>
 				  <a href="/cit-react/mobile-apps">{JsonReader(langSelected, "home.desc_mobile_apps")}</a>
 				</h3>
 				<p style={{ textAlign: 'justify'}}>{JsonReader(langSelected, "home.desc_mobile_apps_body")}</p>
 			  </div>
-			  <div className="feature col-sm-6 col-md-3">
+			  <div className="feature col-xs-6 col-sm-6 col-md-3">
 				<img src="img/features/feature-2.png" alt="Feature 2" className="feature-image-d" />
 				<h3>
 				  <a href="/cit-react/it-consulting">{JsonReader(langSelected, "home.desc_support")}</a>
 				</h3>
 				<p style={{ textAlign: 'justify'}}>{JsonReader(langSelected, "home.desc_support_body")}</p>
 			  </div>
-			  <div className="feature col-sm-6 col-md-3">
+			  <div className="feature col-xs-6 col-sm-6 col-md-3">
 				<img src="img/features/feature-3.png" alt="Feature 2" className="feature-image-d" />
 				<h3>
 				  <a href="/cit-react/cloud-solutions">{JsonReader(langSelected, "home.desc_support_a")}</a>
 				</h3>
 				<p style={{ textAlign: 'justify'}}>{JsonReader(langSelected, "home.desc_support_abody")}</p>
 			  </div>
-			  <div className="feature col-sm-6 col-md-3">
+			  <div className="feature col-xs-6 col-sm-6 col-md-3">
 				<img src="img/features/feature-4.png" alt="Feature 2" className="feature-image-d" />
 				<h3>
 				  <a href="/cit-react/web-development">{JsonReader(langSelected, "home.desc_support_b")}</a>

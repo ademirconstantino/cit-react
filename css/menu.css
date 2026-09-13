@@ -107,18 +107,3 @@
     padding: 0 1rem; /* reduce side padding */
   }
 }
-
-@media (max-width: 767px) {
-    #navigation .language-selector {
-        margin-left: 20px;
-    }
-}
-
-@media (max-width: 767px) {
-    .central-grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 12px;
-        padding: 0 12px;
-    }
-}
