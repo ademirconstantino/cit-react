@@ -106,4 +106,8 @@
   .feature-text-d {
     padding: 0 1rem; /* reduce side padding */
   }
+
+  .mobile-hide-flag {
+        display: none !important;
+    }
 }

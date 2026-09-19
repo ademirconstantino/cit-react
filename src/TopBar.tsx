@@ -25,89 +25,102 @@ function TopBar() {
         languages.find((language) => language.code === "en");
 
     return (
-        <div id="navigation">
-            <div
-                className="navbar-static-top"
-                style={{ paddingTop: 25 }}
-            >
+        <>
+            <style>
+                {`
+                    @media screen and (max-width: 480px) {
+                        .mobile-hide-flag {
+                            display: none !important;
+                        }
+                    }
+                `}
+            </style>
+
+            <div id="navigation">
                 <div
-                    className="container"
-                    style={{ width: "80%" }}
+                    className="navbar-static-top"
+                    style={{ paddingTop: 25 }}
                 >
-                    <table width="100%">
-                        <tbody>
-                            <tr>
+                    <div
+                        className="container"
+                        style={{ width: "80%" }}
+                    >
+                        <table width="100%">
+                            <tbody>
+                                <tr>
 
-                                <td
-                                    align="left"
-                                    width="70%"
-                                >
-                                    <img
-                                        className="img-responsive"
-                                        src="img/logocit2.png"
-                                    />
-                                </td>
-
-                                <td
-                                    align="right"
-                                    width="30%"
-                                >
-                                    <div
-                                        style={{
-                                            display: "inline-flex",
-                                            alignItems: "center",
-                                            gap: "8px"
-                                        }}
+                                    <td
+                                        align="left"
+                                        width="70%"
                                     >
                                         <img
-                                            src={selectedLanguage?.flag}
-                                            alt={selectedLanguage?.name}
-                                            style={{
-                                                width: "32px",
-                                                height: "22px",
-                                                objectFit: "cover",
-                                                borderRadius: "2px"
-                                            }}
+                                            className="img-responsive"
+                                            src="img/logocit2.png"
                                         />
+                                    </td>
 
-                                        {/* Dropdown */}
-                                        <select
-                                            value={langSelected}
-                                            onChange={(e) =>
-                                                setLangSelected(e.target.value)
-                                            }
+                                    <td
+                                        align="right"
+                                        width="30%"
+                                    >
+                                        <div
                                             style={{
-                                                height: "34px",
-                                                minWidth: "150px",
-                                                padding: "4px 32px 4px 10px",
-                                                border: "1px solid #ccc",
-                                                borderRadius: "5px",
-                                                backgroundColor: "#fff",
-                                                color: "#333",
-                                                fontSize: "14px",
-                                                cursor: "pointer",
-                                                outline: "none"
+                                                display: "inline-flex",
+                                                alignItems: "center",
+                                                gap: "8px"
                                             }}
                                         >
-                                            {languages.map((language) => (
-                                                <option
-                                                    key={language.code}
-                                                    value={language.code}
-                                                >
-                                                    {language.name}
-                                                </option>
-                                            ))}
-                                        </select>
 
-                                    </div>
-                                </td>
+                                            <img
+                                                className="mobile-hide-flag"
+                                                src={selectedLanguage?.flag}
+                                                alt={selectedLanguage?.name}
+                                                style={{
+                                                    width: "32px",
+                                                    height: "22px",
+                                                    objectFit: "cover",
+                                                    borderRadius: "2px"
+                                                }}
+                                            />
 
-                            </tr>
-                        </tbody>
-                    </table>
+                                            <select
+                                                value={langSelected}
+                                                onChange={(e) =>
+                                                    setLangSelected(e.target.value)
+                                                }
+                                                style={{
+                                                    height: "34px",
+                                                    minWidth: "150px",
+                                                    padding: "4px 32px 4px 10px",
+                                                    border: "1px solid #ccc",
+                                                    borderRadius: "5px",
+                                                    backgroundColor: "#fff",
+                                                    color: "#333",
+                                                    fontSize: "14px",
+                                                    cursor: "pointer",
+                                                    outline: "none"
+                                                }}
+                                            >
+                                                {languages.map((language) => (
+                                                    <option
+                                                        key={language.code}
+                                                        value={language.code}
+                                                    >
+                                                        {language.name}
+                                                    </option>
+                                                ))}
+                                            </select>
+
+                                        </div>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
