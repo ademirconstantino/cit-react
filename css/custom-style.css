@@ -1,153 +1,64 @@
-/* =========================================================
-   MOBILE RESPONSIVE
-   Smartphones / telas pequenas
-   ========================================================= */
+/* =========================================
+   FOOTER - SMALL SCREENS
+   ========================================= */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
-    /* -----------------------------------------------------
-       HEADER / LOGO / SELETOR DE IDIOMA
-       ----------------------------------------------------- */
-
-    #navigation {
-        width: 100%;
+    .site-footer {
+        font-size: 12px;
     }
 
-    #navigation .container {
-        width: 100% !important;
-        max-width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+    .footer-container {
+        font-size: 12px;
     }
 
-    #navigation .navbar-static-top {
-        width: 100%;
-    }
-
-    /*
-     * Mantém a logo e o seletor de idioma dentro da tela.
-     */
-    #navigation table {
-        width: 100% !important;
-    }
-
-    /*
-     * Espaço entre a área da logo/bandeira
-     * e o seletor de idioma.
-     */
-    #navigation td:last-child {
-        padding-left: 12px;
-    }
-
-    /*
-     * Se o seletor for um <select>
-     */
-    #navigation select {
-        width: 100%;
-        max-width: 180px;
-        min-height: 46px;
-        font-size: 16px;
-        box-sizing: border-box;
-    }
-
-
-    /* -----------------------------------------------------
-       CONTEÚDO PRINCIPAL
-       ----------------------------------------------------- */
-
-    #content > .container {
-        width: 100% !important;
-        max-width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        box-sizing: border-box;
-    }
-
-
-    /* -----------------------------------------------------
-       GRID DOS 4 SERVIÇOS
-       ----------------------------------------------------- */
-
-    .features {
-        width: 100%;
-    }
-
-    .features .row {
-        margin-left: -8px;
-        margin-right: -8px;
-    }
-
-    /*
-     * Cada serviço ocupa metade da tela.
-     * Resultado: 2 x 2 no celular.
-     */
-    .features .feature {
-        width: 50% !important;
-        float: left;
-        padding-left: 8px;
-        padding-right: 8px;
-        box-sizing: border-box;
-    }
-
-    /*
-     * Impede que as imagens ultrapassem a coluna.
-     */
-    .features .feature img,
-    .features .feature-image-d {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /*
-     * Títulos dos serviços
-     */
-    .features h3 {
-        font-size: 18px;
-        line-height: 1.2;
-        margin-top: 15px;
-    }
-
-    /*
-     * Texto dos serviços
-     */
-    .features p {
-        font-size: 14px;
-        line-height: 1.4;
-    }
-
-
-    /* -----------------------------------------------------
-       FOOTER
-       ----------------------------------------------------- */
-
-    footer {
+    .footer-contact li {
         font-size: 12px;
         line-height: 1.4;
     }
 
-    footer h1,
-    footer h2,
-    footer h3,
-    footer h4,
-    footer h5,
-    footer h6 {
-        font-size: 14px;
+    .footer-copyright p {
+        font-size: 11px;
         line-height: 1.3;
     }
 
-    footer p,
-    footer li,
-    footer a,
-    footer span {
-        font-size: 12px;
-        line-height: 1.4;
+    .footer-social i {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================
+   FOOTER - MOBILE
+   ========================================= */
+
+@media screen and (max-width: 480px) {
+
+    .site-footer {
+        font-size: 8px;
     }
 
-    footer small {
-        font-size: 11px;
+    .footer-container {
+        font-size: 9px;
     }
 
+    .footer-contact li {
+        font-size: 8px;
+        line-height: 1.3;
+    }
+
+    .footer-copyright p {
+        font-size: 8px;
+        line-height: 1.3;
+    }
+
+    .footer-social {
+        padding-right: 8px !important;
+        text-align: right !important;
+    }
+
+    .footer-social i {
+        font-size: 10px;
+        padding-left: 5px;
+    }
 }
