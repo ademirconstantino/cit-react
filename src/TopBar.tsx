@@ -26,16 +26,6 @@ function TopBar() {
 
     return (
         <>
-            <style>
-                {`
-                    @media screen and (max-width: 480px) {
-                        .mobile-hide-flag {
-                            display: none !important;
-                        }
-                    }
-                `}
-            </style>
-
             <div id="navigation">
                 <div
                     className="navbar-static-top"
@@ -56,7 +46,10 @@ function TopBar() {
                                         <img
                                             className="img-responsive"
                                             src="img/logocit2.png"
-                                        />
+                                            style={{
+                                                  padding: "4px 32px 4px 10px"
+                                            }}
+                                    />
                                     </td>
 
                                     <td
@@ -67,7 +60,7 @@ function TopBar() {
                                             style={{
                                                 display: "inline-flex",
                                                 alignItems: "center",
-                                                gap: "8px"
+                                                gap: "8px",
                                             }}
                                         >
 
@@ -98,7 +91,7 @@ function TopBar() {
                                                     color: "#333",
                                                     fontSize: "14px",
                                                     cursor: "pointer",
-                                                    outline: "none"
+                                                    outline: "none",
                                                 }}
                                             >
                                                 {languages.map((language) => (

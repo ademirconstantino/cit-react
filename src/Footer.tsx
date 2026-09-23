@@ -19,7 +19,8 @@ function Footer() {
         style={{
           backgroundColor: '#F0F0F0',
           paddingTop: 20,
-          width: "90%"
+          width: "90%",
+          fontSize: "12px"
         }}
       >
 
@@ -34,6 +35,7 @@ function Footer() {
                 <ul className="fa-ul">
 
                   <li>
+                    <span className='site-footer'>
                     <abbr title="Phone">
                       <i className="fa fa-li fa-phone"></i>
                     </abbr>
@@ -41,25 +43,29 @@ function Footer() {
                       langSelected,
                       "footer.telephone_number"
                     )}
+                    </span>
                   </li>
-
                   <li>
                     <abbr title="Email">
                       <i className="fa fa-li fa-envelope"></i>
                     </abbr>
 
+                    <span className='site-footer'>
                     <a
                       href="/cit-react/contact"
                       className="footer-contact-link"
                     >
+                        
                       {JsonReader(
                         langSelected,
                         "footer.contact_us"
                       )}
                     </a>
+                    </span>
                   </li>
 
                   <li>
+                    <span className='site-footer'>
                     <abbr title="Address">
                       <i className="fa fa-li fa-home"></i>
                     </abbr>
@@ -67,6 +73,7 @@ function Footer() {
                       langSelected,
                       "footer.address"
                     )}
+                    </span>
                   </li>
 
                 </ul>
@@ -127,7 +134,7 @@ function Footer() {
                     className="fa fa-linkedin"
                     style={{ paddingLeft: 5 }}
                   ></i>
-                  
+
                 </a>
 
               </div>
