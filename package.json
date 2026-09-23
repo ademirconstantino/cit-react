@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ademirconstantino.github.io/cit-react/",
+  "homepage": "https://www.constantinoit.com/cit-react/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

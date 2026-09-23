@@ -22,15 +22,15 @@ export default function App() {
       <TopBar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          <Route path="/cit-react/" element={<Home />} />
-          <Route path="/cit-react/about" element={<About />} />
-          <Route path="/cit-react/services" element={<Services />} />
-          <Route path="/cit-react/our-team" element={<OurTeam />} />
-          <Route path="/cit-react/contact" element={<Contact />} />
-          <Route path="/cit-react/mobile-apps" element={<MobileApps />} />
-          <Route path="/cit-react/it-consulting" element={<ITConsulting />} />
-          <Route path="/cit-react/web-development" element={<WebDevelopment />} />
-          <Route path="/cit-react/cloud-solutions" element={<CloudSolutions />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/our-team" element={<OurTeam />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/mobile-apps" element={<MobileApps />} />
+          <Route path="/it-consulting" element={<ITConsulting />} />
+          <Route path="/web-development" element={<WebDevelopment />} />
+          <Route path="/cloud-solutions" element={<CloudSolutions />} />
         </Routes>
       </AnimatePresence>
       <Footer />

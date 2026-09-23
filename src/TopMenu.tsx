@@ -23,24 +23,24 @@ function TopMenu() {
         <a href="javascript:void(0);" className="icon" onClick={myFunction}>
           <i className="fa fa-bars"></i>
         </a>
-      <Link to="/cit-react/">
+      <Link to="/">
         <i className="fa fa-home"></i>&nbsp;&nbsp;
         {JsonReader(langSelected, "menu.home")}
       </Link>
 
-      <Link to="/cit-react/about">
+      <Link to="/about">
         {JsonReader(langSelected, "menu.about_us")}
       </Link>
 
-      <Link to="/cit-react/services">
+      <Link to="/services">
         {JsonReader(langSelected, "menu.services")}
       </Link>
 
-      <Link to="/cit-react/our-team">
+      <Link to="/our-team">
         {JsonReader(langSelected, "menu.our_team")}
       </Link>
 
-      <Link to="/cit-react/contact">
+      <Link to="/contact">
         {JsonReader(langSelected, "menu.contact")}
       </Link>
       </div>

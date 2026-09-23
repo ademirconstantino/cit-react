@@ -9,15 +9,15 @@ function TopBar() {
     console.log(title);
 
     const languages = [
-        { code: "en", name: "English", flag: "img/en.png" },
-        { code: "es", name: "Español", flag: "img/es.png" },
-        { code: "it", name: "Italiano", flag: "img/it.png" },
-        { code: "pt", name: "Português", flag: "img/br.png" },
-        { code: "fr", name: "Français", flag: "img/fr.png" },
-        { code: "de", name: "Deutsch", flag: "img/de.png" },
-        { code: "ch", name: "中国人", flag: "img/ch.png" },
-        { code: "jp", name: "日本語", flag: "img/jp.png" },
-        { code: "em", name: "Earabiun", flag: "img/em.png" }
+        { code: "en", name: "English", flag: "/img/en.png" },
+        { code: "es", name: "Español", flag: "/img/es.png" },
+        { code: "it", name: "Italiano", flag: "/img/it.png" },
+        { code: "pt", name: "Português", flag: "/img/br.png" },
+        { code: "fr", name: "Français", flag: "/img/fr.png" },
+        { code: "de", name: "Deutsch", flag: "/img/de.png" },
+        { code: "ch", name: "中国人", flag: "/img/ch.png" },
+        { code: "jp", name: "日本語", flag: "/img/jp.png" },
+        { code: "em", name: "Earabiun", flag: "/img/em.png" }
     ];
 
     const selectedLanguage =
@@ -45,7 +45,7 @@ function TopBar() {
                                     >
                                         <img
                                             className="img-responsive"
-                                            src="img/logocit2.png"
+                                            src="/img/logocit2.png"
                                             style={{
                                                   padding: "4px 32px 4px 10px"
                                             }}

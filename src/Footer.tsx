@@ -52,7 +52,7 @@ function Footer() {
 
                     <span className='site-footer'>
                     <a
-                      href="/cit-react/contact"
+                      href="/contact"
                       className="footer-contact-link"
                     >
                         
