@@ -67,6 +67,14 @@
   /* Large devices (large desktops, 1200px and up) */
 }
 
+/* Homepage feature cards are 2 per row below md; start each row on a new line so
+   a taller card (longer translation) doesn't make the next one float out of place */
+@media (max-width: 991px) {
+  .features .feature:nth-child(2n+1) {
+    clear: left;
+  }
+}
+
 @media screen and (max-width: 480px) {
 
   /* Main page titles */
