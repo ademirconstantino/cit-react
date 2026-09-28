@@ -105,13 +105,7 @@ function Footer() {
 
 
             {/* SOCIAL NETWORKS */}
-            <div
-              className="footer-social"
-              style={{
-                paddingRight: 20,
-                textAlign: 'right'
-              }}
-            >
+            <div className="col-md-6 footer-social">
 
               <div>
 

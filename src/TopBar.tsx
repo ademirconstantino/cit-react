@@ -27,89 +27,38 @@ function TopBar() {
     return (
         <>
             <div id="navigation">
-                <div
-                    className="navbar-static-top"
-                    style={{ paddingTop: 25 }}
-                >
-                    <div
-                        className="container"
-                        style={{ width: "80%" }}
-                    >
-                        <table width="100%">
-                            <tbody>
-                                <tr>
+                <div className="navbar-static-top topbar">
+                    <div className="container topbar-container">
+                        <img
+                            className="img-responsive topbar-logo"
+                            src="/img/logocit2.png"
+                            alt={title ?? "Constantino IT"}
+                        />
 
-                                    <td
-                                        align="left"
-                                        width="70%"
+                        <div className="topbar-lang">
+                            <img
+                                className="mobile-hide-flag topbar-flag"
+                                src={selectedLanguage?.flag}
+                                alt={selectedLanguage?.name}
+                            />
+
+                            <select
+                                className="topbar-select"
+                                value={langSelected}
+                                onChange={(e) =>
+                                    setLangSelected(e.target.value)
+                                }
+                            >
+                                {languages.map((language) => (
+                                    <option
+                                        key={language.code}
+                                        value={language.code}
                                     >
-                                        <img
-                                            className="img-responsive"
-                                            src="/img/logocit2.png"
-                                            style={{
-                                                  padding: "4px 32px 4px 10px"
-                                            }}
-                                    />
-                                    </td>
-
-                                    <td
-                                        align="right"
-                                        width="30%"
-                                    >
-                                        <div
-                                            style={{
-                                                display: "inline-flex",
-                                                alignItems: "center",
-                                                gap: "8px",
-                                            }}
-                                        >
-
-                                            <img
-                                                className="mobile-hide-flag"
-                                                src={selectedLanguage?.flag}
-                                                alt={selectedLanguage?.name}
-                                                style={{
-                                                    width: "32px",
-                                                    height: "22px",
-                                                    objectFit: "cover",
-                                                    borderRadius: "2px"
-                                                }}
-                                            />
-
-                                            <select
-                                                value={langSelected}
-                                                onChange={(e) =>
-                                                    setLangSelected(e.target.value)
-                                                }
-                                                style={{
-                                                    height: "34px",
-                                                    minWidth: "150px",
-                                                    padding: "4px 32px 4px 10px",
-                                                    border: "1px solid #ccc",
-                                                    borderRadius: "5px",
-                                                    backgroundColor: "#fff",
-                                                    color: "#333",
-                                                    fontSize: "14px",
-                                                    cursor: "pointer",
-                                                    outline: "none",
-                                                }}
-                                            >
-                                                {languages.map((language) => (
-                                                    <option
-                                                        key={language.code}
-                                                        value={language.code}
-                                                    >
-                                                        {language.name}
-                                                    </option>
-                                                ))}
-                                            </select>
-
-                                        </div>
-                                    </td>
-
-                                </tr>
-                            </tbody>
-                        </table>
+                                        {language.name}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>

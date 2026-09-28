@@ -1,26 +1,34 @@
 import JsonReader from './JSonReader';
 import { useLang } from "./LangContext";
 
-import { Link } from "react-router-dom";
+import { useEffect, useState, type MouseEvent } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 function TopMenu() {
   const { langSelected } = useLang();
+  const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  function myFunction() {
-    const x = document.getElementById("myTopnav");
-    if (x) {
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
+  // Close the mobile menu whenever the route changes
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
+
+  function toggleMenu(e: MouseEvent) {
+    e.preventDefault();
+    setMenuOpen((open) => !open);
   }
 
   return (
     <div className="main">
-      <div className="topnav" id="myTopnav">
-        <a href="javascript:void(0);" className="icon" onClick={myFunction}>
+      <div className={menuOpen ? "topnav responsive" : "topnav"} id="myTopnav">
+        <a
+          href="#"
+          className="icon"
+          onClick={toggleMenu}
+          aria-label="Menu"
+          aria-expanded={menuOpen}
+        >
           <i className="fa fa-bars"></i>
         </a>
       <Link to="/">
