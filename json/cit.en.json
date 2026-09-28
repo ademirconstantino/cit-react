@@ -144,5 +144,20 @@
 		"send_us_mail": "Send us an e-mail",
 		"location": "Curitiba, PR, Brazil",
 		"thankyou": "Thank you for your message."
+	},
+	"chat": {
+		"title": "Let's talk about your business",
+		"open": "Open chat",
+		"close": "Close chat",
+		"greeting": "Hi! We'd like to get to know your business. Just 4 quick questions.",
+		"question_business_name": "What is the name of your business?",
+		"question_employees": "How many employees does your business have?",
+		"question_revenue": "What is your business's annual revenue?",
+		"question_email": "What is your business e-mail?",
+		"placeholder": "Type your answer...",
+		"send": "Send",
+		"invalid_email": "Please enter a valid e-mail address.",
+		"thank_you": "Thank you! Our team will contact you soon.",
+		"error": "Sorry, we couldn't send your answers. Please try again."
 	}
 }

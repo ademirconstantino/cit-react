@@ -99,5 +99,20 @@
     "send_us_mail": "给我们发送电子邮件",
     "location": "巴西 巴拉那州 库里提巴",
     "thankyou": "感谢您的留言。"
+  },
+  "chat": {
+    "title": "聊聊您的业务",
+    "open": "打开聊天",
+    "close": "关闭聊天",
+    "greeting": "您好！我们想了解您的业务。只需回答 4 个简单问题。",
+    "question_business_name": "您的企业名称是什么？",
+    "question_employees": "您的企业有多少名员工？",
+    "question_revenue": "您的企业年营业额是多少？",
+    "question_email": "您的企业电子邮箱是什么？",
+    "placeholder": "请输入您的回答...",
+    "send": "发送",
+    "invalid_email": "请输入有效的电子邮箱地址。",
+    "thank_you": "谢谢！我们的团队会尽快与您联系。",
+    "error": "抱歉，无法发送您的回答。请重试。"
   }
 }
