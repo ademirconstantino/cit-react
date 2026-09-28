@@ -129,3 +129,135 @@
     margin-bottom: 0.5rem;
   }
 }
+
+/*
+ * --------------------------------------------------
+ * 4. Top bar (logo + language selector)
+ *--------------------------------------------------
+ */
+.topbar {
+  padding-top: 25px;
+}
+
+.topbar-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* Bootstrap's clearfix pseudo-elements become flex items and push the logo off the left edge */
+.topbar-container::before,
+.topbar-container::after {
+  display: none;
+}
+
+.topbar-logo {
+  /* keep the image's natural size; only shrink when space runs out */
+  flex: 0 1 auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 4px 32px 4px 10px;
+}
+
+.topbar-lang {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topbar-flag {
+  width: 32px;
+  height: 22px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.topbar-select {
+  height: 34px;
+  min-width: 150px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topbar {
+    padding-top: 12px;
+  }
+
+  .topbar-container {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .topbar-logo {
+    max-width: 60%;
+    padding: 4px 0;
+  }
+
+  .mobile-hide-flag {
+    display: none;
+  }
+
+  .topbar-select {
+    min-width: 0;
+    max-width: 120px;
+    height: 32px;
+    font-size: 13px;
+  }
+}
+
+/*
+ * --------------------------------------------------
+ * 5. Footer
+ *--------------------------------------------------
+ */
+.footer-social {
+  padding-right: 20px;
+  text-align: right;
+}
+
+.footer-social a {
+  display: inline-block;
+  padding: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-container {
+    width: 100% !important;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .footer-contact li {
+    line-height: 1.5;
+    margin-bottom: 4px;
+    word-break: break-word;
+  }
+
+  .footer-copyright,
+  .footer-social {
+    text-align: center;
+    padding-right: 15px;
+  }
+
+  .footer-copyright p {
+    font-size: 11px;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+
+  .footer-social i {
+    font-size: 18px;
+  }
+}
