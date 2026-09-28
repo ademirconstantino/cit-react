@@ -269,3 +269,145 @@
     font-size: 18px;
   }
 }
+
+/*
+ * --------------------------------------------------
+ * 6. Home chat widget
+ *--------------------------------------------------
+ */
+.cit-chat {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1050;
+}
+
+.cit-chat-toggle {
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  background-color: #55a79a;
+  color: #fff;
+  font-size: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.cit-chat-toggle:hover {
+  background-color: #478c81;
+}
+
+.cit-chat-panel {
+  width: 320px;
+  max-width: calc(100vw - 32px);
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.cit-chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 14px;
+  background-color: #55a79a;
+  color: #fff;
+  font-weight: bold;
+}
+
+.cit-chat-close {
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 4px;
+  cursor: pointer;
+}
+
+.cit-chat-body {
+  height: 300px;
+  max-height: 50vh;
+  overflow-y: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #f5f5f5;
+}
+
+.cit-chat-msg {
+  max-width: 85%;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.cit-chat-msg-bot {
+  align-self: flex-start;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #e3e3e3;
+}
+
+.cit-chat-msg-user {
+  align-self: flex-end;
+  background-color: #55a79a;
+  color: #fff;
+}
+
+.cit-chat-form {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid #e3e3e3;
+}
+
+.cit-chat-input {
+  flex: 1;
+  min-width: 0;
+  height: 36px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* 16px stops iOS from zooming in on focus */
+  outline: none;
+}
+
+.cit-chat-input:focus {
+  border-color: #55a79a;
+}
+
+.cit-chat-send {
+  flex: 0 0 auto;
+  margin-inline-start: auto;
+  height: 36px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #55a79a;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cit-chat-send:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+@media screen and (max-width: 480px) {
+  .cit-chat {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .cit-chat-body {
+    height: 260px;
+  }
+}

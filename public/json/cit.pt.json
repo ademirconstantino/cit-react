@@ -145,5 +145,20 @@
 		"send_us_mail": "Envie um e-mail",
 		"location": "Curitiba, PR, Brasil",
 		"thankyou": "Obrigado por sua mensagem"
+	},
+	"chat": {
+		"title": "Vamos falar sobre o seu negócio",
+		"open": "Abrir chat",
+		"close": "Fechar chat",
+		"greeting": "Olá! Queremos conhecer o seu negócio. São só 4 perguntas rápidas.",
+		"question_business_name": "Qual é o nome do seu negócio?",
+		"question_employees": "Quantos funcionários o seu negócio tem?",
+		"question_revenue": "Qual é o faturamento anual do seu negócio?",
+		"question_email": "Qual é o seu e-mail comercial?",
+		"placeholder": "Digite sua resposta...",
+		"send": "Enviar",
+		"invalid_email": "Por favor, informe um e-mail válido.",
+		"thank_you": "Obrigado! Nossa equipe entrará em contato em breve.",
+		"error": "Desculpe, não foi possível enviar suas respostas. Tente novamente."
 	}
 }

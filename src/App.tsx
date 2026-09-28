@@ -12,6 +12,7 @@ import ITConsulting from "./ITConsulting";
 import WebDevelopment from "./WebDevelopment";
 import CloudSolutions from "./CloudSolutions";
 import OurTeam from "./OurTeam";
+import ChatWidget from "./ChatWidget";
 
 export default function App() {
 
@@ -34,6 +35,8 @@ export default function App() {
         </Routes>
       </AnimatePresence>
       <Footer />
+      {/* Outside the animated page: position:fixed breaks inside framer-motion's transformed wrapper */}
+      {location.pathname === "/" && <ChatWidget />}
       </>
   );
 }
