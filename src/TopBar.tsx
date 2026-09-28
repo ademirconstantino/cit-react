@@ -37,7 +37,7 @@ function TopBar() {
 
                         <div className="topbar-lang">
                             <img
-                                className="mobile-hide-flag topbar-flag"
+                                className="topbar-flag"
                                 src={selectedLanguage?.flag}
                                 alt={selectedLanguage?.name}
                             />
