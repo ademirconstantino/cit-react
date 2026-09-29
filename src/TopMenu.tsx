@@ -14,10 +14,6 @@ function TopMenu() {
     setMenuOpen(false);
   }, [location.key]);
 
-  function linkClass(path: string) {
-    return location.pathname === path ? "active" : undefined;
-  }
-
   function toggleMenu(e: MouseEvent) {
     e.preventDefault();
     setMenuOpen((open) => !open);
@@ -35,24 +31,24 @@ function TopMenu() {
         >
           <i className="fa fa-bars"></i>
         </a>
-      <Link to="/" className={linkClass("/")}>
+      <Link to="/">
         <i className="fa fa-home"></i>&nbsp;&nbsp;
         {JsonReader(langSelected, "menu.home")}
       </Link>
 
-      <Link to="/about" className={linkClass("/about")}>
+      <Link to="/about">
         {JsonReader(langSelected, "menu.about_us")}
       </Link>
 
-      <Link to="/services" className={linkClass("/services")}>
+      <Link to="/services">
         {JsonReader(langSelected, "menu.services")}
       </Link>
 
-      <Link to="/our-team" className={linkClass("/our-team")}>
+      <Link to="/our-team">
         {JsonReader(langSelected, "menu.our_team")}
       </Link>
 
-      <Link to="/contact" className={linkClass("/contact")}>
+      <Link to="/contact">
         {JsonReader(langSelected, "menu.contact")}
       </Link>
       </div>
