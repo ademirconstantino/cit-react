@@ -455,3 +455,31 @@
   color: gray;
   text-decoration: none;
 }
+
+/* Contact page: grey e-mail and phones panel below the form */
+.contact-info-title {
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+.contact-info-panel {
+  background-color: #f0f0f0;
+  border: none;
+  box-shadow: none;
+}
+.contact-info-panel .panel-body {
+  padding: 25px 30px;
+}
+.contact-info-panel .fa-ul {
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.contact-info-panel li + li {
+  margin-top: 12px;
+}
+.contact-info-panel a,
+.contact-info-panel a:hover,
+.contact-info-panel a:focus {
+  color: #000;
+  text-decoration: none;
+}
