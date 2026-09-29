@@ -69,7 +69,11 @@
     "expertise_title": "我们的专长",
     "expertise_body": "我们的专业人员在移动开发、Web 技术、云平台和企业架构方面拥有深厚背景，始终采用最先进的工具和方法。",
     "culture_title": "我们的文化",
-    "culture_body": "我们倡导学习、协作和创新的文化，知识共享和持续成长是我们日常工作的一部分。"
+    "culture_body": "我们倡导学习、协作和创新的文化，知识共享和持续成长是我们日常工作的一部分。",
+    "profile_title": "认识创始人",
+    "profile_name": "Ademir Constantino Filho",
+    "profile_role": "创始人兼软件工程师",
+    "profile_bio": "Ademir 毕业于 Centro Universitário Leonardo da Vinci（UNIASSELVI，2010年），获得信息系统学位；在巴拉那天主教大学（PUCPR，2014年）完成软件工程专业进修，并在英国利物浦大学（University of Liverpool，2018年）获得软件工程研究生学历。二十多年来，他一直在国际层面开发软件解决方案，曾在巴西、美国和意大利的主要软件中心工作。"
   },
   "services_pages": {
     "mobile_menu_title": "移动应用",

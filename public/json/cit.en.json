@@ -69,7 +69,11 @@
 		"expertise_title": "Our Expertise",
 		"expertise_body": "Our professionals have strong backgrounds in mobile development, web technologies, cloud platforms, and enterprise architecture, always using state-of-the-art tools and methodologies.",
 		"culture_title": "Our Culture",
-		"culture_body": "We foster a culture of learning, collaboration, and innovation, where knowledge sharing and continuous growth are part of our daily routine."
+		"culture_body": "We foster a culture of learning, collaboration, and innovation, where knowledge sharing and continuous growth are part of our daily routine.",
+		"profile_title": "Meet the Founder",
+		"profile_name": "Ademir Constantino Filho",
+		"profile_role": "Founder & Software Engineer",
+		"profile_bio": "Ademir holds a degree in Information Systems from Centro Universitário Leonardo da Vinci (UNIASSELVI, 2010), a specialization in Software Engineering from the Pontifical Catholic University of Paraná (PUCPR, 2014) and a postgraduate degree in Software Engineering from the University of Liverpool, England (2018). For over twenty years he has been developing software solutions at an international level, having worked in major software hubs in Brazil, the United States and Italy."
 	},
 	"services_pages": {
 		"mobile_menu_title": "Mobile Apps",

@@ -52,6 +52,29 @@ function OurTeam() {
               <p>{JsonReader(langSelected, "team.culture_body")}</p>
             </div>
           </div>
+
+          <h3 className="title-divider">
+            <span>{JsonReader(langSelected, "team.profile_title")}</span>
+          </h3>
+
+          <div className="row team-profile">
+            <div className="col-sm-4 col-md-3 text-center">
+              <img
+                src="/img/team/ademir.jpg"
+                alt={JsonReader(langSelected, "team.profile_name")}
+                className="team-profile-photo"
+              />
+            </div>
+            <div className="col-sm-8 col-md-9">
+              <h4>{JsonReader(langSelected, "team.profile_name")}</h4>
+              <p className="team-profile-role">
+                {JsonReader(langSelected, "team.profile_role")}
+              </p>
+              <p style={{ textAlign: "justify" }}>
+                {JsonReader(langSelected, "team.profile_bio")}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </motion.section>
