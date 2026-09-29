@@ -57,15 +57,18 @@ function Contact() {
                         </div>
                         <input type="submit" className="btn btn-primary contact-submit" value={JsonReader(langSelected, 'contact.send_message')}/>
                     </form>
+                    <h3 className="contact-info-title">{JsonReader(langSelected, "contact.info_title")}</h3>
                     <div className="panel panel-default contact-info-panel">
                         <div className="panel-body">
                         <ul className="fa-ul">
                             <li>
                             <i className="fa fa-li fa-envelope"></i>
+                            <strong>{JsonReader(langSelected, "contact.info_email_label")}:</strong>{" "}
                             <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
                             </li>
                             <li>
                             <i className="fa fa-li fa-phone"></i>
+                            <strong>{JsonReader(langSelected, "contact.info_phones_label")}:</strong>{" "}
                             {PHONES.map((phone, i) => (
                                 <span key={phone}>
                                 {i > 0 && " | "}

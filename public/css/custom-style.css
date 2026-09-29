@@ -457,8 +457,11 @@
 }
 
 /* Contact page: grey e-mail and phones panel below the form */
+.contact-info-title {
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
 .contact-info-panel {
-  margin-top: 30px;
   background-color: #f0f0f0;
   border: none;
   box-shadow: none;
