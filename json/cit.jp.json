@@ -12,8 +12,6 @@
     "contact": "お問い合わせ"
   },
   "home": {
-    "welcome_message": "Constantino IT Consulting へようこそ",
-    "welcome_companydetails": "ITコンサルティングサービスに特化した企業",
     "desc_mobile_apps": "モバイルアプリ",
     "desc_mobile_apps_body": "最適なITプロセスと手法を用いてモバイルアプリを開発します。",
     "desc_support": "ITコンサルティング",
@@ -21,7 +19,8 @@
     "desc_support_a": "クラウドソリューションの専門知識",
     "desc_support_abody": "パフォーマンスとコスト効率を最適化するクラウド基盤の設計・移行・最適化を支援します。",
     "desc_support_b": "Web開発",
-    "desc_support_bbody": "複雑な業務プロセスや高いユーザー需要に対応する堅牢で拡張性の高いWebアプリケーションを開発します。"
+    "desc_support_bbody": "複雑な業務プロセスや高いユーザー需要に対応する堅牢で拡張性の高いWebアプリケーションを開発します。",
+    "learn_more": "詳しく見る"
   },
   "footer": {
     "contact_us": "お問い合わせ",

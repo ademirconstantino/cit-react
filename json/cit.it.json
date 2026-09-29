@@ -12,8 +12,6 @@
         "contact": "CONTATTACI"
     },
 	"home" : {
-        "welcome_message": "Benvenuto in Constantino IT Consulting",
-        "welcome_companydetails": "Azienda specializzata in servizi di consulenza informatica",
 		"desc_mobile_apps" : "App Mobile",
 		"desc_mobile_apps_body" : "Sviluppiamo app mobili utilizzando i migliori processi e approcci IT.",
 		"desc_support": "Consulenza IT",
@@ -21,7 +19,8 @@
 		"desc_support_a": "Competenze in Soluzioni Cloud",
         "desc_support_abody": "Aiutiamo le organizzazioni a progettare, migrare e ottimizzare infrastrutture cloud per migliorare le prestazioni e l’efficienza dei costi.",
         "desc_support_b": "Sviluppo Web",
-        "desc_support_bbody": "Sviluppiamo applicazioni web robuste e scalabili, progettate per supportare processi di business complessi e un’elevata domanda da parte degli utenti."
+        "desc_support_bbody": "Sviluppiamo applicazioni web robuste e scalabili, progettate per supportare processi di business complessi e un’elevata domanda da parte degli utenti.",
+        "learn_more": "Scopri di più"
     },
 	"footer": {
 		"contact_us": "Contattaci",

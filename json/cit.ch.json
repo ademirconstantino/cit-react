@@ -12,8 +12,6 @@
     "contact": "联系我们"
   },
   "home": {
-    "welcome_message": "欢迎来到 Constantino IT Consulting",
-    "welcome_companydetails": "专注于 IT 咨询服务的专业公司",
     "desc_mobile_apps": "移动应用",
     "desc_mobile_apps_body": "我们采用最佳 IT 流程和方法开发移动应用程序。",
     "desc_support": "IT 咨询",
@@ -21,7 +19,8 @@
     "desc_support_a": "云解决方案专家",
     "desc_support_abody": "我们帮助企业设计、迁移和优化云基础设施，以提升性能并降低成本。",
     "desc_support_b": "网页开发",
-    "desc_support_bbody": "我们开发强大且可扩展的 Web 应用程序，以支持复杂的业务流程和高用户需求。"
+    "desc_support_bbody": "我们开发强大且可扩展的 Web 应用程序，以支持复杂的业务流程和高用户需求。",
+    "learn_more": "了解更多"
   },
   "footer": {
     "contact_us": "联系我们",

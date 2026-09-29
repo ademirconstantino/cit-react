@@ -30,14 +30,6 @@
  * 3. Responsiveness/media queries
  *--------------------------------------------------
  */
-/* Homepage feature cards are 2 per row below md; start each row on a new line so
-   a taller card (longer translation) doesn't make the next one float out of place */
-@media (max-width: 991px) {
-  .features .feature:nth-child(2n+1) {
-    clear: left;
-  }
-}
-
 @media screen and (max-width: 480px) {
 
   h2 {
@@ -73,7 +65,7 @@
  *--------------------------------------------------
  */
 .topbar {
-  padding-top: 25px;
+  padding-top: 10px;
 }
 
 .topbar-container {
@@ -97,7 +89,8 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 4px 32px 4px 10px;
+  max-height: 44px;
+  padding: 2px 32px 2px 10px;
 }
 
 .topbar-lang {
@@ -373,14 +366,14 @@
  */
 /* Inner wrapper of pages whose animated container is already #content (was a duplicate #content) */
 .page-content {
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 /* Our Team - hero with founder photo as background */
 .team-hero {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 16px;
   margin-bottom: 30px;
   min-height: 420px;
   display: flex;
@@ -407,10 +400,6 @@
   z-index: 1;
   width: 60%;
   padding: 40px;
-}
-.team-hero .title-divider,
-.team-hero .title-divider span {
-  background-color: transparent;
 }
 .team-profile h4 {
   margin-bottom: 4px;
@@ -462,6 +451,7 @@
   margin-bottom: 15px;
 }
 .contact-info-panel {
+  border-radius: 12px;
   background-color: #f0f0f0;
   border: none;
   box-shadow: none;
@@ -482,4 +472,156 @@
 .contact-info-panel a:focus {
   color: #000;
   text-decoration: none;
+}
+
+/* Home: photo panel with frosted glass service cards */
+.home-hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  padding: clamp(110px, 24vh, 260px) 20px 20px;
+  background: #f4f6f8;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+/* Same translucent photo treatment as the Our Team header */
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(../img/home/hero.jpg) center 45% / cover no-repeat;
+  opacity: 0.45;
+}
+.home-hero-cards {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.home-hero-card {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 20px;
+  border-radius: 12px;
+  background: rgba(235, 235, 240, 0.72);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+.home-hero-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  color: #111;
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+.home-hero-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1b1b1b;
+}
+.home-hero-card p {
+  flex: 1;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.home-hero-link,
+.home-hero-link:hover,
+.home-hero-link:focus {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #0969da;
+  font-weight: 600;
+  text-decoration: none;
+}
+.home-hero-arrow {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: #0969da;
+  color: #fff;
+  font-size: 20px;
+  transition: background-color 0.2s;
+}
+.home-hero-link:hover .home-hero-arrow {
+  background: #0550ae;
+}
+@media (max-width: 1199px) {
+  .home-hero-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .home-hero {
+    padding: 160px 12px 12px;
+  }
+  .home-hero-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Page background: white on top, very light blue on the lower half */
+html {
+  min-height: 100%;
+  background: linear-gradient(180deg, #fff 0%, #fff 45%, #d4e6f7 60%, #d4e6f7 100%);
+}
+body {
+  background: transparent;
+}
+
+/* Title divider line drawn as a flex filler instead of a white box behind the
+   text, so titles sit cleanly on either background colour */
+.title-divider,
+.title-divider span {
+  background: none;
+}
+h2.title-divider,
+div.title-divider {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.title-divider::after {
+  content: "";
+  order: 1;
+  flex: 1;
+  min-width: 20px;
+  height: 9px;
+  background: url(../img/bg_divider.png) left center repeat-x;
+}
+h2.title-divider > span,
+div.title-divider h3 > span {
+  padding-right: 0.5em;
+}
+h2.title-divider > small {
+  order: 2;
+  flex-basis: 100%;
+}
+
+/* Footer: white rounded panel contrasting with the blue page background */
+.footer-container {
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Rounded sidebar section menus */
+.section-menu ul.nav-list li.nav-header + li > a {
+  border-radius: 10px 10px 0 0;
+}
+.section-menu ul.nav-list li:last-child > a {
+  border-radius: 0 0 10px 10px;
+}
+.section-menu ul.nav-list li.nav-header + li:last-child > a {
+  border-radius: 10px;
 }
