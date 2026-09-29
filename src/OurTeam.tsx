@@ -27,25 +27,24 @@ function OurTeam() {
     >
       <div id="content">
         <div className="container" id="our-team">
-          <img
-            src="/img/team/ademir-banner.jpg"
-            alt={JsonReader(langSelected, "team.profile_name")}
-            className="team-banner"
-          />
+          <div className="team-hero">
+            <div className="team-hero-bg" aria-hidden="true" />
+            <div className="team-hero-content">
+              <h2 className="title-divider">
+                <span>{JsonReader(langSelected, "team.title")}</span>
+                <small>{JsonReader(langSelected, "team.subtitle")}</small>
+              </h2>
 
-          <h2 className="title-divider">
-            <span>{JsonReader(langSelected, "team.title")}</span>
-            <small>{JsonReader(langSelected, "team.subtitle")}</small>
-          </h2>
-
-          <div className="team-profile">
-            <h4>{JsonReader(langSelected, "team.profile_name")}</h4>
-            <p className="team-profile-role">
-              {JsonReader(langSelected, "team.profile_role")}
-            </p>
-            <p style={{ textAlign: "justify" }}>
-              {JsonReader(langSelected, "team.profile_bio")}
-            </p>
+              <div className="team-profile">
+                <h4>{JsonReader(langSelected, "team.profile_name")}</h4>
+                <p className="team-profile-role">
+                  {JsonReader(langSelected, "team.profile_role")}
+                </p>
+                <p style={{ textAlign: "justify" }}>
+                  {JsonReader(langSelected, "team.profile_bio")}
+                </p>
+              </div>
+            </div>
           </div>
 
           <p style={{ textAlign: "justify" }}>
