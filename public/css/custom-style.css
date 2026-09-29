@@ -384,7 +384,7 @@
 .team-hero-bg {
   position: absolute;
   inset: 0;
-  background: url(/img/team/ademir-banner.jpg) 60% 30% / cover no-repeat;
+  background: url(../img/team/ademir-banner.jpg) 60% 30% / cover no-repeat;
   opacity: 0.45;
   transform-origin: 65% 40%;
   animation: team-hero-in 1.6s ease-out both, team-hero-zoom 24s ease-in-out 1.6s infinite alternate;
