@@ -21,7 +21,7 @@ function Services() {
 
     return (
         <motion.div id="content" variants={variants} initial="initial" animate="animate"  exit="exit" transition={{ duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }}>
-        <div id="content">
+        <div className="page-content">
             <div className="container" id="about">
             <div className="row">
                 <div className="col-md-3 sidebar">
@@ -48,19 +48,19 @@ function Services() {
                     <span>{JsonReader(langSelected, "services.header_text")}</span>
                     <small>{JsonReader(langSelected, "services.header_text_body")}</small>
                 </h2>
-                <div className="title-divider" id="stats">
+                <div className="title-divider" id="fabrica">
                     <h3>
                     <span>{JsonReader(langSelected, "services.software_factory")}</span>
                     </h3>
                 </div>
                 <span>{JsonReader(langSelected, "services.software_factory_text")}</span>
-                <div className="title-divider" id="stats">
+                <div className="title-divider" id="consultores">
                     <h3>
                     <span>{JsonReader(langSelected, "services.expert_consultants")}</span>
                     </h3>
                 </div>
                 <span>{JsonReader(langSelected, "services.expert_consultants_text")}</span>
-                <div className="title-divider" id="stats">
+                <div className="title-divider" id="areas">
                     <h3>
                     <span>{JsonReader(langSelected, "services.areas_consultancy")}</span>
                     </h3>

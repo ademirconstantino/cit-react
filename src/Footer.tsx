@@ -109,21 +109,21 @@ function Footer() {
 
               <div>
 
-                <a href="https://x.com/ItConstantino">
+                <a href="https://x.com/ItConstantino" aria-label="X (Twitter)">
                   <i
                     className="fa fa-twitter"
                     style={{ paddingLeft: 5 }}
                   ></i>
                 </a>
 
-                <a href="https://www.facebook.com/profile.php?id=61581224173736">
+                <a href="https://www.facebook.com/profile.php?id=61581224173736" aria-label="Facebook">
                   <i
                     className="fa fa-facebook"
                     style={{ paddingLeft: 5 }}
                   ></i>
                 </a>
 
-                <a href="http://www.linkedin.com/in/ademir-constantino/">
+                <a href="http://www.linkedin.com/in/ademir-constantino/" aria-label="LinkedIn">
                   <i
                     className="fa fa-linkedin"
                     style={{ paddingLeft: 5 }}

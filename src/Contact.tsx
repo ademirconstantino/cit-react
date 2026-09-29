@@ -21,7 +21,7 @@ function Contact() {
     return (
         
     <motion.div id="content" variants={variants} initial="initial" animate="animate"  exit="exit" transition={{ duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }}>
-        <div id="content">
+        <div className="page-content">
             <div className="container">
             <div className="row">
                 <div className="col-md-3 sidebar">
@@ -39,25 +39,25 @@ function Contact() {
                     <span>{JsonReader(langSelected, "contact.header_text")}</span>
                     <small>{JsonReader(langSelected, "contact.header_text_body")}</small>
                 </h2>
-                </div>
                 <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-8">
                     <form id="contact-form" action="https://formsubmit.co/ademirconstantino@gmail.com" method="POST">
                         <div className="form-group">
-                        <label className="sr-only">{JsonReader(langSelected, "contact.name")}</label>
+                        <label className="sr-only" htmlFor="nome">{JsonReader(langSelected, "contact.name")}</label>
                         <input type="text" name="nome" className="form-control" id="nome" placeholder={JsonReader(langSelected, 'contact.name')}/>
                         </div>
                         <div className="form-group">
-                        <label className="sr-only">{JsonReader(langSelected, "contact.email")}</label>
+                        <label className="sr-only" htmlFor="email">{JsonReader(langSelected, "contact.email")}</label>
                         <input type="email" name="email" className="form-control" id="email" placeholder={JsonReader(langSelected, 'contact.email')}/>
                         </div>
                         <div className="form-group">
-                        <label className="sr-only">{JsonReader(langSelected, "contact.message")}</label>
-                        <textarea className="form-control" name="mensagem" id="mensagem" placeholder={JsonReader(langSelected, 'contact.message')}></textarea>
+                        <label className="sr-only" htmlFor="mensagem">{JsonReader(langSelected, "contact.message")}</label>
+                        <textarea className="form-control" name="mensagem" id="mensagem" rows={5} placeholder={JsonReader(langSelected, 'contact.message')}></textarea>
                         </div>
-                        <input type="submit" className="btn btn-primary" value={JsonReader(langSelected, 'contact.send_message')}/>
+                        <input type="submit" className="btn btn-primary contact-submit" value={JsonReader(langSelected, 'contact.send_message')}/>
                     </form>
                     </div>
+                </div>
                 </div>
                 </div>
             </div>

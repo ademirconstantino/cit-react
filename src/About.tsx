@@ -19,7 +19,7 @@ function About() {
 
       return (
     <motion.div id="content" variants={variants} initial="initial" animate="animate"  exit="exit" transition={{ duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }}>
-        <div id="content">
+        <div className="page-content">
             <div className="container" id="about">
             <div className="row">
                 <div className="col-md-3 sidebar">
@@ -49,19 +49,19 @@ function About() {
 
                 <h4>{JsonReader(langSelected, "about.experience")}</h4>
                 <p style={{ textAlign: "justify"}}>{JsonReader(langSelected, "about.company_details")}</p>  
-                <div className="title-divider" id="stats">
+                <div className="title-divider" id="mission">
                     <h3><span>{JsonReader(langSelected, "about.mission")}</span></h3>
                 </div>
                     <span>{JsonReader(langSelected, "about.mission_text")}</span>
                 
-                <div className="title-divider" id="stats">
+                <div className="title-divider" id="businessinsight">
                     <h3>
                     <span>{JsonReader(langSelected, "about.business_insight")}</span>
                     </h3>
                 </div>
                 <span>{JsonReader(langSelected, "about.business_insight_text")}</span>
                 
-                <div className="title-divider" id="stats">
+                <div className="title-divider" id="ourvalues">
                     <h3>
                     <span>{JsonReader(langSelected, "about.our_values")}</span>
                     </h3>
