@@ -463,11 +463,16 @@
   border: none;
   box-shadow: none;
 }
+.contact-info-panel .panel-body {
+  padding: 25px 30px;
+}
 .contact-info-panel .fa-ul {
   margin-bottom: 0;
+  font-size: 15px;
+  line-height: 1.6;
 }
 .contact-info-panel li + li {
-  margin-top: 6px;
+  margin-top: 12px;
 }
 .contact-info-panel a,
 .contact-info-panel a:hover,
