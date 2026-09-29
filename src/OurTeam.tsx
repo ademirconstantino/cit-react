@@ -27,10 +27,26 @@ function OurTeam() {
     >
       <div id="content">
         <div className="container" id="our-team">
+          <img
+            src="/img/team/ademir-banner.jpg"
+            alt={JsonReader(langSelected, "team.profile_name")}
+            className="team-banner"
+          />
+
           <h2 className="title-divider">
             <span>{JsonReader(langSelected, "team.title")}</span>
             <small>{JsonReader(langSelected, "team.subtitle")}</small>
           </h2>
+
+          <div className="team-profile">
+            <h4>{JsonReader(langSelected, "team.profile_name")}</h4>
+            <p className="team-profile-role">
+              {JsonReader(langSelected, "team.profile_role")}
+            </p>
+            <p style={{ textAlign: "justify" }}>
+              {JsonReader(langSelected, "team.profile_bio")}
+            </p>
+          </div>
 
           <p style={{ textAlign: "justify" }}>
             {JsonReader(langSelected, "team.intro")}
@@ -50,29 +66,6 @@ function OurTeam() {
             <div className="col-md-4">
               <h4>{JsonReader(langSelected, "team.culture_title")}</h4>
               <p>{JsonReader(langSelected, "team.culture_body")}</p>
-            </div>
-          </div>
-
-          <h3 className="title-divider">
-            <span>{JsonReader(langSelected, "team.profile_title")}</span>
-          </h3>
-
-          <div className="row team-profile">
-            <div className="col-sm-4 col-md-3 text-center">
-              <img
-                src="/img/team/ademir.jpg"
-                alt={JsonReader(langSelected, "team.profile_name")}
-                className="team-profile-photo"
-              />
-            </div>
-            <div className="col-sm-8 col-md-9">
-              <h4>{JsonReader(langSelected, "team.profile_name")}</h4>
-              <p className="team-profile-role">
-                {JsonReader(langSelected, "team.profile_role")}
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                {JsonReader(langSelected, "team.profile_bio")}
-              </p>
             </div>
           </div>
         </div>
