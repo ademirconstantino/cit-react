@@ -7,6 +7,16 @@ import "../public/css/theme-style.min.css";
 import "../public/css/custom-style.css";
 import "../public/css/font-awesome.min.css";
 
+const PHONES = ["+55 41 9 9607 5187", "+55 11 9 4956 0056"];
+
+const CNPJS = [
+  { number: "64.763.602/0001-83" },
+  { number: "11.809.343/0001-18", url: "https://www.jusbrasil.com.br/nome/ademir-constantino-filho/cnpj-CvuNXRGGiVx" },
+  { number: "25.352.343/0001-46", url: "https://www.jusbrasil.com.br/nome/ademir-constantino-filho/cnpj-MHPMXb5-K0u" },
+  { number: "20.350.883/0001-77", url: "https://www.jusbrasil.com.br/nome/ademir-constantino-filho/cnpj-AHv3HTZ81mq" },
+  { number: "27.087.633/0001-35", url: "https://www.jusbrasil.com.br/nome/ademir-constantino-filho/cnpj-9hpVZXoQvzx" },
+];
+
 function Footer() {
 
   const { langSelected } = useLang();
@@ -39,10 +49,14 @@ function Footer() {
                     <abbr title="Phone">
                       <i className="fa fa-li fa-phone"></i>
                     </abbr>
-                    {JsonReader(
-                      langSelected,
-                      "footer.telephone_number"
-                    )}
+                    {PHONES.map((phone, i) => (
+                      <span key={phone}>
+                        {i > 0 && <br />}
+                        <a href={`tel:${phone.replace(/\s/g, "")}`} className="footer-contact-link">
+                          {phone}
+                        </a>
+                      </span>
+                    ))}
                     </span>
                   </li>
                   <li>
@@ -73,6 +87,26 @@ function Footer() {
                       langSelected,
                       "footer.address"
                     )}
+                    </span>
+                  </li>
+
+                  <li>
+                    <span className='site-footer'>
+                    <abbr title="CNPJ">
+                      <i className="fa fa-li fa-building"></i>
+                    </abbr>
+                    {CNPJS.map(({ number, url }, i) => (
+                      <span key={number}>
+                        {i > 0 && <br />}
+                        {url ? (
+                          <a href={url} target="_blank" rel="noopener noreferrer" className="footer-contact-link">
+                            CNPJ {number}
+                          </a>
+                        ) : (
+                          <>CNPJ {number}</>
+                        )}
+                      </span>
+                    ))}
                     </span>
                   </li>
 
