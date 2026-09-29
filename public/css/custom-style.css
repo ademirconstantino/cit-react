@@ -65,7 +65,7 @@
  *--------------------------------------------------
  */
 .topbar {
-  padding-top: 10px;
+  padding-top: 18px;
 }
 
 .topbar-container {
@@ -90,6 +90,7 @@
   max-width: 100%;
   min-width: 0;
   max-height: 44px;
+  margin-top: 14px;
   padding: 2px 32px 2px 10px;
 }
 
