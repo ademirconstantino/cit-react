@@ -23,7 +23,7 @@ function Footer() {
       <div
         className="container footer-container"
         style={{
-          backgroundColor: '#F0F0F0',
+          backgroundColor: '#fff',
           paddingTop: 20,
           width: "90%",
           fontSize: "12px"
