@@ -9,10 +9,14 @@ function TopMenu() {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Close the mobile menu whenever the route changes
+  // Close the mobile menu on every navigation (also re-clicks of the same page)
   useEffect(() => {
     setMenuOpen(false);
-  }, [location.pathname]);
+  }, [location.key]);
+
+  function linkClass(path: string) {
+    return location.pathname === path ? "active" : undefined;
+  }
 
   function toggleMenu(e: MouseEvent) {
     e.preventDefault();
@@ -31,24 +35,24 @@ function TopMenu() {
         >
           <i className="fa fa-bars"></i>
         </a>
-      <Link to="/">
+      <Link to="/" className={linkClass("/")}>
         <i className="fa fa-home"></i>&nbsp;&nbsp;
         {JsonReader(langSelected, "menu.home")}
       </Link>
 
-      <Link to="/about">
+      <Link to="/about" className={linkClass("/about")}>
         {JsonReader(langSelected, "menu.about_us")}
       </Link>
 
-      <Link to="/services">
+      <Link to="/services" className={linkClass("/services")}>
         {JsonReader(langSelected, "menu.services")}
       </Link>
 
-      <Link to="/our-team">
+      <Link to="/our-team" className={linkClass("/our-team")}>
         {JsonReader(langSelected, "menu.our_team")}
       </Link>
 
-      <Link to="/contact">
+      <Link to="/contact" className={linkClass("/contact")}>
         {JsonReader(langSelected, "menu.contact")}
       </Link>
       </div>
