@@ -33,13 +33,29 @@ function Footer() {
 
         <div className="row">
 
-          <div className="col-md-12 col footer-contact">
+          <div className="col-md-3 col footer-contact">
 
             <div className="block contact-block">
 
               <address>
 
                 <ul className="fa-ul">
+
+                  <li>
+                    <abbr title="Phone">
+                      <i className="fa fa-li fa-phone"></i>
+                    </abbr>
+                    <span className="site-footer">
+                    {PHONES.map((phone, i) => (
+                      <span key={phone} className="footer-phone">
+                        {i > 0 && <span className="footer-sep">|</span>}
+                        <a href={`tel:${phone.replace(/\s/g, "")}`} className="footer-contact-link">
+                          {phone}
+                        </a>
+                      </span>
+                    ))}
+                    </span>
+                  </li>
 
                   <li>
                     <abbr title="Email">
@@ -69,22 +85,6 @@ function Footer() {
                       langSelected,
                       "footer.address"
                     )}
-                    </span>
-                  </li>
-
-                  <li>
-                    <abbr title="Phone">
-                      <i className="fa fa-li fa-phone"></i>
-                    </abbr>
-                    <span className="site-footer footer-oneline">
-                    {PHONES.map((phone, i) => (
-                      <span key={phone}>
-                        {i > 0 && <span className="footer-sep">|</span>}
-                        <a href={`tel:${phone.replace(/\s/g, "")}`} className="footer-contact-link">
-                          {phone}
-                        </a>
-                      </span>
-                    ))}
                     </span>
                   </li>
 

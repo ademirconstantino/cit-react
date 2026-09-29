@@ -448,17 +448,9 @@
   box-shadow: inset 0 -3px 0 #666;
 }
 
-/* Footer: phones and CNPJs each on a single line */
-.footer-oneline {
-  display: inline-block;
-  max-width: 100%;
-  vertical-align: top;
+/* Footer: keep each phone number (with its separator) unbroken */
+.footer-phone {
   white-space: nowrap;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-.footer-oneline::-webkit-scrollbar {
-  display: none;
 }
 .footer-sep {
   margin: 0 8px;
