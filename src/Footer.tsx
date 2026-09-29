@@ -9,13 +9,10 @@ import "../public/css/font-awesome.min.css";
 
 const PHONES = ["+55 41 9 9607 5187", "+55 11 9 4956 0056"];
 
-const CNPJS = [
-  { number: "64.763.602/0001-83" },
-  { number: "11.809.343/0001-18", url: "https://www.jusbrasil.com.br/nome/ademir-constantino-filho/cnpj-CvuNXRGGiVx" },
-  { number: "25.352.343/0001-46", url: "https://www.jusbrasil.com.br/nome/ademir-constantino-filho/cnpj-MHPMXb5-K0u" },
-  { number: "20.350.883/0001-77", url: "https://www.jusbrasil.com.br/nome/ademir-constantino-filho/cnpj-AHv3HTZ81mq" },
-  { number: "27.087.633/0001-35", url: "https://www.jusbrasil.com.br/nome/ademir-constantino-filho/cnpj-9hpVZXoQvzx" },
-];
+const CNPJ = {
+  number: "11.809.343/0001-18",
+  url: "https://www.jusbrasil.com.br/nome/ademir-constantino-filho/cnpj-CvuNXRGGiVx",
+};
 
 function Footer() {
 
@@ -95,19 +92,10 @@ function Footer() {
                     <abbr title="CNPJ">
                       <i className="fa fa-li fa-building"></i>
                     </abbr>
-                    <span className="site-footer footer-oneline">
-                    {CNPJS.map(({ number, url }, i) => (
-                      <span key={number}>
-                        {i > 0 && <span className="footer-sep">|</span>}
-                        {url ? (
-                          <a href={url} target="_blank" rel="noopener noreferrer" className="footer-contact-link">
-                            CNPJ {number}
-                          </a>
-                        ) : (
-                          <>CNPJ {number}</>
-                        )}
-                      </span>
-                    ))}
+                    <span className="site-footer">
+                    <a href={CNPJ.url} target="_blank" rel="noopener noreferrer" className="footer-contact-link">
+                      CNPJ {CNPJ.number}
+                    </a>
                     </span>
                   </li>
 
