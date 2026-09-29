@@ -155,6 +155,14 @@
  * 5. Footer
  *--------------------------------------------------
  */
+.footer-contact-link,
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .footer-social {
   padding-right: 20px;
   text-align: right;
@@ -446,13 +454,4 @@
   color: #000;
   background-color: rgba(0, 0, 0, 0.08);
   box-shadow: inset 0 -3px 0 #666;
-}
-
-/* Footer: keep each phone number (with its separator) unbroken */
-.footer-phone {
-  white-space: nowrap;
-}
-.footer-sep {
-  margin: 0 8px;
-  color: #bbb;
 }

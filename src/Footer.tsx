@@ -47,8 +47,8 @@ function Footer() {
                     </abbr>
                     <span className="site-footer">
                     {PHONES.map((phone, i) => (
-                      <span key={phone} className="footer-phone">
-                        {i > 0 && <span className="footer-sep">|</span>}
+                      <span key={phone}>
+                        {i > 0 && " | "}
                         <a href={`tel:${phone.replace(/\s/g, "")}`} className="footer-contact-link">
                           {phone}
                         </a>
