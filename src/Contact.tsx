@@ -1,6 +1,7 @@
 import JsonReader from './JSonReader';
 import { motion } from "framer-motion";
 import { useLang } from "./LangContext";
+import { EMAIL, PHONES, telHref } from "./contactInfo";
 
 import "../public/css/menu.css"; 
 import "../public/css/bootstrap.min.css";
@@ -41,6 +42,25 @@ function Contact() {
                 </h2>
                 <div className="row">
                     <div className="col-md-8">
+                    <div className="panel panel-default contact-info-panel">
+                        <div className="panel-body">
+                        <ul className="fa-ul">
+                            <li>
+                            <i className="fa fa-li fa-envelope"></i>
+                            <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+                            </li>
+                            <li>
+                            <i className="fa fa-li fa-phone"></i>
+                            {PHONES.map((phone, i) => (
+                                <span key={phone}>
+                                {i > 0 && " | "}
+                                <a href={telHref(phone)}>{phone}</a>
+                                </span>
+                            ))}
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
                     <form id="contact-form" action="https://formsubmit.co/ademirconstantino@gmail.com" method="POST">
                         <div className="form-group">
                         <label className="sr-only" htmlFor="nome">{JsonReader(langSelected, "contact.name")}</label>

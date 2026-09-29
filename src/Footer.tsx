@@ -1,13 +1,12 @@
 import JsonReader from './JSonReader';
 import { useLang } from "./LangContext";
+import { PHONES, telHref } from "./contactInfo";
 
 import "../public/css/menu.css";
 import "../public/css/bootstrap.min.css";
 import "../public/css/theme-style.min.css";
 import "../public/css/custom-style.css";
 import "../public/css/font-awesome.min.css";
-
-const PHONES = ["+55 41 9 9607 5187", "+55 11 9 4956 0056"];
 
 const CNPJ = {
   number: "11.809.343/0001-18",
@@ -49,7 +48,7 @@ function Footer() {
                     {PHONES.map((phone, i) => (
                       <span key={phone}>
                         {i > 0 && " | "}
-                        <a href={`tel:${phone.replace(/\s/g, "")}`} className="footer-contact-link">
+                        <a href={telHref(phone)} className="footer-contact-link">
                           {phone}
                         </a>
                       </span>

@@ -455,3 +455,17 @@
   color: gray;
   text-decoration: none;
 }
+
+/* Contact page: e-mail and phones panel above the form */
+.contact-info-panel .fa-ul {
+  margin-bottom: 0;
+}
+.contact-info-panel li + li {
+  margin-top: 6px;
+}
+.contact-info-panel a,
+.contact-info-panel a:hover,
+.contact-info-panel a:focus {
+  color: #000;
+  text-decoration: none;
+}
