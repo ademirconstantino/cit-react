@@ -36,7 +36,7 @@ function Footer() {
 
         <div className="row">
 
-          <div className="col-md-3 col footer-contact">
+          <div className="col-md-12 col footer-contact">
 
             <div className="block contact-block">
 
@@ -44,21 +44,6 @@ function Footer() {
 
                 <ul className="fa-ul">
 
-                  <li>
-                    <span className='site-footer'>
-                    <abbr title="Phone">
-                      <i className="fa fa-li fa-phone"></i>
-                    </abbr>
-                    {PHONES.map((phone, i) => (
-                      <span key={phone}>
-                        {i > 0 && <br />}
-                        <a href={`tel:${phone.replace(/\s/g, "")}`} className="footer-contact-link">
-                          {phone}
-                        </a>
-                      </span>
-                    ))}
-                    </span>
-                  </li>
                   <li>
                     <abbr title="Email">
                       <i className="fa fa-li fa-envelope"></i>
@@ -91,13 +76,29 @@ function Footer() {
                   </li>
 
                   <li>
-                    <span className='site-footer'>
+                    <abbr title="Phone">
+                      <i className="fa fa-li fa-phone"></i>
+                    </abbr>
+                    <span className="site-footer footer-oneline">
+                    {PHONES.map((phone, i) => (
+                      <span key={phone}>
+                        {i > 0 && <span className="footer-sep">|</span>}
+                        <a href={`tel:${phone.replace(/\s/g, "")}`} className="footer-contact-link">
+                          {phone}
+                        </a>
+                      </span>
+                    ))}
+                    </span>
+                  </li>
+
+                  <li>
                     <abbr title="CNPJ">
                       <i className="fa fa-li fa-building"></i>
                     </abbr>
+                    <span className="site-footer footer-oneline">
                     {CNPJS.map(({ number, url }, i) => (
                       <span key={number}>
-                        {i > 0 && <br />}
+                        {i > 0 && <span className="footer-sep">|</span>}
                         {url ? (
                           <a href={url} target="_blank" rel="noopener noreferrer" className="footer-contact-link">
                             CNPJ {number}

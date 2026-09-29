@@ -447,3 +447,20 @@
   background-color: rgba(0, 0, 0, 0.08);
   box-shadow: inset 0 -3px 0 #666;
 }
+
+/* Footer: phones and CNPJs each on a single line */
+.footer-oneline {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.footer-oneline::-webkit-scrollbar {
+  display: none;
+}
+.footer-sep {
+  margin: 0 8px;
+  color: #bbb;
+}
