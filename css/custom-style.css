@@ -27,46 +27,9 @@
  /////////////////////////////////////////////////////////////////////*/
 /*
  * --------------------------------------------------
- * 1. General Elements
- *--------------------------------------------------
- */
-#navigation {
-  /* 1. Navigation wrapper */
-}
-#highlighted {
-  /* 2. Highlighted (below header) wrapper */
-}
-#content {
-  /* 3. Content wrapper */
-}
-#content-below {
-  /* 4. Content Below wrapper */
-}
-#footer {
-  /* 5. Footer wrapper */
-}
-/*
- * --------------------------------------------------
- * 2. Colours
- *-------------------------------------------------- 
- */
-/*
- * --------------------------------------------------
  * 3. Responsiveness/media queries
  *--------------------------------------------------
  */
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-@media (min-width: 768px) {
-  /* Small devices (tablets, 768px and up) */
-}
-@media (min-width: 992px) {
-  /* Medium devices (desktops, 992px and up) */
-}
-@media (min-width: 1200px) {
-  /* Large devices (large desktops, 1200px and up) */
-}
-
 /* Homepage feature cards are 2 per row below md; start each row on a new line so
    a taller card (longer translation) doesn't make the next one float out of place */
 @media (max-width: 991px) {
@@ -76,12 +39,6 @@
 }
 
 @media screen and (max-width: 480px) {
-
-  /* Main page titles */
-  h1 {
-    font-size: 1.6rem;
-    line-height: 1.2;
-  }
 
   h2 {
     font-size: 1.4rem;
@@ -107,34 +64,6 @@
   /* Paragraph readability */
   p {
     font-size: 0.95rem;
-  }
-
-    /* Homepage feature/service titles */
-  .feature-block h3,
-  .feature-block h4,
-  .feature-title,
-  .service-box h3,
-  .icon-box h3 {
-    font-size: 1.1rem;
-    line-height: 1.25;
-    margin-bottom: 0.5rem;
-  }
-
-  /* Homepage feature descriptions */
-  .feature-block p,
-  .service-box p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-
- .feature-text-d h3 {
-    font-size: 1.1rem;
-  }
-
-  .title {
-    font-size: 1.1rem;
-    line-height: 1.25;
-    margin-bottom: 0.5rem;
   }
 }
 
@@ -211,10 +140,6 @@
   .topbar-logo {
     max-width: 60%;
     padding: 4px 0;
-  }
-
-  .mobile-hide-flag {
-    display: none;
   }
 
   .topbar-select {
@@ -410,4 +335,36 @@
   .cit-chat-body {
     height: 260px;
   }
+}
+
+/*
+ * --------------------------------------------------
+ * 7. Contact form
+ *--------------------------------------------------
+ */
+@media screen and (max-width: 480px) {
+  #contact-form .form-control {
+    height: 42px;
+    font-size: 16px; /* 16px stops iOS from zooming in on focus */
+  }
+
+  #contact-form textarea.form-control {
+    height: auto;
+  }
+
+  .contact-submit {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+  }
+}
+
+/*
+ * --------------------------------------------------
+ * 8. Page content wrapper
+ *--------------------------------------------------
+ */
+/* Inner wrapper of pages whose animated container is already #content (was a duplicate #content) */
+.page-content {
+  padding: 30px 0;
 }
