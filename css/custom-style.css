@@ -449,3 +449,9 @@
   z-index: 1000;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
+/* Bootstrap's a:focus underline loads after menu.css; keep menu links plain */
+.topnav a:focus,
+.topnav a:active {
+  color: gray;
+  text-decoration: none;
+}
