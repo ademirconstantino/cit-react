@@ -8,20 +8,19 @@
 		"home": "HOME",
         "about_us": "CHI SIAMO",
         "services": "SERVIZI",
-		"our_team": "OUR TEAM",
-        "clients": "CLIENTS",
+		"our_team": "IL NOSTRO TEAM",
         "contact": "CONTATTACI"
     },
 	"home" : {
         "welcome_message": "Benvenuto in Constantino IT Consulting",
         "welcome_companydetails": "Azienda specializzata in servizi di consulenza informatica",
-		"desc_mobile_apps" : "Mobile Apps",
+		"desc_mobile_apps" : "App Mobile",
 		"desc_mobile_apps_body" : "Sviluppiamo app mobili utilizzando i migliori processi e approcci IT.",
-		"desc_support": "IT Consulting",
+		"desc_support": "Consulenza IT",
 		"desc_support_body" : "Supportiamo le organizzazioni con consulenza esperta in ambito tecnologico, di processi e di architettura.",
-		"desc_support_a": "Cloud Solutions Expertise",
+		"desc_support_a": "Competenze in Soluzioni Cloud",
         "desc_support_abody": "Aiutiamo le organizzazioni a progettare, migrare e ottimizzare infrastrutture cloud per migliorare le prestazioni e l’efficienza dei costi.",
-        "desc_support_b": "Web Development",
+        "desc_support_b": "Sviluppo Web",
         "desc_support_bbody": "Sviluppiamo applicazioni web robuste e scalabili, progettate per supportare processi di business complessi e un’elevata domanda da parte degli utenti."
     },
 	"footer": {
@@ -113,7 +112,7 @@
 	"cloud_overview_title": "Panoramica della strategia cloud",
 	"cloud_overview_body": "Supportiamo le organizzazioni nella progettazione, migrazione e ottimizzazione delle infrastrutture cloud, migliorando prestazioni ed efficienza dei costi.",
 	"cloud_platforms_title": "Piattaforme cloud",
-	"cloud_platforms_body": "Lavoriamo con AWS, Azure e Google Cloud, selezionando i servizi più adatti a ogni scenario di business.",
+	"cloud_platforms_body": "Lavoriamo con OCI di Oracle, AWS di Amazon, Azure di Microsoft e GCP di Google, selezionando i servizi più adatti a ogni scenario di business.",
 	"cloud_devops_title": "DevOps e automazione",
 	"cloud_devops_body": "Infrastructure as Code, pipeline CI/CD e monitoraggio garantiscono rilasci rapidi e affidabili.",
 	"cloud_security_title": "Sicurezza e affidabilità",
@@ -141,7 +140,7 @@
 		"email" : "E-mail",
 		"message" : "Messaggio",
 		"send_message" : "Invia messaggio",
-		"telephone" : "+39 (41) 9 9607 5187",
+		"telephone" : "+55 (41) 9 9607 5187",
 		"send_us_mail" : "Mandaci un email",
 		"location" : "Curitiba, PR, Brasile",
 		"thankyou" : "Grazie per il vostro messaggio."
