@@ -42,6 +42,21 @@ function Contact() {
                 </h2>
                 <div className="row">
                     <div className="col-md-8">
+                    <form id="contact-form" action="https://formsubmit.co/ademirconstantino@gmail.com" method="POST">
+                        <div className="form-group">
+                        <label className="sr-only" htmlFor="nome">{JsonReader(langSelected, "contact.name")}</label>
+                        <input type="text" name="nome" className="form-control" id="nome" placeholder={JsonReader(langSelected, 'contact.name')}/>
+                        </div>
+                        <div className="form-group">
+                        <label className="sr-only" htmlFor="email">{JsonReader(langSelected, "contact.email")}</label>
+                        <input type="email" name="email" className="form-control" id="email" placeholder={JsonReader(langSelected, 'contact.email')}/>
+                        </div>
+                        <div className="form-group">
+                        <label className="sr-only" htmlFor="mensagem">{JsonReader(langSelected, "contact.message")}</label>
+                        <textarea className="form-control" name="mensagem" id="mensagem" rows={5} placeholder={JsonReader(langSelected, 'contact.message')}></textarea>
+                        </div>
+                        <input type="submit" className="btn btn-primary contact-submit" value={JsonReader(langSelected, 'contact.send_message')}/>
+                    </form>
                     <div className="panel panel-default contact-info-panel">
                         <div className="panel-body">
                         <ul className="fa-ul">
@@ -61,21 +76,6 @@ function Contact() {
                         </ul>
                         </div>
                     </div>
-                    <form id="contact-form" action="https://formsubmit.co/ademirconstantino@gmail.com" method="POST">
-                        <div className="form-group">
-                        <label className="sr-only" htmlFor="nome">{JsonReader(langSelected, "contact.name")}</label>
-                        <input type="text" name="nome" className="form-control" id="nome" placeholder={JsonReader(langSelected, 'contact.name')}/>
-                        </div>
-                        <div className="form-group">
-                        <label className="sr-only" htmlFor="email">{JsonReader(langSelected, "contact.email")}</label>
-                        <input type="email" name="email" className="form-control" id="email" placeholder={JsonReader(langSelected, 'contact.email')}/>
-                        </div>
-                        <div className="form-group">
-                        <label className="sr-only" htmlFor="mensagem">{JsonReader(langSelected, "contact.message")}</label>
-                        <textarea className="form-control" name="mensagem" id="mensagem" rows={5} placeholder={JsonReader(langSelected, 'contact.message')}></textarea>
-                        </div>
-                        <input type="submit" className="btn btn-primary contact-submit" value={JsonReader(langSelected, 'contact.send_message')}/>
-                    </form>
                     </div>
                 </div>
                 </div>
