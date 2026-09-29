@@ -11,10 +11,10 @@ import "../public/css/custom-style.css";
 import "../public/css/font-awesome.min.css";
 
 const CARDS = [
-  { path: "/mobile-apps", title: "home.desc_mobile_apps", body: "home.desc_mobile_apps_body" },
-  { path: "/it-consulting", title: "home.desc_support", body: "home.desc_support_body" },
-  { path: "/cloud-solutions", title: "home.desc_support_a", body: "home.desc_support_abody" },
-  { path: "/web-development", title: "home.desc_support_b", body: "home.desc_support_bbody" },
+  { path: "/mobile-apps", color: "#0969da", title: "home.desc_mobile_apps", body: "home.desc_mobile_apps_body" },
+  { path: "/it-consulting", color: "#e8590c", title: "home.desc_support", body: "home.desc_support_body" },
+  { path: "/cloud-solutions", color: "#1a7f37", title: "home.desc_support_a", body: "home.desc_support_abody" },
+  { path: "/web-development", color: "#8250df", title: "home.desc_support_b", body: "home.desc_support_bbody" },
 ];
 
 function Home() {
@@ -37,7 +37,7 @@ function Home() {
 			  <div className="home-hero-cards">
 				{CARDS.map((card) => (
 				  <div className="home-hero-card" key={card.path}>
-					<div className="home-hero-icon">
+					<div className="home-hero-icon" style={{ color: card.color }}>
 					  <CopilotIcon />
 					</div>
 					<h3>{JsonReader(langSelected, card.title)}</h3>
