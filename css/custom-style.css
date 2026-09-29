@@ -368,3 +368,69 @@
 .page-content {
   padding: 30px 0;
 }
+
+/* Our Team - hero with founder photo as background */
+.team-hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  background: #f4f6f8;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+.team-hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url(/img/team/ademir-banner.jpg) 60% 30% / cover no-repeat;
+  opacity: 0.45;
+  transform-origin: 65% 40%;
+  animation: team-hero-in 1.6s ease-out both, team-hero-zoom 24s ease-in-out 1.6s infinite alternate;
+}
+.team-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 0.1) 100%);
+}
+.team-hero-content {
+  position: relative;
+  z-index: 1;
+  width: 60%;
+  padding: 40px;
+}
+.team-hero .title-divider,
+.team-hero .title-divider span {
+  background-color: transparent;
+}
+.team-profile h4 {
+  margin-bottom: 4px;
+}
+.team-profile-role {
+  color: #888;
+  font-style: italic;
+}
+@keyframes team-hero-in {
+  from { opacity: 0; filter: blur(8px); transform: scale(1.08); }
+  to { opacity: 0.45; filter: blur(0); transform: scale(1); }
+}
+@keyframes team-hero-zoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+@media (max-width: 767px) {
+  .team-hero-content {
+    width: 100%;
+    padding: 24px 20px;
+  }
+  .team-hero::after {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.9) 100%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .team-hero-bg {
+    animation: none;
+  }
+}

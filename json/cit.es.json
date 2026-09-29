@@ -69,7 +69,10 @@
         "expertise_title": "Nuestra experiencia",
         "expertise_body": "Nuestros profesionales cuentan con sólidos conocimientos en desarrollo móvil, tecnologías web, plataformas cloud y arquitectura empresarial, utilizando siempre herramientas y metodologías de vanguardia.",
         "culture_title": "Nuestra cultura",
-        "culture_body": "Fomentamos una cultura de aprendizaje, colaboración e innovación, donde el intercambio de conocimiento y el crecimiento continuo forman parte de nuestra rutina diaria."
+        "culture_body": "Fomentamos una cultura de aprendizaje, colaboración e innovación, donde el intercambio de conocimiento y el crecimiento continuo forman parte de nuestra rutina diaria.",
+        "profile_name": "Ademir Constantino Filho",
+        "profile_role": "Fundador e Ingeniero de Software",
+        "profile_bio": "Ademir es licenciado en Sistemas de Información por el Centro Universitário Leonardo da Vinci (UNIASSELVI, 2010), especialista en Ingeniería de Software por la Pontificia Universidad Católica de Paraná (PUCPR, 2014) y posgraduado en Ingeniería de Software por la University of Liverpool, Inglaterra (2018). Desde hace más de veinte años desarrolla soluciones de software a nivel internacional, habiendo trabajado en importantes polos de software en Brasil, Estados Unidos e Italia."
     },
 	"services_pages": {
         "mobile_menu_title": "Apps Móviles",

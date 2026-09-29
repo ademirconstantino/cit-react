@@ -69,7 +69,10 @@
     "expertise_title": "私たちの専門性",
     "expertise_body": "モバイル開発、Web技術、クラウドプラットフォーム、エンタープライズアーキテクチャにおいて豊富な経験を持ち、常に最先端のツールと手法を活用しています。",
     "culture_title": "私たちのカルチャー",
-    "culture_body": "学習、協働、革新を重視する文化を育み、知識共有と継続的成長を日常業務の一部としています。"
+    "culture_body": "学習、協働、革新を重視する文化を育み、知識共有と継続的成長を日常業務の一部としています。",
+    "profile_name": "Ademir Constantino Filho",
+    "profile_role": "創業者・ソフトウェアエンジニア",
+    "profile_bio": "Ademir は Centro Universitário Leonardo da Vinci（UNIASSELVI、2010年）で情報システムの学位を取得し、パラナ・カトリック大学（PUCPR、2014年）でソフトウェア工学の専門課程を修了、さらにイギリスのリバプール大学（University of Liverpool、2018年）でソフトウェア工学の大学院課程を修了しました。20年以上にわたり国際的なレベルでソフトウェアソリューションを開発しており、ブラジル、アメリカ、イタリアの主要なソフトウェア拠点で活躍してきました。"
   },
   "services_pages": {
     "mobile_menu_title": "モバイルアプリ",
