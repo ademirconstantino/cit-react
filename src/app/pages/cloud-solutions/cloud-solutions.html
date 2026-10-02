@@ -1,0 +1,54 @@
+<section class="services">
+  <div id="content">
+    <div class="container" id="cloud-solutions">
+      <div class="row">
+        <div class="col-md-3 sidebar">
+          <div class="section-menu">
+            <ul class="nav nav-list">
+              <li class="nav-header">{{ lang.t('services_pages.cloud_menu_title') }}</li>
+              <li class="active">
+                <a routerLink="." fragment="cloud-overview" class="first">{{ lang.t('services_pages.cloud_menu_overview') }}</a>
+              </li>
+              <li>
+                <a routerLink="." fragment="cloud-platforms">{{ lang.t('services_pages.cloud_menu_platforms') }}</a>
+              </li>
+              <li>
+                <a routerLink="." fragment="cloud-devops">{{ lang.t('services_pages.cloud_menu_devops') }}</a>
+              </li>
+              <li>
+                <a routerLink="." fragment="cloud-security">{{ lang.t('services_pages.cloud_menu_security') }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="title-divider">
+            <span>{{ lang.t('services_pages.cloud_title') }}</span>
+            <small>{{ lang.t('services_pages.cloud_subtitle') }}</small>
+          </h2>
+
+          <div class="title-divider" id="cloud-overview">
+            <h3><span>{{ lang.t('services_pages.cloud_overview_title') }}</span></h3>
+          </div>
+          <p style="text-align: justify">{{ lang.t('services_pages.cloud_overview_body') }}</p>
+
+          <div class="title-divider" id="cloud-platforms">
+            <h3><span>{{ lang.t('services_pages.cloud_platforms_title') }}</span></h3>
+          </div>
+          <p style="text-align: justify">{{ lang.t('services_pages.cloud_platforms_body') }}</p>
+
+          <div class="title-divider" id="cloud-devops">
+            <h3><span>{{ lang.t('services_pages.cloud_devops_title') }}</span></h3>
+          </div>
+          <p style="text-align: justify">{{ lang.t('services_pages.cloud_devops_body') }}</p>
+
+          <div class="title-divider" id="cloud-security">
+            <h3><span>{{ lang.t('services_pages.cloud_security_title') }}</span></h3>
+          </div>
+          <p style="text-align: justify">{{ lang.t('services_pages.cloud_security_body') }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

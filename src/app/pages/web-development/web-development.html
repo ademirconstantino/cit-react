@@ -1,0 +1,54 @@
+<section class="services">
+  <div id="content">
+    <div class="container" id="web-development">
+      <div class="row">
+        <div class="col-md-3 sidebar">
+          <div class="section-menu">
+            <ul class="nav nav-list">
+              <li class="nav-header">{{ lang.t('services_pages.web_menu_title') }}</li>
+              <li class="active">
+                <a routerLink="." fragment="web-overview" class="first">{{ lang.t('services_pages.web_menu_overview') }}</a>
+              </li>
+              <li>
+                <a routerLink="." fragment="web-technology">{{ lang.t('services_pages.web_menu_technology') }}</a>
+              </li>
+              <li>
+                <a routerLink="." fragment="web-architecture">{{ lang.t('services_pages.web_menu_architecture') }}</a>
+              </li>
+              <li>
+                <a routerLink="." fragment="web-quality">{{ lang.t('services_pages.web_menu_quality') }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="title-divider">
+            <span>{{ lang.t('services_pages.web_title') }}</span>
+            <small>{{ lang.t('services_pages.web_subtitle') }}</small>
+          </h2>
+
+          <div class="title-divider" id="web-overview">
+            <h3><span>{{ lang.t('services_pages.web_overview_title') }}</span></h3>
+          </div>
+          <p style="text-align: justify">{{ lang.t('services_pages.web_overview_body') }}</p>
+
+          <div class="title-divider" id="web-technology">
+            <h3><span>{{ lang.t('services_pages.web_technology_title') }}</span></h3>
+          </div>
+          <p style="text-align: justify">{{ lang.t('services_pages.web_technology_body') }}</p>
+
+          <div class="title-divider" id="web-architecture">
+            <h3><span>{{ lang.t('services_pages.web_architecture_title') }}</span></h3>
+          </div>
+          <p style="text-align: justify">{{ lang.t('services_pages.web_architecture_body') }}</p>
+
+          <div class="title-divider" id="web-quality">
+            <h3><span>{{ lang.t('services_pages.web_quality_title') }}</span></h3>
+          </div>
+          <p style="text-align: justify">{{ lang.t('services_pages.web_quality_body') }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

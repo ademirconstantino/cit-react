@@ -1,0 +1,97 @@
+<div class="site-footer">
+  <div
+    class="container footer-container"
+    style="background-color: #fff; padding-top: 20px; width: 90%; font-size: 12px"
+  >
+    <div class="row">
+      <div class="col-md-3 col footer-contact">
+        <div class="block contact-block">
+          <address>
+            <ul class="fa-ul">
+              <li>
+                <abbr title="Phone">
+                  <i class="fa fa-li fa-phone"></i>
+                </abbr>
+                <span class="site-footer">
+                  @for (phone of phones; track phone; let first = $first) {
+                    <span>
+                      @if (!first) {
+                        |
+                      }
+                      <a [href]="telHref(phone)" class="footer-contact-link">{{ phone }}</a>
+                    </span>
+                  }
+                </span>
+              </li>
+
+              <li>
+                <abbr title="Email">
+                  <i class="fa fa-li fa-envelope"></i>
+                </abbr>
+
+                <span class="site-footer">
+                  <a routerLink="/contact" class="footer-contact-link">
+                    {{ lang.t('footer.contact_us') }}
+                  </a>
+                </span>
+              </li>
+
+              <li>
+                <span class="site-footer">
+                  <abbr title="Address">
+                    <i class="fa fa-li fa-home"></i>
+                  </abbr>
+                  {{ lang.t('footer.address') }}
+                </span>
+              </li>
+
+              <li>
+                <abbr title="CNPJ">
+                  <i class="fa fa-li fa-building"></i>
+                </abbr>
+                <span class="site-footer">
+                  <a
+                    [href]="cnpj.url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer-contact-link"
+                  >
+                    CNPJ {{ cnpj.number }}
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="subfooter">
+        <!-- COPYRIGHT -->
+        <div class="col-md-6 footer-copyright">
+          <p>{{ lang.t('footer.copyright_notice') }}</p>
+        </div>
+
+        <!-- SOCIAL NETWORKS -->
+        <div class="col-md-6 footer-social">
+          <div>
+            <a href="https://x.com/ItConstantino" aria-label="X (Twitter)">
+              <i class="fa fa-twitter" style="padding-left: 5px"></i>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61581224173736" aria-label="Facebook">
+              <i class="fa fa-facebook" style="padding-left: 5px"></i>
+            </a>
+
+            <a href="http://www.linkedin.com/in/ademir-constantino/" aria-label="LinkedIn">
+              <i class="fa fa-linkedin" style="padding-left: 5px"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+</div>

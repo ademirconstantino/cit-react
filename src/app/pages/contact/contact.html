@@ -1,0 +1,93 @@
+<div id="content">
+  <div class="page-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 sidebar">
+          <div class="section-menu">
+            <ul class="nav nav-list">
+              <li class="nav-header">{{ lang.t('contact.header_text') }}</li>
+              <li class="active">
+                <a routerLink="." fragment="top" class="first">{{ lang.t('contact.header_text_body') }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <h2 class="title-divider">
+            <span>{{ lang.t('contact.header_text') }}</span>
+            <small>{{ lang.t('contact.header_text_body') }}</small>
+          </h2>
+          <div class="row">
+            <div class="col-md-8">
+              <form
+                id="contact-form"
+                action="https://formsubmit.co/ademirconstantino@gmail.com"
+                method="POST"
+              >
+                <div class="form-group">
+                  <label class="sr-only" for="nome">{{ lang.t('contact.name') }}</label>
+                  <input
+                    type="text"
+                    name="nome"
+                    class="form-control"
+                    id="nome"
+                    [attr.placeholder]="lang.t('contact.name')"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="email">{{ lang.t('contact.email') }}</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    id="email"
+                    [attr.placeholder]="lang.t('contact.email')"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="mensagem">{{ lang.t('contact.message') }}</label>
+                  <textarea
+                    class="form-control"
+                    name="mensagem"
+                    id="mensagem"
+                    rows="5"
+                    [attr.placeholder]="lang.t('contact.message')"
+                  ></textarea>
+                </div>
+                <input
+                  type="submit"
+                  class="btn btn-primary contact-submit"
+                  [value]="lang.t('contact.send_message')"
+                />
+              </form>
+              <h3 class="contact-info-title">{{ lang.t('contact.info_title') }}</h3>
+              <div class="panel panel-default contact-info-panel">
+                <div class="panel-body">
+                  <ul class="fa-ul">
+                    <li>
+                      <i class="fa fa-li fa-envelope"></i>
+                      <strong>{{ lang.t('contact.info_email_label') }}:</strong>&ngsp;
+                      <a [href]="'mailto:' + email">{{ email }}</a>
+                    </li>
+                    <li>
+                      <i class="fa fa-li fa-phone"></i>
+                      <strong>{{ lang.t('contact.info_phones_label') }}:</strong>&ngsp;
+                      @for (phone of phones; track phone; let first = $first) {
+                        <span>
+                          @if (!first) {
+                            |
+                          }
+                          <a [href]="telHref(phone)">{{ phone }}</a>
+                        </span>
+                      }
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

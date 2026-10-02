@@ -1,0 +1,57 @@
+<div class="cit-chat" [attr.dir]="lang.selected() === 'em' ? 'rtl' : 'ltr'">
+  @if (open()) {
+    <div class="cit-chat-panel" role="dialog" [attr.aria-label]="lang.t('chat.title')">
+      <div class="cit-chat-header">
+        <span>{{ lang.t('chat.title') }}</span>
+        <button
+          type="button"
+          class="cit-chat-close"
+          (click)="close()"
+          [attr.aria-label]="lang.t('chat.close')"
+        >
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="cit-chat-body" #body aria-live="polite">
+        @for (m of messages(); track $index) {
+          <div class="cit-chat-msg cit-chat-msg-{{ m.from }}">
+            {{ m.from === 'bot' ? lang.t(m.key) : m.text }}
+          </div>
+        }
+      </div>
+
+      @if (!done()) {
+        <form class="cit-chat-form" (submit)="handleSubmit($event)">
+          @if (!retrying()) {
+            <input
+              #inputEl
+              class="cit-chat-input"
+              type="text"
+              [attr.inputmode]="isEmailStep() ? 'email' : 'text'"
+              [value]="input()"
+              (input)="onInput($event)"
+              [attr.placeholder]="lang.t('chat.placeholder')"
+              [disabled]="sending()"
+              maxlength="200"
+            />
+          }
+          <button type="submit" class="cit-chat-send" [disabled]="sending()">
+            {{ lang.t('chat.send') }}
+          </button>
+        </form>
+      }
+    </div>
+  }
+
+  @if (!open()) {
+    <button
+      type="button"
+      class="cit-chat-toggle"
+      (click)="open.set(true)"
+      [attr.aria-label]="lang.t('chat.open')"
+    >
+      <i class="fa fa-comments" aria-hidden="true"></i>
+    </button>
+  }
+</div>

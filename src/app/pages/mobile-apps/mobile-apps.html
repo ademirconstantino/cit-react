@@ -1,0 +1,54 @@
+<section class="services">
+  <div id="content">
+    <div class="container" id="mobile-apps">
+      <div class="row">
+        <div class="col-md-3 sidebar">
+          <div class="section-menu">
+            <ul class="nav nav-list">
+              <li class="nav-header">{{ lang.t('services_pages.mobile_menu_title') }}</li>
+              <li class="active">
+                <a routerLink="." fragment="overview" class="first">{{ lang.t('services_pages.mobile_menu_overview') }}</a>
+              </li>
+              <li>
+                <a routerLink="." fragment="technology">{{ lang.t('services_pages.mobile_menu_technology') }}</a>
+              </li>
+              <li>
+                <a routerLink="." fragment="process">{{ lang.t('services_pages.mobile_menu_process') }}</a>
+              </li>
+              <li>
+                <a routerLink="." fragment="delivery">{{ lang.t('services_pages.mobile_menu_delivery') }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="title-divider">
+            <span>{{ lang.t('services_pages.mobile_title') }}</span>
+            <small>{{ lang.t('services_pages.mobile_subtitle') }}</small>
+          </h2>
+
+          <div class="title-divider" id="overview">
+            <h3><span>{{ lang.t('services_pages.mobile_overview_title') }}</span></h3>
+          </div>
+          <p style="text-align: justify">{{ lang.t('services_pages.mobile_overview_body') }}</p>
+
+          <div class="title-divider" id="technology">
+            <h3><span>{{ lang.t('services_pages.mobile_technology_title') }}</span></h3>
+          </div>
+          <p style="text-align: justify">{{ lang.t('services_pages.mobile_technology_body') }}</p>
+
+          <div class="title-divider" id="process">
+            <h3><span>{{ lang.t('services_pages.mobile_process_title') }}</span></h3>
+          </div>
+          <p style="text-align: justify">{{ lang.t('services_pages.mobile_process_body') }}</p>
+
+          <div class="title-divider" id="delivery">
+            <h3><span>{{ lang.t('services_pages.mobile_delivery_title') }}</span></h3>
+          </div>
+          <p style="text-align: justify">{{ lang.t('services_pages.mobile_delivery_body') }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+<div class="main">
+  <div class="topnav" [class.responsive]="menuOpen()" id="myTopnav">
+    <a
+      href="#"
+      class="icon"
+      (click)="toggleMenu($event)"
+      aria-label="Menu"
+      [attr.aria-expanded]="menuOpen()"
+    >
+      <i class="fa fa-bars"></i>
+    </a>
+    <a routerLink="/"><i class="fa fa-home"></i>&nbsp;&nbsp;{{ lang.t('menu.home') }}</a>
+
+    <a routerLink="/about">{{ lang.t('menu.about_us') }}</a>
+
+    <a routerLink="/services">{{ lang.t('menu.services') }}</a>
+
+    <a routerLink="/our-team">{{ lang.t('menu.our_team') }}</a>
+
+    <a routerLink="/contact">{{ lang.t('menu.contact') }}</a>
+  </div>
+</div>

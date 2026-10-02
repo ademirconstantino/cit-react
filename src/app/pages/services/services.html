@@ -1,0 +1,45 @@
+<div id="content">
+  <div class="page-content">
+    <div class="container" id="about">
+      <div class="row">
+        <div class="col-md-3 sidebar">
+          <div class="section-menu">
+            <ul class="nav nav-list">
+              <li class="nav-header">{{ lang.t('services.this_section') }}</li>
+              <li class="active">
+                <a routerLink="." fragment="top" class="first">{{ lang.t('services.our_services') }}</a>
+              </li>
+              <li>
+                <a routerLink="." fragment="fabrica">{{ lang.t('services.software_factory') }}</a>
+              </li>
+              <li>
+                <a routerLink="." fragment="consultores">{{ lang.t('services.expert_consultants') }}</a>
+              </li>
+              <li>
+                <a routerLink="." fragment="areas">{{ lang.t('services.areas_consultancy') }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <h2 class="title-divider">
+            <span>{{ lang.t('services.header_text') }}</span>
+            <small>{{ lang.t('services.header_text_body') }}</small>
+          </h2>
+          <div class="title-divider" id="fabrica">
+            <h3><span>{{ lang.t('services.software_factory') }}</span></h3>
+          </div>
+          <span>{{ lang.t('services.software_factory_text') }}</span>
+          <div class="title-divider" id="consultores">
+            <h3><span>{{ lang.t('services.expert_consultants') }}</span></h3>
+          </div>
+          <span>{{ lang.t('services.expert_consultants_text') }}</span>
+          <div class="title-divider" id="areas">
+            <h3><span>{{ lang.t('services.areas_consultancy') }}</span></h3>
+          </div>
+          <span>{{ lang.t('services.areas_consultancy_text') }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

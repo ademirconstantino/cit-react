@@ -1,0 +1,27 @@
+<div id="navigation">
+  <div class="navbar-static-top topbar">
+    <div class="container topbar-container">
+      <img
+        class="img-responsive topbar-logo"
+        src="/img/logocit2.png"
+        [alt]="lang.t('header.website_title') ?? 'Constantino IT'"
+      />
+
+      <div class="topbar-lang">
+        <img
+          class="topbar-flag"
+          [src]="selectedLanguage().flag"
+          [alt]="selectedLanguage().name"
+        />
+
+        <select class="topbar-select" (change)="onSelect($event)">
+          @for (language of languages; track language.code) {
+            <option [value]="language.code" [selected]="language.code === lang.selected()">
+              {{ language.name }}
+            </option>
+          }
+        </select>
+      </div>
+    </div>
+  </div>
+</div>

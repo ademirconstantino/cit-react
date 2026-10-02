@@ -1,0 +1,54 @@
+<section class="services">
+  <div id="content">
+    <div class="container" id="it-consulting">
+      <div class="row">
+        <div class="col-md-3 sidebar">
+          <div class="section-menu">
+            <ul class="nav nav-list">
+              <li class="nav-header">{{ lang.t('services_pages.consulting_menu_title') }}</li>
+              <li class="active">
+                <a routerLink="." fragment="consulting-overview" class="first">{{ lang.t('services_pages.consulting_menu_overview') }}</a>
+              </li>
+              <li>
+                <a routerLink="." fragment="consulting-strategy">{{ lang.t('services_pages.consulting_menu_strategy') }}</a>
+              </li>
+              <li>
+                <a routerLink="." fragment="consulting-architecture">{{ lang.t('services_pages.consulting_menu_architecture') }}</a>
+              </li>
+              <li>
+                <a routerLink="." fragment="consulting-transformation">{{ lang.t('services_pages.consulting_menu_transformation') }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="title-divider">
+            <span>{{ lang.t('services_pages.consulting_title') }}</span>
+            <small>{{ lang.t('services_pages.consulting_subtitle') }}</small>
+          </h2>
+
+          <div class="title-divider" id="consulting-overview">
+            <h3><span>{{ lang.t('services_pages.consulting_overview_title') }}</span></h3>
+          </div>
+          <p style="text-align: justify">{{ lang.t('services_pages.consulting_overview_body') }}</p>
+
+          <div class="title-divider" id="consulting-strategy">
+            <h3><span>{{ lang.t('services_pages.consulting_strategy_title') }}</span></h3>
+          </div>
+          <p style="text-align: justify">{{ lang.t('services_pages.consulting_strategy_body') }}</p>
+
+          <div class="title-divider" id="consulting-architecture">
+            <h3><span>{{ lang.t('services_pages.consulting_architecture_title') }}</span></h3>
+          </div>
+          <p style="text-align: justify">{{ lang.t('services_pages.consulting_architecture_body') }}</p>
+
+          <div class="title-divider" id="consulting-transformation">
+            <h3><span>{{ lang.t('services_pages.consulting_transformation_title') }}</span></h3>
+          </div>
+          <p style="text-align: justify">{{ lang.t('services_pages.consulting_transformation_body') }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

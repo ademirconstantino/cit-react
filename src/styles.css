@@ -1,0 +1,56 @@
+/* Angular wraps every component in its host element. The layout hosts must not create
+   a box of their own, otherwise the sticky .main menu would only stick inside <app-top-menu>. */
+app-root,
+app-top-menu,
+app-top-bar,
+app-footer,
+app-chat-widget {
+  display: contents;
+}
+
+/*
+ * Page transition (router view transitions): the old page slides up and fades out,
+ * then the new one slides in from below. Menu, top bar and footer stay still.
+ */
+router-outlet + * {
+  display: block;
+  view-transition-name: page;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+
+::view-transition-group(page) {
+  animation: none;
+}
+
+::view-transition-old(page) {
+  animation: page-exit 0.6s cubic-bezier(0.43, 0.13, 0.23, 0.96) both;
+}
+
+::view-transition-new(page) {
+  animation: page-enter 0.6s cubic-bezier(0.43, 0.13, 0.23, 0.96) 0.6s both;
+}
+
+@keyframes page-exit {
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes page-enter {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(page),
+  ::view-transition-new(page) {
+    animation: none;
+  }
+}

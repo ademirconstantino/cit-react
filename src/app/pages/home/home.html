@@ -1,0 +1,27 @@
+<div id="content">
+  <div class="page-content">
+    <div class="container" style="width: 80%">
+      <div class="block">
+        <div class="home-hero">
+          <div class="home-hero-cards">
+            @for (card of cards; track card.path) {
+              <div class="home-hero-card">
+                <div class="home-hero-icon" [style.color]="card.color">
+                  <svg appCopilotIcon></svg>
+                </div>
+                <h3>{{ lang.t(card.title) }}</h3>
+                <p>{{ lang.t(card.body) }}</p>
+                <a [routerLink]="card.path" class="home-hero-link">
+                  <span class="home-hero-arrow" aria-hidden="true">
+                    <i class="fa fa-angle-right"></i>
+                  </span>
+                  {{ lang.t('home.learn_more') }}
+                </a>
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
