@@ -65,7 +65,8 @@
  *--------------------------------------------------
  */
 .topbar {
-  padding-top: 18px;
+  /* spacing above the logo lives here (not on the logo) so the language selector stays vertically centred on it */
+  padding-top: 32px;
 }
 
 .topbar-container {
@@ -90,7 +91,6 @@
   max-width: 100%;
   min-width: 0;
   max-height: 44px;
-  margin-top: 14px;
   padding: 2px 32px 2px 10px;
 }
 
@@ -123,7 +123,7 @@
 
 @media screen and (max-width: 600px) {
   .topbar {
-    padding-top: 12px;
+    padding-top: 26px;
   }
 
   .topbar-container {
