@@ -541,7 +541,7 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: #0969da;
+  color: var(--card-color, #0969da);
   font-weight: 600;
   text-decoration: none;
 }
@@ -552,13 +552,13 @@
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  background: #0969da;
+  background: var(--card-color, #0969da);
   color: #fff;
   font-size: 20px;
-  transition: background-color 0.2s;
+  transition: filter 0.2s;
 }
 .home-hero-link:hover .home-hero-arrow {
-  background: #0550ae;
+  filter: brightness(0.85);
 }
 @media (max-width: 1199px) {
   .home-hero-cards {
@@ -711,4 +711,20 @@ h2.title-divider > small {
 .mentoring-languages .fa {
   font-size: 18px;
   color: #0969da;
+}
+
+/* Services: faint UML diagrams behind the page content */
+.services-uml {
+  position: relative;
+}
+.services-uml::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(../img/services/uml-bg.svg) center top / max(100%, 1100px) auto no-repeat;
+  opacity: 0.1;
+  pointer-events: none;
+}
+.services-uml > .container {
+  position: relative;
 }

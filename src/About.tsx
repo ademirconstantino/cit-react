@@ -52,21 +52,21 @@ function About() {
                 <div className="title-divider" id="mission">
                     <h3><span>{JsonReader(langSelected, "about.mission")}</span></h3>
                 </div>
-                    <span>{JsonReader(langSelected, "about.mission_text")}</span>
+                    <p style={{ textAlign: "justify" }}>{JsonReader(langSelected, "about.mission_text")}</p>
                 
                 <div className="title-divider" id="businessinsight">
                     <h3>
                     <span>{JsonReader(langSelected, "about.business_insight")}</span>
                     </h3>
                 </div>
-                <span>{JsonReader(langSelected, "about.business_insight_text")}</span>
+                <p style={{ textAlign: "justify" }}>{JsonReader(langSelected, "about.business_insight_text")}</p>
                 
                 <div className="title-divider" id="ourvalues">
                     <h3>
                     <span>{JsonReader(langSelected, "about.our_values")}</span>
                     </h3>
                 </div>
-                <span>{JsonReader(langSelected, "about.our_values_text")}</span>
+                <p style={{ textAlign: "justify" }}>{JsonReader(langSelected, "about.our_values_text")}</p>
                 </div>
             </div>
             </div>

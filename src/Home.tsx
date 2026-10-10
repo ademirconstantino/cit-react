@@ -2,6 +2,7 @@ import JsonReader from './JSonReader';
 import { useLang } from "./LangContext";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import type { CSSProperties } from "react";
 import { MobileIcon, ConsultingIcon, CloudIcon, WebIcon } from "./TechIcons";
 
 import "../public/css/menu.css"; 
@@ -42,9 +43,11 @@ function Home() {
 					</div>
 					<h3>{JsonReader(langSelected, card.title)}</h3>
 					<p>{JsonReader(langSelected, card.body)}</p>
-					<Link to={card.path} className="home-hero-link">
+					<Link to={card.path} className="home-hero-link" style={{ "--card-color": card.color } as CSSProperties}>
 					  <span className="home-hero-arrow" aria-hidden="true">
-						<i className="fa fa-angle-right"></i>
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+						  <path d="M7 17L17 7M8 7h9v9" />
+						</svg>
 					  </span>
 					  {JsonReader(langSelected, "home.learn_more")}
 					</Link>
