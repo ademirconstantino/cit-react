@@ -628,3 +628,87 @@ h2.title-divider > small {
 .section-menu ul.nav-list li.nav-header + li:last-child > a {
   border-radius: 10px;
 }
+
+/* Mentoring: topic cards, numbered steps and contact call-to-action */
+.mentoring-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 10px;
+}
+.mentoring-card {
+  background: #fff;
+  border: 1px solid #e3e6ea;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+.mentoring-card p {
+  margin-bottom: 0;
+}
+.mentoring-steps {
+  list-style: none;
+  counter-reset: mentoring-step;
+  padding: 0;
+  margin: 10px 0 0;
+}
+.mentoring-steps li {
+  counter-increment: mentoring-step;
+  position: relative;
+  padding-left: 52px;
+  margin-bottom: 14px;
+}
+.mentoring-steps li::before {
+  content: counter(mentoring-step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #0969da;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mentoring-steps h4 {
+  margin: 6px 0 4px;
+  font-weight: 600;
+}
+.mentoring-cta {
+  margin: 24px 0 10px;
+  padding: 20px 24px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #e3e6ea;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+.mentoring-cta p {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+@media (max-width: 1199px) {
+  .mentoring-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .mentoring-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.mentoring-languages {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #ddf4ff;
+  border: 1px solid #b6e3ff;
+  color: #0a3069;
+  font-weight: 600;
+}
+.mentoring-languages .fa {
+  font-size: 18px;
+  color: #0969da;
+}

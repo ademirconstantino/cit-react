@@ -2,7 +2,7 @@ import JsonReader from './JSonReader';
 import { useLang } from "./LangContext";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import CopilotIcon from "./CopilotIcon";
+import { MobileIcon, ConsultingIcon, CloudIcon, WebIcon } from "./TechIcons";
 
 import "../public/css/menu.css"; 
 import "../public/css/bootstrap.min.css";
@@ -11,10 +11,10 @@ import "../public/css/custom-style.css";
 import "../public/css/font-awesome.min.css";
 
 const CARDS = [
-  { path: "/mobile-apps", color: "#0969da", title: "home.desc_mobile_apps", body: "home.desc_mobile_apps_body" },
-  { path: "/it-consulting", color: "#e8590c", title: "home.desc_support", body: "home.desc_support_body" },
-  { path: "/cloud-solutions", color: "#1a7f37", title: "home.desc_support_a", body: "home.desc_support_abody" },
-  { path: "/web-development", color: "#8250df", title: "home.desc_support_b", body: "home.desc_support_bbody" },
+  { path: "/mobile-apps", Icon: MobileIcon, color: "#0969da", title: "home.desc_mobile_apps", body: "home.desc_mobile_apps_body" },
+  { path: "/it-consulting", Icon: ConsultingIcon, color: "#e8590c", title: "home.desc_support", body: "home.desc_support_body" },
+  { path: "/cloud-solutions", Icon: CloudIcon, color: "#1a7f37", title: "home.desc_support_a", body: "home.desc_support_abody" },
+  { path: "/web-development", Icon: WebIcon, color: "#8250df", title: "home.desc_support_b", body: "home.desc_support_bbody" },
 ];
 
 function Home() {
@@ -38,7 +38,7 @@ function Home() {
 				{CARDS.map((card) => (
 				  <div className="home-hero-card" key={card.path}>
 					<div className="home-hero-icon" style={{ color: card.color }}>
-					  <CopilotIcon />
+					  <card.Icon />
 					</div>
 					<h3>{JsonReader(langSelected, card.title)}</h3>
 					<p>{JsonReader(langSelected, card.body)}</p>

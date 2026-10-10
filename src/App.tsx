@@ -12,6 +12,7 @@ import ITConsulting from "./ITConsulting";
 import WebDevelopment from "./WebDevelopment";
 import CloudSolutions from "./CloudSolutions";
 import OurTeam from "./OurTeam";
+import Mentoring from "./Mentoring";
 import ChatWidget from "./ChatWidget";
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/our-team" element={<OurTeam />} />
+          <Route path="/mentoring" element={<Mentoring />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/mobile-apps" element={<MobileApps />} />
           <Route path="/it-consulting" element={<ITConsulting />} />
