@@ -8,10 +8,7 @@ import "../public/css/theme-style.min.css";
 import "../public/css/custom-style.css";
 import "../public/css/font-awesome.min.css";
 
-const CNPJ = {
-  number: "11.809.343/0001-18",
-  url: "https://www.jusbrasil.com.br/nome/ademir-constantino-filho/cnpj-CvuNXRGGiVx",
-};
+const CNPJ = "11.809.343/0001-18";
 
 function Footer() {
 
@@ -92,9 +89,7 @@ function Footer() {
                       <i className="fa fa-li fa-building"></i>
                     </abbr>
                     <span className="site-footer">
-                    <a href={CNPJ.url} target="_blank" rel="noopener noreferrer" className="footer-contact-link">
-                      CNPJ {CNPJ.number}
-                    </a>
+                      CNPJ {CNPJ}
                     </span>
                   </li>
 
