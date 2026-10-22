@@ -13,7 +13,9 @@ import WebDevelopment from "./WebDevelopment";
 import CloudSolutions from "./CloudSolutions";
 import OurTeam from "./OurTeam";
 import Mentoring from "./Mentoring";
+import Ebook from "./Ebook";
 import ChatWidget from "./ChatWidget";
+import EbookPromo from "./EbookPromo";
 
 export default function App() {
 
@@ -34,11 +36,13 @@ export default function App() {
           <Route path="/it-consulting" element={<ITConsulting />} />
           <Route path="/web-development" element={<WebDevelopment />} />
           <Route path="/cloud-solutions" element={<CloudSolutions />} />
+          <Route path="/ebook" element={<Ebook />} />
         </Routes>
       </AnimatePresence>
       <Footer />
       {/* Outside the animated page: position:fixed breaks inside framer-motion's transformed wrapper */}
       {location.pathname === "/" && <ChatWidget />}
+      {location.pathname === "/" && <EbookPromo />}
       </>
   );
 }

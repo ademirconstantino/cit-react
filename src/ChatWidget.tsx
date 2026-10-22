@@ -1,9 +1,7 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import JsonReader from "./JSonReader";
 import { useLang } from "./LangContext";
-
-const NTFY_URL = "https://ntfy.sh/";
-const NTFY_TOPIC = "cit-site-8f3k2q9x";
+import { notify } from "./ntfy";
 
 // Answers are stored in this order; each question is a key under "chat" in the JSON files
 const QUESTIONS = [
@@ -79,24 +77,15 @@ function ChatWidget() {
     storageSet(() => sessionStorage, DISMISSED_KEY, "1");
   };
 
-  const notify = async (all: string[]) => {
+  const notifyLead = (all: string[]) => {
     const message = QUESTIONS.map((q, i) => `${q.label}: ${all[i]}`).join("\n");
-    const response = await fetch(NTFY_URL, {
-      method: "POST",
-      body: JSON.stringify({
-        topic: NTFY_TOPIC,
-        title: `Novo lead do site: ${all[0]}`,
-        message: `${message}\nIdioma: ${langSelected}`,
-        tags: ["briefcase"],
-      }),
-    });
-    if (!response.ok) throw new Error(`ntfy responded ${response.status}`);
+    return notify(`Novo lead do site: ${all[0]}`, `${message}\nIdioma: ${langSelected}`, ["briefcase"]);
   };
 
   const submit = async (all: string[]) => {
     setSending(true);
     try {
-      await notify(all);
+      await notifyLead(all);
       setDone(true);
       storageSet(() => localStorage, DONE_KEY, "1");
       setMessages((m) => [...m, { from: "bot", key: "chat.thank_you" }]);

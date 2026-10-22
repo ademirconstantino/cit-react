@@ -1,0 +1,484 @@
+/*
+ * --------------------------------------------------
+ * Free eBook landing page and home page promo (colors match the book cover)
+ *--------------------------------------------------
+ */
+.ebook-page,
+.ebook-promo {
+  --ebook-navy: #0c2340;
+  --ebook-blue: #17457a;
+  --ebook-orange: #f5a04a;
+  --ebook-orange-dark: #e08a2e;
+}
+
+.ebook-body {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.ebook-header {
+  margin-bottom: 24px;
+}
+
+.ebook-badge {
+  display: inline-block;
+  background: var(--ebook-orange);
+  color: var(--ebook-navy);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  padding: 6px 12px;
+  border-radius: 3px;
+}
+
+.ebook-title {
+  color: var(--ebook-navy);
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.1;
+  margin: 14px 0 8px;
+}
+
+.ebook-subtitle {
+  color: var(--ebook-orange-dark);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.ebook-intro {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 820px;
+  margin-bottom: 0;
+}
+
+.ebook-facts {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+.ebook-facts i {
+  color: var(--ebook-orange-dark);
+  margin-right: 4px;
+}
+
+.ebook-facts strong {
+  color: var(--ebook-navy);
+}
+
+/* The two languages are the main selling point: make that fact stand out */
+.ebook-facts-languages {
+  color: var(--ebook-navy);
+  font-weight: 700;
+}
+
+.ebook-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.ebook-btn:hover,
+.ebook-btn:focus {
+  text-decoration: none;
+}
+
+.ebook-btn-primary {
+  background: var(--ebook-orange);
+  color: var(--ebook-navy);
+}
+
+.ebook-btn-primary:hover,
+.ebook-btn-primary:focus {
+  background: var(--ebook-orange-dark);
+  color: var(--ebook-navy);
+}
+
+.ebook-btn-link {
+  color: var(--ebook-blue);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.ebook-btn-link:hover {
+  color: var(--ebook-orange-dark);
+}
+
+/* Cover next to the form */
+.ebook-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+/* Two covers, one in front of the other, to show both editions at a glance */
+.ebook-cover-stack {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto 24px;
+  padding: 0 40px 40px 0;
+}
+
+.ebook-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 18px 40px rgba(12, 35, 64, 0.35);
+}
+
+.ebook-cover-front {
+  position: relative;
+  z-index: 2;
+}
+
+.ebook-cover-back {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: calc(100% - 40px);
+  z-index: 1;
+  opacity: 0.85;
+}
+
+/* White box holding the form, or the download links once it is sent */
+.ebook-panel {
+  border: 1px solid #e3e7ee;
+  border-top: 4px solid var(--ebook-orange);
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 24px;
+  background: #fff;
+}
+
+.ebook-panel h3 {
+  margin: 0 0 6px;
+  font-size: 22px;
+  color: var(--ebook-navy);
+}
+
+.ebook-edition-lang {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ebook-navy);
+  margin: 0;
+}
+
+.ebook-edition-label {
+  color: var(--ebook-orange-dark);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 2px 0 0;
+}
+
+.ebook-edition-meta {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.ebook-success .ebook-btn {
+  margin: 0 16px 8px 0;
+}
+
+/* Lead form: the download links only appear after it is sent */
+.ebook-form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 16px 0 0;
+  min-width: 0;
+}
+
+.ebook-form legend {
+  border: 0;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ebook-navy);
+}
+
+.ebook-form label {
+  font-weight: 600;
+  color: #444;
+}
+
+.ebook-form .form-group {
+  margin-bottom: 12px;
+}
+
+.ebook-choice {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px 40px 10px 14px;
+  border: 2px solid #e3e7ee;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: normal;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.ebook-choice:hover {
+  border-color: #f8c58f;
+}
+
+.ebook-choice.is-selected {
+  border-color: var(--ebook-orange);
+  background: #fff8f0;
+}
+
+.ebook-choice input {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  margin: -7px 0 0;
+  accent-color: var(--ebook-orange-dark);
+}
+
+.ebook-choice:focus-within {
+  outline: 2px solid var(--ebook-blue);
+  outline-offset: 2px;
+}
+
+.ebook-choice-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.ebook-choice-title {
+  color: #555;
+  font-size: 13px;
+}
+
+.ebook-form .form-control.is-invalid {
+  border-color: #c0392b;
+}
+
+.ebook-field-error,
+.ebook-send-error {
+  color: #c0392b;
+  font-size: 13px;
+  margin: 6px 0 0;
+}
+
+.ebook-send-error {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.ebook-submit {
+  border: 0;
+  font-size: 16px;
+  padding: 12px 24px;
+  margin-top: 4px;
+}
+
+.ebook-submit:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.ebook-privacy {
+  color: #777;
+  font-size: 12px;
+  margin: 10px 0 0;
+}
+
+.ebook-success-title {
+  color: #1a7f37 !important;
+  margin-bottom: 10px !important;
+}
+
+.ebook-other-edition {
+  margin: 8px 0 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.ebook-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px;
+  border: 1px solid #e3e7ee;
+  border-top: 4px solid var(--ebook-orange);
+  border-radius: 6px;
+  background: #fff;
+  color: #555;
+}
+
+.ebook-cta h3 {
+  color: var(--ebook-navy);
+  margin-top: 0;
+}
+
+.ebook-cta p {
+  margin: 0;
+}
+
+/* Floating promo on the home page (the chat widget owns the bottom-right corner) */
+.ebook-promo {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  /* above the sticky top menu, below the chat widget */
+  z-index: 100000;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  width: 360px;
+  padding: 16px 36px 16px 16px;
+  background: #fff;
+  border-top: 4px solid var(--ebook-orange);
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+}
+
+.ebook-promo-cover {
+  width: 76px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 3px;
+  box-shadow: 0 4px 10px rgba(12, 35, 64, 0.35);
+}
+
+.ebook-promo .ebook-badge {
+  font-size: 10px;
+  padding: 3px 8px;
+}
+
+.ebook-promo-title {
+  display: block;
+  margin: 6px 0 2px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--ebook-navy);
+}
+
+.ebook-promo-languages {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+.ebook-promo-languages i {
+  color: var(--ebook-orange-dark);
+}
+
+.ebook-promo .ebook-btn {
+  padding: 8px 14px;
+  font-size: 14px;
+}
+
+.ebook-promo-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #777;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.ebook-promo-close:hover,
+.ebook-promo-close:focus {
+  background: #f0f2f5;
+  color: #333;
+}
+
+@media screen and (max-width: 991px) {
+  /* Stacked columns: keep them full width inside the flex row */
+  .ebook-main > div {
+    width: 100%;
+  }
+
+  .ebook-cover-stack {
+    max-width: 220px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* Leave room for the chat button in the bottom-right corner */
+  .ebook-promo {
+    left: 12px;
+    right: 88px;
+    bottom: 12px;
+    width: auto;
+    gap: 10px;
+    padding: 12px 32px 12px 12px;
+  }
+
+  /* The open chat panel takes the whole width: show the promo again once it is closed */
+  body:has(.cit-chat-panel) .ebook-promo {
+    display: none;
+  }
+
+  .ebook-promo-cover {
+    width: 52px;
+  }
+
+  .ebook-promo-title {
+    font-size: 14px;
+  }
+
+  .ebook-promo-languages {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ebook-title {
+    font-size: 30px;
+  }
+
+  .ebook-subtitle {
+    font-size: 16px;
+  }
+
+  .ebook-cover-stack {
+    max-width: 180px;
+    padding: 0 28px 28px 0;
+  }
+
+  .ebook-cover-back {
+    top: 28px;
+    left: 28px;
+    width: calc(100% - 28px);
+  }
+
+  .ebook-panel {
+    padding: 18px;
+  }
+
+  .ebook-success .ebook-btn {
+    margin-right: 0;
+  }
+
+  .ebook-cta {
+    flex-direction: column;
+    text-align: center;
+  }
+}
