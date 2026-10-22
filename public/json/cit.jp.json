@@ -26,7 +26,16 @@
   "footer": {
     "contact_us": "お問い合わせ",
     "address": "クリチバ | サンパウロ、ブラジル",
-    "copyright_notice": "Constantino IT Consulting | 著作権 © 2010-2026 無断転載を禁じます。"
+    "copyright_notice": "Constantino IT Consulting | 著作権 © 2010-2026 無断転載を禁じます。",
+    "sitemap_company": "会社情報",
+    "sitemap_services": "サービス",
+    "sitemap_ebook": "無料電子書籍",
+    "link_home": "ホーム",
+    "link_about": "会社概要",
+    "link_team": "チーム",
+    "link_mentoring": "メンタリング",
+    "link_contact": "お問い合わせ",
+    "link_services": "サービス一覧"
   },
   "links": {
     "facebook_link": "https://www.facebook.com/profile.php?id=61581224173736",

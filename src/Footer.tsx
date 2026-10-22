@@ -1,5 +1,6 @@
 import JsonReader from './JSonReader';
 import { useLang } from "./LangContext";
+import { Link } from "react-router-dom";
 import { PHONES, telHref } from "./contactInfo";
 
 import "../public/css/menu.css";
@@ -9,6 +10,23 @@ import "../public/css/custom-style.css";
 import "../public/css/font-awesome.min.css";
 
 const CNPJ = "11.809.343/0001-18";
+
+// Site map: [path, JSON key of the link text]
+const COMPANY_LINKS = [
+  ["/", "footer.link_home"],
+  ["/about", "footer.link_about"],
+  ["/our-team", "footer.link_team"],
+  ["/mentoring", "footer.link_mentoring"],
+  ["/contact", "footer.link_contact"],
+];
+
+const SERVICE_LINKS = [
+  ["/services", "footer.link_services"],
+  ["/mobile-apps", "services_pages.mobile_title"],
+  ["/it-consulting", "services_pages.consulting_title"],
+  ["/cloud-solutions", "services_pages.cloud_title"],
+  ["/web-development", "services_pages.web_title"],
+];
 
 function Footer() {
 
@@ -27,9 +45,11 @@ function Footer() {
         }}
       >
 
-        <div className="row">
+        <div className="footer-main">
 
-          <div className="col-md-3 col footer-contact">
+          <img src="/img/logo-symbol.png" alt="Constantino IT" className="footer-logo" />
+
+          <div className="footer-contact">
 
             <div className="block contact-block">
 
@@ -101,54 +121,73 @@ function Footer() {
 
           </div>
 
+          {/* SITE MAP */}
+          <div className="footer-sitemap">
+            <nav aria-labelledby="footer-company">
+              <h4 id="footer-company">{JsonReader(langSelected, "footer.sitemap_company")}</h4>
+              <ul>
+                {COMPANY_LINKS.map(([path, key]) => (
+                  <li key={path}><Link to={path}>{JsonReader(langSelected, key)}</Link></li>
+                ))}
+              </ul>
+            </nav>
+
+            <nav aria-labelledby="footer-services">
+              <h4 id="footer-services">{JsonReader(langSelected, "footer.sitemap_services")}</h4>
+              <ul>
+                {SERVICE_LINKS.map(([path, key]) => (
+                  <li key={path}><Link to={path}>{JsonReader(langSelected, key)}</Link></li>
+                ))}
+              </ul>
+            </nav>
+
+            <nav aria-labelledby="footer-ebook">
+              <h4 id="footer-ebook">{JsonReader(langSelected, "footer.sitemap_ebook")}</h4>
+              <ul>
+                <li><Link to="/ebook">{JsonReader(langSelected, "ebook.title")}</Link></li>
+                <li className="footer-sitemap-note">{JsonReader(langSelected, "ebook.languages_title")}</li>
+              </ul>
+            </nav>
+          </div>
+
         </div>
 
 
-        <div className="row">
+        {/* COPYRIGHT AND SOCIAL NETWORKS, at the bottom of the panel */}
+        <div className="footer-bottom">
 
-          <div className="subfooter">
+          <p className="footer-copyright">
+            {JsonReader(
+              langSelected,
+              "footer.copyright_notice"
+            )}
+          </p>
 
-            {/* COPYRIGHT */}
-            <div className="col-md-6 footer-copyright">
+          <div className="footer-social">
 
-              <p>
-                {JsonReader(
-                  langSelected,
-                  "footer.copyright_notice"
-                )}
-              </p>
+            <div>
 
-            </div>
+              <a href="https://x.com/ItConstantino" aria-label="X (Twitter)">
+                <i
+                  className="fa fa-twitter"
+                  style={{ paddingLeft: 5 }}
+                ></i>
+              </a>
 
+              <a href="https://www.facebook.com/profile.php?id=61581224173736" aria-label="Facebook">
+                <i
+                  className="fa fa-facebook"
+                  style={{ paddingLeft: 5 }}
+                ></i>
+              </a>
 
-            {/* SOCIAL NETWORKS */}
-            <div className="col-md-6 footer-social">
+              <a href="http://www.linkedin.com/in/ademir-constantino/" aria-label="LinkedIn">
+                <i
+                  className="fa fa-linkedin"
+                  style={{ paddingLeft: 5 }}
+                ></i>
 
-              <div>
-
-                <a href="https://x.com/ItConstantino" aria-label="X (Twitter)">
-                  <i
-                    className="fa fa-twitter"
-                    style={{ paddingLeft: 5 }}
-                  ></i>
-                </a>
-
-                <a href="https://www.facebook.com/profile.php?id=61581224173736" aria-label="Facebook">
-                  <i
-                    className="fa fa-facebook"
-                    style={{ paddingLeft: 5 }}
-                  ></i>
-                </a>
-
-                <a href="http://www.linkedin.com/in/ademir-constantino/" aria-label="LinkedIn">
-                  <i
-                    className="fa fa-linkedin"
-                    style={{ paddingLeft: 5 }}
-                  ></i>
-
-                </a>
-
-              </div>
+              </a>
 
             </div>
 
