@@ -26,7 +26,16 @@
   "footer": {
     "contact_us": "联系我们",
     "address": "库里提巴 | 圣保罗，巴西",
-    "copyright_notice": "Constantino IT Consulting | 版权所有 © 2010-2026 保留所有权利。"
+    "copyright_notice": "Constantino IT Consulting | 版权所有 © 2010-2026 保留所有权利。",
+    "sitemap_company": "公司",
+    "sitemap_services": "服务",
+    "sitemap_ebook": "免费电子书",
+    "link_home": "首页",
+    "link_about": "关于我们",
+    "link_team": "我们的团队",
+    "link_mentoring": "导师指导",
+    "link_contact": "联系我们",
+    "link_services": "全部服务"
   },
   "links": {
     "facebook_link": "https://www.facebook.com/profile.php?id=61581224173736",

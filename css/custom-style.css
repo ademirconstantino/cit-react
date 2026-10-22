@@ -203,9 +203,103 @@
   text-decoration: none;
 }
 
+/* One row: logo symbol, contact details, site map, social links */
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 16px 24px;
+  margin-bottom: 14px;
+}
+
+.footer-logo {
+  flex-shrink: 0;
+  width: auto;
+  height: 44px;
+}
+
+.footer-main .footer-contact {
+  flex: 0 1 auto;
+}
+
+/* One line per group: title, then its links separated by dots */
+.footer-sitemap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  /* centred in the space left by the contact details */
+  margin: 0 auto;
+}
+
+.footer-sitemap nav {
+  display: flex;
+  align-items: baseline;
+  gap: 4px 12px;
+}
+
+.footer-sitemap h4 {
+  flex: 0 0 110px;
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.footer-sitemap ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.footer-sitemap li + li::before {
+  content: "·";
+  padding: 0 8px;
+  color: #bbb;
+}
+
+.footer-sitemap a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-sitemap a:hover,
+.footer-sitemap a:focus {
+  color: #2f7d70;
+  text-decoration: none;
+}
+
+.footer-sitemap-note {
+  color: #888;
+}
+
 .footer-social {
   padding-right: 20px;
   text-align: right;
+}
+
+/* Bottom line of the panel: copyright on the left, social links on the right */
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px 16px;
+  padding: 10px 0 12px;
+  border-top: 1px solid #eef0f2;
+}
+
+.footer-bottom .footer-copyright {
+  margin: 0;
+}
+
+.footer-bottom .footer-social {
+  padding-right: 0;
+  font-size: 14px;
 }
 
 .footer-social a {
@@ -220,10 +314,29 @@
     padding-right: 16px;
   }
 
+  /* Group title above its line of links */
+  .footer-sitemap {
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .footer-sitemap nav {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .footer-sitemap h4 {
+    flex-basis: auto;
+  }
+
   .footer-contact li {
     line-height: 1.5;
     margin-bottom: 4px;
     word-break: break-word;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
   }
 
   .footer-copyright,
@@ -232,7 +345,7 @@
     padding-right: 15px;
   }
 
-  .footer-copyright p {
+  .footer-bottom .footer-copyright {
     font-size: 11px;
     line-height: 1.4;
     margin-bottom: 6px;

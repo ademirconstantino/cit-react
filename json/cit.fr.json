@@ -26,7 +26,16 @@
   "footer": {
     "contact_us": "Contact",
     "address": "Curitiba | São Paulo, Brésil",
-    "copyright_notice": "Constantino IT Consulting | Copyright © 2010-2026 Tous droits réservés."
+    "copyright_notice": "Constantino IT Consulting | Copyright © 2010-2026 Tous droits réservés.",
+    "sitemap_company": "Entreprise",
+    "sitemap_services": "Services",
+    "sitemap_ebook": "eBook gratuit",
+    "link_home": "Accueil",
+    "link_about": "À propos",
+    "link_team": "Notre équipe",
+    "link_mentoring": "Mentorat",
+    "link_contact": "Contact",
+    "link_services": "Tous les services"
   },
   "links": {
     "facebook_link": "https://www.facebook.com/profile.php?id=61581224173736",

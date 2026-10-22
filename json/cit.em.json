@@ -26,7 +26,16 @@
   "footer": {
     "contact_us": "اتصل بنا",
     "address": "كوريتيبا | ساو باولو، البرازيل",
-    "copyright_notice": "Constantino IT Consulting | حقوق النشر © 2010-2026 جميع الحقوق محفوظة."
+    "copyright_notice": "Constantino IT Consulting | حقوق النشر © 2010-2026 جميع الحقوق محفوظة.",
+    "sitemap_company": "الشركة",
+    "sitemap_services": "الخدمات",
+    "sitemap_ebook": "كتاب إلكتروني مجاني",
+    "link_home": "الرئيسية",
+    "link_about": "من نحن",
+    "link_team": "فريقنا",
+    "link_mentoring": "الإرشاد",
+    "link_contact": "اتصل بنا",
+    "link_services": "جميع الخدمات"
   },
   "links": {
     "facebook_link": "https://www.facebook.com/profile.php?id=61581224173736",
