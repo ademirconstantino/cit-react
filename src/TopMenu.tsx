@@ -52,6 +52,10 @@ function TopMenu() {
         {JsonReader(langSelected, "menu.mentoring")}
       </Link>
 
+      <Link to="/blog">
+        {JsonReader(langSelected, "menu.blog")}
+      </Link>
+
       <Link to="/contact">
         {JsonReader(langSelected, "menu.contact")}
       </Link>

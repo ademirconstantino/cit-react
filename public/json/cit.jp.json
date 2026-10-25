@@ -10,6 +10,7 @@
     "services": "サービス",
     "our_team": "チーム",
     "mentoring": "メンタリング",
+    "blog": "ブログ",
     "contact": "お問い合わせ"
   },
   "home": {
@@ -248,5 +249,13 @@
     "success_body": "{name}様、ありがとうございます。ワンクリックでダウンロードできます。",
     "other_edition": "こちらの版もあります：",
     "promo_close": "閉じる"
+  },
+  "blog": {
+    "title": "ブログ",
+    "subtitle": "ソフトウェア開発、アーキテクチャ、テクノロジーに関する記事",
+    "read_more": "記事を読む",
+    "back": "ブログに戻る",
+    "reading_time": "分で読めます",
+    "lang_note": "この記事はポルトガル語で書かれています。"
   }
 }

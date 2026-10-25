@@ -14,6 +14,8 @@ import CloudSolutions from "./CloudSolutions";
 import OurTeam from "./OurTeam";
 import Mentoring from "./Mentoring";
 import Ebook from "./Ebook";
+import Blog from "./Blog";
+import BlogPost from "./BlogPost";
 import ChatWidget from "./ChatWidget";
 import EbookPromo from "./EbookPromo";
 
@@ -37,6 +39,8 @@ export default function App() {
           <Route path="/web-development" element={<WebDevelopment />} />
           <Route path="/cloud-solutions" element={<CloudSolutions />} />
           <Route path="/ebook" element={<Ebook />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
       </AnimatePresence>
       <Footer />

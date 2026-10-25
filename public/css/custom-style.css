@@ -356,6 +356,35 @@
   }
 }
 
+/* Phones: short footer with contact details only; the top menu already links every page */
+@media screen and (max-width: 480px) {
+  .footer-sitemap {
+    display: none;
+  }
+
+  .footer-main {
+    flex-wrap: nowrap;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .footer-logo {
+    height: 36px;
+  }
+
+  .footer-contact address {
+    margin-bottom: 0;
+  }
+
+  .footer-contact li {
+    margin-bottom: 2px;
+  }
+
+  .footer-bottom {
+    padding: 8px 0 4px;
+  }
+}
+
 /*
  * --------------------------------------------------
  * 6. Home chat widget
