@@ -10,6 +10,7 @@
 		"services": "SERVIÇOS",
 		"our_team": "NOSSO TIME",
 		"mentoring": "MENTORIA",
+		"blog": "BLOG",
 		"contact": "CONTATO"
 	},
 	"home": {
@@ -249,5 +250,13 @@
 		"success_body": "Obrigado, {name}. O seu exemplar está a um clique.",
 		"other_edition": "Também disponível em",
 		"promo_close": "Fechar"
+	},
+	"blog": {
+		"title": "Blog",
+		"subtitle": "Artigos sobre desenvolvimento de software, arquitetura e tecnologia",
+		"read_more": "Ler post",
+		"back": "Voltar ao blog",
+		"reading_time": "min de leitura",
+		"lang_note": ""
 	}
 }

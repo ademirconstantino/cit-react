@@ -10,6 +10,7 @@
     "services": "DIENSTLEISTUNGEN",
     "our_team": "UNSER TEAM",
     "mentoring": "MENTORING",
+    "blog": "BLOG",
     "contact": "KONTAKT"
   },
   "home": {
@@ -248,5 +249,13 @@
     "success_body": "Danke, {name}. Ihr Exemplar ist nur einen Klick entfernt.",
     "other_edition": "Auch erhältlich auf",
     "promo_close": "Schließen"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Artikel über Softwareentwicklung, Architektur und Technologie",
+    "read_more": "Artikel lesen",
+    "back": "Zurück zum Blog",
+    "reading_time": "Min. Lesezeit",
+    "lang_note": "Dieser Artikel ist auf Portugiesisch verfasst."
   }
 }

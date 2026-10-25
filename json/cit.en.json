@@ -10,6 +10,7 @@
 		"services": "SERVICES",
 		"our_team": "OUR TEAM",
 		"mentoring": "MENTORING",
+		"blog": "BLOG",
 		"contact": "CONTACT US"
 	},
 	"home": {
@@ -248,5 +249,13 @@
 		"success_body": "Thank you, {name}. Your copy is just a click away.",
 		"other_edition": "Also available in",
 		"promo_close": "Close"
+	},
+	"blog": {
+		"title": "Blog",
+		"subtitle": "Articles on software development, architecture and technology",
+		"read_more": "Read post",
+		"back": "Back to blog",
+		"reading_time": "min read",
+		"lang_note": "This post is written in Portuguese."
 	}
 }

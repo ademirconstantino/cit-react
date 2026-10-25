@@ -10,6 +10,7 @@
         "services": "SERVIZI",
 		"our_team": "IL NOSTRO TEAM",
 		"mentoring": "MENTORING",
+		"blog": "BLOG",
         "contact": "CONTATTACI"
     },
 	"home" : {
@@ -248,5 +249,13 @@
 		"success_body": "Grazie, {name}. La tua copia è a un clic di distanza.",
 		"other_edition": "Disponibile anche in",
 		"promo_close": "Chiudi"
+	},
+	"blog": {
+		"title": "Blog",
+		"subtitle": "Articoli su sviluppo software, architettura e tecnologia",
+		"read_more": "Leggi l'articolo",
+		"back": "Torna al blog",
+		"reading_time": "min di lettura",
+		"lang_note": "Questo articolo è scritto in portoghese."
 	}
 }

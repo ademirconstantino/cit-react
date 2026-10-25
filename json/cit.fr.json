@@ -10,6 +10,7 @@
     "services": "SERVICES",
     "our_team": "NOTRE ÉQUIPE",
     "mentoring": "MENTORAT",
+    "blog": "BLOG",
     "contact": "CONTACT"
   },
   "home": {
@@ -248,5 +249,13 @@
     "success_body": "Merci, {name}. Votre exemplaire est à portée de clic.",
     "other_edition": "Aussi disponible en",
     "promo_close": "Fermer"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Articles sur le développement logiciel, l'architecture et la technologie",
+    "read_more": "Lire l'article",
+    "back": "Retour au blog",
+    "reading_time": "min de lecture",
+    "lang_note": "Cet article est rédigé en portugais."
   }
 }

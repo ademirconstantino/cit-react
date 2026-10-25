@@ -10,6 +10,7 @@
     "services": "服务",
     "our_team": "我们的团队",
     "mentoring": "导师辅导",
+    "blog": "博客",
     "contact": "联系我们"
   },
   "home": {
@@ -248,5 +249,13 @@
     "success_body": "谢谢您，{name}。只需一次点击即可下载。",
     "other_edition": "另有版本：",
     "promo_close": "关闭"
+  },
+  "blog": {
+    "title": "博客",
+    "subtitle": "关于软件开发、架构和技术的文章",
+    "read_more": "阅读文章",
+    "back": "返回博客",
+    "reading_time": "分钟阅读",
+    "lang_note": "本文以葡萄牙语撰写。"
   }
 }
